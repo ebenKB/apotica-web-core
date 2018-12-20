@@ -1,5 +1,5 @@
 :root {
-  --primary: #00ae55;
+  --primary: #62A339;
   --secondary: #4a96e8;
   --complement: #000;
   --dark: #363f44;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: proxima-nova;
-  src: url("../assets/fonts/proxima-nova.otf");
+  src: url("../../assets/fonts/proxima-nova.otf");
 }
 
 body {
@@ -54,14 +54,20 @@ header {
 
 /* apotica */
 header ul {
-  margin-right: 8%;
   float: right;
+  margin: 0;
+  margin-right: 8%;
+  padding: 0;
 }
 
 /* apotica */
 header ul li {
   display: inline-block;
   list-style: none;
+  /* background: red; */
+  border-left: 1px solid rgba(249, 252, 248,0.4);
+  /* margin: 0.5px; */
+  padding: 12.5px;
 }
 
 /* apotica */
@@ -174,9 +180,8 @@ header a:hover {
 .hero {
   position: relative;
   padding: 40px ;
-  /* display: flex; */
-  min-height: 550px;
-  height: 85vh;
+  min-height: 450px;
+  height: 78vh;
   width: cal (100vw - 40px);
   background-image: linear-gradient(rgba(5, 5, 5, 0.9), rgba(131, 173, 139, 0.35)),
     url("https://images.unsplash.com/photo-1527153818091-1a9638521e2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5fce4ce8856a711cc50a14e03e58783a&auto=format&fit=crop&w=858&q=80");
@@ -325,6 +330,40 @@ nav {
   background-color: rgba(0, 174, 85, 0.7);
 }
 
+.hero-bottom__caption {
+  display: grid;
+  grid-template-columns: 9fr max-content;
+  align-items: baseline;
+  grid-gap: 10px;
+  background: green;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.3em;
+  font-weight: 300;
+}
+
+.hero-bottom__caption div {
+  font-size: 18px;
+  line-height: 1.3em;
+  font-weight: 300;
+}
+
+.hero-bottom__caption div + div{
+  margin-right: 25%;
+  float: left;
+}
+
+/* apotica */
+.media-probe .row {
+  margin-top: 40px;
+  width: 90%;
+  margin-left: 5%;
+  /* background: red; */
+}
+
+/* apotica */
 .two-row-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -332,6 +371,32 @@ nav {
   /* background-color: yellow; */
 }
 
+.media-probe .four-column-grid {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.media-probe .item {
+  text-align: center;
+  width: 90%;
+
+}
+
+.media-probe h4 {
+  color: #000;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.media-probe .item p{
+  margin-top: 10%;
+}
+
+.item img{
+  width: 35%;
+
+}
 .two-column-grid {
   display: grid;
   /* grid-template-columns: repeat(2, 1fr); */
@@ -346,6 +411,7 @@ nav {
   grid-template-rows: auto;
   /* padding: 10px 0px; */
 }
+
 .no-pad {
   padding: 0 0;
 }
@@ -367,10 +433,11 @@ nav {
     padding: 10px 0px;
 }
 
+/* apotica */
 .four-column-grid {
   display: grid;
   /* grid-template-columns: repeat(4, 1fr); */
-  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   grid-template-rows: auto;
   padding: 10px 0px;
 }
@@ -396,17 +463,16 @@ nav {
 .nav-links li:hover > .dropdown {
   visibility: visible;
 }
-
+/* apotica */
 .nav-logo {
   padding: 0%;
   width: 100%;
-  /* margin: 0 0 0 -15%; */
 }
 
+/* apotica */
 .logo {
-  max-width: 80%;
+  max-width: 50%;
   margin-left: 0;
-  /* margin-top: -6%; */
   padding: 0;
 }
 
@@ -435,14 +501,16 @@ nav {
 }
 
 .btn {
-  border-radius: 2.5px;
+
   padding: 10px 17.5px;
   min-width: 60px;
   text-align: center;
   border: 0px;
   color: #fff;
-  font-size: 15.8px;
-  font-weight: 400;
+  border-radius: 3px;
+  text-transform: none;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .tall {
@@ -471,8 +539,10 @@ nav {
   padding: 2px;
 }
 
+/* apotica */
 .al-ctr {
-    align-items: center;
+    /* align-items: center; */
+    text-align: center;
 }
 
 .sign-in {
@@ -483,10 +553,6 @@ nav {
 .sign-in a {
     color: #fff;
 }
-
-/* .sign-in a:active {
-    color: var(--primary)
-} */
 
 .cta {
     display: inline-block;
@@ -612,7 +678,6 @@ nav {
     border: 0px;
     background-color: #ffff;
     color: var(--primary);
-    /* float: right; */
 }
 
 
@@ -642,11 +707,10 @@ nav {
     /* float: right; */
 }
 
-.btn-outline--large {
+/* apotica */
+.btn-outline {
     border-radius: 6px;
     padding: 10px 20px;
-    width: 250px;
-    height: 65px;
     text-align: center;
     font-size: 18px;
     border: 1px solid #ffff;
@@ -654,15 +718,14 @@ nav {
     color: #ffff;
 }
 
-.btn-outline--large:hover{
+/* apotica */
+.btn-outline:hover{
     transition: all .2s ease-in-out;
     border-radius: 6px;
     padding: 10px 20px;
-    width: 250px;
-    height: 65px;
     text-align: center;
     font-size: 18px;
-    border: 1.5px solid;
+    border: 1px solid;
     background-color: #ffff;
     color:  var(--primary);
     /* float: right; */
