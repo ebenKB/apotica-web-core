@@ -14,7 +14,7 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone https://github.com/fonbeat/apotica`
-* `apotica`
+* `cd apotica`
 * `npm install`
 
 ## Running / Development
