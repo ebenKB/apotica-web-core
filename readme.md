@@ -22,8 +22,6 @@ You will need the following things properly installed on your computer.
 * `gulp`
 * Visit your app at [http://localhost:4200](http://localhost:8080).
 
-
-
 ### Linting
 
 * `npm run lint:hbs`
@@ -32,5 +30,5 @@ You will need the following things properly installed on your computer.
 
 ### Building
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+* `npm build` (development)
+* `npm build --environment production` (production)
