@@ -227,8 +227,10 @@ nav {
 }
 
 .nav-menu-content-wrapper {
+  position: fixed;
   background-color: #464547;
   width: 100%;
+  z-index: 10;
 }
 
 .border-gradient {
@@ -360,6 +362,9 @@ nav {
 /* apotica */
 .hero-bottom__caption {
   background: url("../../assets/images/banner-1.jpg");
+}
+
+.hero-bottom__caption .content {
   display: grid;
   grid-template-columns: 8fr max-content;
   align-items: baseline;
@@ -381,7 +386,6 @@ nav {
 
 /* apotica */
 .hero-bottom__caption div + div{
-  margin-right: 30%;
   float: left;
 }
 
@@ -874,24 +878,21 @@ nav {
 
 /* apotica */
 .btn-outline {
-    border-radius: 6px;
-    /* padding: 10px 20px; */
+    /* border-radius: 6px; */
     text-align: center;
     font-size: 18px;
-    border: 1px solid var(--white)f;
+    border: 1px solid var(--white);
     background-color: transparent;
     color: var(--white)f;
 }
 
 /* apotica */
 .btn-outline:hover{
-    transition: all .2s ease-in-out;
-    border-radius: 6px;
     text-align: center;
-    font-size: 18px;
     border: 1px solid;
-    background-color: var(--white)f;
+    background-color: var(--white);
     color:  var(--primary);
+    transition: all .5s linear;
 }
 
 .testimonial-details{
@@ -1386,10 +1387,13 @@ div.footer-bottom-left{
   }
 }
 
+/* apotica */
 @media screen and (min-width: 50em) {
   .max-width-halfcol {
+    margin-top: 8%;
     margin-right: 2.35765%;
-    max-width: 70%;
+    max-width: 65%;
+    padding: 20px;
   }
 }
 
