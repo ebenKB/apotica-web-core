@@ -10,7 +10,7 @@ You will need the following dependencies properly installed on your computer in 
 * [Node.js](https://nodejs.org/) (with npm)
 * [Gulp cli](https://gulpjs.com/)
 
-The project already ships with a gulp.js file and for that matter you do not need to create a new gulp.js file.
+*The project already ships with a gulp.js file and for that matter you do not need to create a new gulp.js file*.
 
 * [Google Chrome](https://google.com/chrome/)
 ## Installation
