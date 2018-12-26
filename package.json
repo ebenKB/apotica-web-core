@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/fonbeat/kotage-website/issues"
   },
-  "homepage": "https://github.com/fonbeat/kotage-website#readme"
+  "homepage": "https://github.com/fonbeat/kotage-website#readme",
+  "dependencies": {
+    "sal.js": "^0.5.0"
+  }
 }
