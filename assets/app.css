@@ -515,6 +515,24 @@ nav {
   background: url("../../assets//images//customer-spotlight-home-depot.jpg")
 }
 
+.customer-spotlight h2 {
+  color: #fff;
+  font-size: 45px;
+  line-height: 47px;
+  font-weight: 300;
+  border-bottom: 1px solid #fff;
+  margin-bottom: .3em;
+  margin-left: 30px;
+  padding-bottom: .5em;
+}
+
+.customer-spotlight h2 span {
+  display: block;
+  text-align: left;
+
+
+}
+
 /* apotica */
 .social-media {
   height: 300px;
