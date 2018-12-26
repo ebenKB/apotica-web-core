@@ -1,5 +1,3 @@
-alert("hey")
-
 // humburger logic
 document.getElementById('media-mob').addEventListener('click', () => {
   const burgerTop = document.getElementById('burger-top');
