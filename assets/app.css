@@ -224,6 +224,7 @@ header a:hover {
   overflow: hidden;
 }
 
+
 nav {
   position: absolute;
   top: 0;
@@ -1219,6 +1220,42 @@ div.footer-bottom-left{
     margin-left: 150px;
 }
 
+/* Services.html */
+/* Services */
+.services{
+  height: auto;
+  position: relative;
+}
+/* apotica */
+.services-hero{
+  background: url(//storage.googleapis.com/airwatch_assets/images/services-background.jpg) top right no-repeat #464648;
+  min-height: 250px;
+  position: relative;
+}
+
+/* apotica */
+.hero-text-wrapper__services{
+  margin-top: -50px;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding: 60px 0px;
+
+}
+
+/* apotica */
+.hero-text__services {
+  width: 86%;
+  margin-left: 15%;
+  color: var(--white);
+}
+
+/* apotica */
+.hero-text__services p{
+  font-size: 32px;
+  line-height: 44px
+}
+/* end services */
 
 
 /* end container 2 styling */
