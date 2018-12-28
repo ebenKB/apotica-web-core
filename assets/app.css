@@ -1228,10 +1228,17 @@ div.footer-bottom-left{
 }
 /* apotica */
 .services-hero{
-  background: url(//storage.googleapis.com/airwatch_assets/images/services-background.jpg) top right no-repeat #464648;
+  background: url(//storage.googleapis.com/airwatch_assets/images/services-background.jpg) center no-repeat #464648;
   min-height: 250px;
-  position: relative;
-  /* padding: 10% 0; */
+  min-width: 100%;
+  padding: 10% 0;
+  background-size: cover;
+  /* position: relative; */
+  position: absolute
+}
+
+.services-container{
+
 }
 
 /* apotica */
