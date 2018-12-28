@@ -1231,14 +1231,8 @@ div.footer-bottom-left{
   background: url(//storage.googleapis.com/airwatch_assets/images/services-background.jpg) center no-repeat #464648;
   min-height: 250px;
   min-width: 100%;
-  padding: 10% 0;
-  background-size: cover;
-  /* position: relative; */
-  position: absolute
-}
-
-.services-container{
-
+  margin-top: 11.5%;
+  /* background-size: cover; */
 }
 
 /* apotica */
@@ -1247,8 +1241,6 @@ div.footer-bottom-left{
   text-align: center;
   font-weight: 700;
   position: relative;
-  padding: 60px 0px;
-
 }
 
 /* apotica */
