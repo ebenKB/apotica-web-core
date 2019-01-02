@@ -1352,8 +1352,58 @@ div.footer-bottom-left{
 }
 
 /* apotica */
-.footer-callout {
+.footer-callout__container {
   background: linear-gradient(to right,#009fe0 50%,#009fe0 50%,#014a7f 50%);
+  height: 370px;
+}
+
+/* apotica */
+.footer-callout {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
+  /* max-width: 70%; */
+  display: grid;
+  grid-template-columns: repeat(2, 660px);
+}
+
+/* apotica */
+.footer-callout div{
+  text-align: center;
+  padding: 80px 0;
+}
+
+/* apotica */
+.footer-callout div h2 {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 52px;
+  margin: 0;
+}
+
+/* apotica */
+/* apotica */
+.btn-outline__rounded {
+  border-radius: 6px;
+  text-align: center;
+  font-size: 18px;
+  padding: 9px 20px;
+  border: 1px solid var(--white);
+  background-color: transparent;
+  color: var(--white)f;
+}
+
+/* apotica */
+.btn-outline__rounded:hover{
+  text-align: center;
+  background-color: var(--white);
+  color:  var(--primary);
+  transition: all .3s linear;
+}
+/* apotica */
+.footer-callout__right {
 }
 /* end services */
 
