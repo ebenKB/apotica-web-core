@@ -1523,6 +1523,56 @@ div.footer-bottom-left{
 .lt-image-person .m-t-100 {
   margin-top: 50px;
 }
+
+/* apotica */
+.contact {
+  display: none;
+}
+
+/* apotica */
+/* .border-gradient {
+  margin-top: 90px;
+} */
+
+/* apotica */
+/* .nav-menu-content-wrapper {
+  background: transparent;
+} */
+
+/* apotica */
+.mobile-menu {
+  background: #000;
+  padding-bottom: 18px;
+}
+
+/* apotica */
+.dsk-bd {
+  display: none;
+}
+/* apotica */
+.customer-spotlight h2 {
+  display: none;
+}
+/* apotica */
+.media-probe button {
+  margin-bottom: 25px;
+}
+
+/* apotica */
+.hero-bottom__caption .content {
+  grid-template-columns: 1fr;
+  padding: 20px 0;
+}
+
+.media-probe .btn {
+  width: 100%;
+  padding: 20px;
+}
+.media-probe .four-column-grid {
+  width: 92%;
+  margin-left: 8%;
+}
+
 }
 
 /* ****IPAD *** */
