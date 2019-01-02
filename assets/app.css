@@ -281,7 +281,7 @@ nav {
 }
 
 /* apotica */
-.nav-links li:not(:last-child) a:hover {
+.nav-links li:not(:last-child):hover > a{
   border-bottom: 1px solid var(--white);
 }
 
@@ -293,10 +293,7 @@ nav {
   font-family: Helvetica, sans-serif;
   font-weight: 400;
   font-size: 12px;
-  /* background-color: blue; */
   padding: 20px 10px;
-  /* height: 20px; */
-
 }
 
 .menu {
@@ -332,6 +329,7 @@ nav {
   text-align: left;
   visibility: hidden;
   color: #000;
+  transition: all 0.05s ease-in-out 0s;
   z-index: 1;
 }
 
@@ -652,6 +650,8 @@ nav {
 .nav-links li:hover > .dropdown {
   visibility: visible;
 }
+
+
 /* apotica */
 .nav-logo {
   padding: 0%;
