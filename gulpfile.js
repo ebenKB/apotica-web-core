@@ -18,10 +18,8 @@ gulp.task('connect', function() {
   });
 });
 
-
 gulp.task('css', function () {
     gulp.src('./assets/*.css')
-
       .pipe(gulp.dest('./dist/assets/css'))
       .pipe(connect.reload());
 });

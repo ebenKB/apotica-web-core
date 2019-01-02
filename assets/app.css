@@ -224,6 +224,7 @@ header a:hover {
   overflow: hidden;
 }
 
+
 nav {
   position: absolute;
   top: 0;
@@ -1219,6 +1220,192 @@ div.footer-bottom-left{
     margin-left: 150px;
 }
 
+
+
+/* Services.html */
+/* Services */
+.services{
+  height: auto;
+  position: relative;
+}
+/* apotica */
+.services-hero{
+  background: url(//storage.googleapis.com/airwatch_assets/images/services-background.jpg) center no-repeat #464648;
+  min-height: 250px;
+  min-width: 100%;
+  margin-top: 11.5%;
+  /* background-size: cover; */
+}
+
+/* apotica */
+.hero-text-wrapper__services{
+  margin-top: -50px;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+}
+
+/* apotica */
+.hero-text__services {
+  width: 86%;
+  margin-left: 15%;
+  color: var(--white);
+}
+
+/* apotica */
+.hero-text__services p {
+  font-size: 32px;
+  line-height: 44px
+}
+
+/* apotica */
+.services-container p b:after {
+  content: '';
+  border-right: 1.5px solid #fff;
+  padding-right: 10px;
+}
+
+/* apotica */
+.services-nav {
+  margin-top: -56px;
+  margin-left: 20%;
+}
+
+.services-nav__content {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  /* color: #fff; */
+}
+
+/* apotica */
+.services-nav__content li {
+  background: #3e3f44;
+  display: inline-block;
+  width: 190px;
+  border-right: 1px solid #616365;
+}
+
+/* apotica */
+.services-nav__content li a span {
+
+  color: #fff;
+  font-weight: 600;
+  background: #0095d3;
+  width: 30px;
+  height: 23px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+  padding-top: 9px;
+  text-align: center;
+}
+
+/* apotica */
+.services-nav__content li a.active {
+  color: #616365;
+  background-color: #fff;
+}
+
+/* apotica */
+.services-nav__content a {
+  color: #fff;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 12px;
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* apotica */
+.services-intro {
+  color: #333;
+}
+
+/* apotica */
+.services-intro h2 {
+  font-size: 32px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+/* apotica */
+.services-intro h3 {
+  text-align: center;
+  color: #3d3f45;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 33px;
+  width: 67%;
+  margin: 0 auto 64px;
+}
+
+/* apotica */
+.service-cta {
+  margin-left: 47%;
+  margin-bottom: 5%;
+}
+
+/* apotica */
+.footer-callout__container {
+  background: linear-gradient(to right,#009fe0 50%,#009fe0 50%,#014a7f 50%);
+  height: 370px;
+}
+
+/* apotica */
+.footer-callout {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #fff;
+  /* max-width: 70%; */
+  display: grid;
+  grid-template-columns: repeat(2, 660px);
+}
+
+/* apotica */
+.footer-callout div{
+  text-align: center;
+  padding: 80px 0;
+}
+
+/* apotica */
+.footer-callout div h2 {
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 52px;
+  margin: 0;
+}
+
+/* apotica */
+/* apotica */
+.btn-outline__rounded {
+  border-radius: 6px;
+  text-align: center;
+  font-size: 18px;
+  padding: 9px 20px;
+  border: 1px solid var(--white);
+  background-color: transparent;
+  color: var(--white)f;
+}
+
+/* apotica */
+.btn-outline__rounded:hover{
+  text-align: center;
+  background-color: var(--white);
+  color:  var(--primary);
+  transition: all .3s linear;
+}
+/* apotica */
+.footer-callout__right {
+}
+/* end services */
 
 
 /* end container 2 styling */
