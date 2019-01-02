@@ -1220,6 +1220,8 @@ div.footer-bottom-left{
     margin-left: 150px;
 }
 
+
+
 /* Services.html */
 /* Services */
 .services{
@@ -1251,10 +1253,19 @@ div.footer-bottom-left{
 }
 
 /* apotica */
-.hero-text__services p{
+.hero-text__services p {
   font-size: 32px;
   line-height: 44px
 }
+
+/* apotica */
+.services-container p b:after {
+  content: '';
+  border-right: 1.5px solid #fff;
+  padding-right: 10px;
+}
+
+/* apotica */
 /* end services */
 
 
