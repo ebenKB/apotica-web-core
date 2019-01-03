@@ -128,10 +128,10 @@ header a:hover {
 }
 
 .mobile-menu {
-  position: absolute;
-  top: 0;
+  position: relative;
+  /* top: 0; */
   width: 100%;
-  height: 12%;
+  /* height: 12%; */
   display: none;
   z-index: 3;
   overflow: hidden;
@@ -139,15 +139,21 @@ header a:hover {
 
 .mobile-view {
   position: absolute;
+  top: 0;
+  left: 0;
+
   height: 530px;
   width: 100%;
   display: none;
   z-index: 2;
 }
 
+/* apotica */
 .mobile-container {
-    margin-top: 100px;
+    margin-top: 70px;
     overflow: hidden;
+    position: static;
+    background-color: var(--white);
     /* background-color: red; */
     /* display: grid;
     grid-template-columns: 1fr;
@@ -165,7 +171,7 @@ header a:hover {
 }
 
 .hamburger {
-  margin-left: 60%;
+  margin-left: 30%;
 }
 
 #burger-top {
@@ -205,10 +211,6 @@ header a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.mobile-container {
-  background-color: var(--white);
-  height: 100%;
-}
 
 .hero {
   position: relative;
@@ -247,6 +249,7 @@ nav {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dca38', endColorstr='#23697b',GradientType=1 );
 }
 
+/* apotica */
 .nav-inner-content {
   position: relative;
   width: 100%;
@@ -1429,10 +1432,19 @@ div.footer-bottom-left{
     display: block;
   }
 
+  /* apotica */
   .nav-inner-content {
-    display: none;
+    /* display: none; */
+    margin-left: 0%;
+    grid-template-columns: 1fr 1fr;
   }
 
+/* apotica */
+.nav-logo {
+  padding: 0%;
+  width: 100%;
+  margin-left: 5%;
+}
   .hero-text-wrapper {
     margin-top: 30%;
   }
@@ -1525,7 +1537,7 @@ div.footer-bottom-left{
 }
 
 /* apotica */
-.contact {
+.desktop-only {
   display: none;
 }
 
@@ -1541,7 +1553,7 @@ div.footer-bottom-left{
 
 /* apotica */
 .mobile-menu {
-  background: #000;
+  /* background: #000; */
   padding-bottom: 18px;
 }
 
