@@ -1417,6 +1417,60 @@ div.footer-bottom-left{
 /* end services */
 
 
+/* deployment.html */
+
+/* apotica */
+.deployment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 560px);
+  text-align: center;
+}
+
+/* apotica */
+.deployment-grid div.deployment-grid__left {
+  margin-left: 15%;
+  text-align: left;
+}
+
+/* apotica */
+.deployment-grid div.deployment-grid__right {
+  min-width: 100%;
+  margin-left: 20%;
+  text-align: left;
+}
+
+/* apotica */
+.deployment-grid div h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  line-height: 31px;
+  font-weight: 300;
+  color: #3d3f45;
+}
+
+/* apotica */
+.deployment-grid div p {
+  margin-bottom: 30px;
+  color: #3d3f45;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 300;
+}
+
+/* apotica */
+.deployment-grid div p a{
+  color: green;
+}
+
+
+
+
+
+
+/*  */
+
+
 /* end container 2 styling */
 
 @media screen and (min-width: 320px ) and (max-width: 812px){
