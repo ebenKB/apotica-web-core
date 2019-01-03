@@ -128,10 +128,10 @@ header a:hover {
 }
 
 .mobile-menu {
-  position: absolute;
-  top: 0;
+  position: relative;
+  /* top: 0; */
   width: 100%;
-  height: 12%;
+  /* height: 12%; */
   display: none;
   z-index: 3;
   overflow: hidden;
@@ -139,15 +139,21 @@ header a:hover {
 
 .mobile-view {
   position: absolute;
+  top: 0;
+  left: 0;
+
   height: 530px;
   width: 100%;
   display: none;
   z-index: 2;
 }
 
+/* apotica */
 .mobile-container {
-    margin-top: 100px;
+    margin-top: 70px;
     overflow: hidden;
+    position: static;
+    background-color: var(--white);
     /* background-color: red; */
     /* display: grid;
     grid-template-columns: 1fr;
@@ -165,7 +171,7 @@ header a:hover {
 }
 
 .hamburger {
-  margin-left: 60%;
+  margin-left: 30%;
 }
 
 #burger-top {
@@ -205,10 +211,6 @@ header a:hover {
   transition: all 0.3s ease-in-out;
 }
 
-.mobile-container {
-  background-color: var(--white);
-  height: 100%;
-}
 
 .hero {
   position: relative;
@@ -248,6 +250,7 @@ nav {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dca38', endColorstr='#23697b',GradientType=1 );
 }
 
+/* apotica */
 .nav-inner-content {
   position: relative;
   width: 100%;
@@ -1622,10 +1625,19 @@ div.footer-bottom-left{
     display: block;
   }
 
+  /* apotica */
   .nav-inner-content {
-    display: none;
+    /* display: none; */
+    margin-left: 0%;
+    grid-template-columns: 1fr 1fr;
   }
 
+/* apotica */
+.nav-logo {
+  padding: 0%;
+  width: 100%;
+  margin-left: 5%;
+}
   .hero-text-wrapper {
     margin-top: 30%;
   }
@@ -1716,6 +1728,56 @@ div.footer-bottom-left{
 .lt-image-person .m-t-100 {
   margin-top: 50px;
 }
+
+/* apotica */
+.desktop-only {
+  display: none;
+}
+
+/* apotica */
+/* .border-gradient {
+  margin-top: 90px;
+} */
+
+/* apotica */
+/* .nav-menu-content-wrapper {
+  background: transparent;
+} */
+
+/* apotica */
+.mobile-menu {
+  /* background: #000; */
+  padding-bottom: 18px;
+}
+
+/* apotica */
+.dsk-bd {
+  display: none;
+}
+/* apotica */
+.customer-spotlight h2 {
+  display: none;
+}
+/* apotica */
+.media-probe button {
+  margin-bottom: 25px;
+}
+
+/* apotica */
+.hero-bottom__caption .content {
+  grid-template-columns: 1fr;
+  padding: 20px 0;
+}
+
+.media-probe .btn {
+  width: 100%;
+  padding: 20px;
+}
+.media-probe .four-column-grid {
+  width: 92%;
+  margin-left: 8%;
+}
+
 }
 
 /* ****IPAD *** */
