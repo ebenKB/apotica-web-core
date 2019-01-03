@@ -70,6 +70,7 @@ header ul li {
   padding: 15px 24px;
 }
 
+/* apotica */
 header ul li a  i{
   margin-right: 10px;
   transform: rotate(90deg);
@@ -117,6 +118,10 @@ header a:hover {
   line-height: 32px;
   margin-top: 16px;
   color: var(--white);
+}
+
+.caption {
+  font-weight: 600;
 }
 
 .caption h2 {
@@ -321,19 +326,22 @@ nav {
 
 /* apotica */
 .dropdown {
+  font-size: 12px;
   position: absolute;
   border-radius: 5px;
   left:0;
-  margin-top: 10.50%;
+  margin-top: 14.00%;
+  margin-left: -10px;
   right: 0;
   min-width: 500px;
   max-width: 500px;
   background-color: var(--white);
-  opacity: 1;
+  opacity: 0;
   text-align: left;
   visibility: hidden;
-  color: #000;
-  transition: all 0.05s ease-in-out 0s;
+  color: var(--dark);
+  transition: all 0.135s ease-in-out 0s;
+  border: 1px solid rgba(216, 213, 213,0.3);
   z-index: 1;
 }
 
@@ -341,6 +349,8 @@ nav {
 .dropdown::before {
   position: absolute;
   content: "";
+
+  margin-top: -5px;
   min-height: 40px;
   min-width: 40px;
   background-color: var(--white);
@@ -351,10 +361,11 @@ nav {
 }
 
 .dropdown-container {
-  padding: 20px;
+  padding: 30px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2;
+  color: var(--dark);
 }
 
 .dropdown-container a:hover * div,
@@ -366,6 +377,9 @@ nav {
   background-color: rgba(0, 174, 85, 0.7);
 }
 
+.dropdown .menu-sub-item span {
+  font-size: 12px;
+}
 /* apotica */
 .hero-bottom__caption {
   background: url("../../assets/images/banner-1.jpg");
@@ -600,6 +614,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
+  grid-gap: 30px;
   /* padding: 10px 0px; */
 }
 
@@ -638,7 +653,8 @@ nav {
   grid-template-columns: 3fr 9fr;
   grid-template-rows: auto;
   padding: 1.5px 0px;
-  color: #000;
+  align-items: center;
+  color: var(--dark);
 }
 
 .menu-sub-item p {
@@ -647,12 +663,14 @@ nav {
 }
 
 .faint-bd-bt {
-  padding: 5% 0px;
+  /* padding: 5% 0px; */
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .nav-links li:hover > .dropdown {
   visibility: visible;
+  opacity: 1;
+  transition: all 0.7s ease-in-out 0s;
 }
 
 
