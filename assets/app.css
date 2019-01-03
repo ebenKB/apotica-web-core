@@ -328,12 +328,12 @@ nav {
 .dropdown {
   font-size: 12px;
   position: absolute;
-  border-radius: 5px;
+  border-radius: 2.5px;
   left:0;
-  margin-top: 14.00%;
+  margin-top: 25px;
   margin-left: -10px;
   right: 0;
-  min-width: 500px;
+  min-width: max-content;
   max-width: 500px;
   background-color: var(--white);
   opacity: 0;
@@ -345,11 +345,21 @@ nav {
   z-index: 1;
 }
 
+.dropdown ul,
+.dropdown ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown ul li:not(last-child) {
+  display: block;
+  /* margin-bottom: 20px; */
+  padding: 10px 0;
+}
 /* apotica */
 .dropdown::before {
   position: absolute;
   content: "";
-
   margin-top: -5px;
   min-height: 40px;
   min-width: 40px;
@@ -365,6 +375,12 @@ nav {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 2;
+  color: var(--dark);
+}
+
+.custom-link-item a {
+  padding: 0;
+  margin: 0;
   color: var(--dark);
 }
 
@@ -657,8 +673,9 @@ nav {
   color: var(--dark);
 }
 
-.menu-sub-item p {
-  font-size: 14px;
+.menu-sub-item p ,
+.custom-link-item a{
+  font-size: 12px;
   font-weight: 900;
 }
 
@@ -1151,12 +1168,12 @@ nav {
 }
 
 .footer >div a{
-    color: var(--white)f;
+    color: var(--white);
     text-decoration: none;
 }
 
 .faint-white{
-    color: var(--white)f;
+    color: var(--white);
 }
 /*
 .footer-bottom-right{
@@ -1218,10 +1235,10 @@ div.footer-bottom-left{
     padding-right: 2.5px;
 }
 
-.faint{
+/* .faint{
     margin: 0;
     padding: 0;
-}
+} */
 
 .footer-menu--heading{
     margin-bottom: 10px;
