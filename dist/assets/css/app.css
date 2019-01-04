@@ -1463,6 +1463,15 @@ div.footer-bottom-left{
   color: green;
 }
 
+/* support.html */
+.pricing-table {
+position: relative;
+min-height: 1px;
+padding-right: 15px;
+padding-left: 15px;
+}
+/* end support.html */
+
 
 
 
