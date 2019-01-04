@@ -1347,11 +1347,7 @@ div > a:hover,
 }
 
 /* apotica */
-.services-nav__content li a:hover {
-	background: #fff;
-	transition: all 0.3s ease-in;
-	color: #333;
-}
+
 /* apotica */
 .services-nav__content li a span {
 	color: #fff;
