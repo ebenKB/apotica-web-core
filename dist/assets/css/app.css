@@ -1291,11 +1291,8 @@ div.footer-bottom-left{
 }
 
 /* apotica */
-.services-nav__content li a:hover {
-  background: #fff;
-  transition: all .3s ease-in;
-  color: #333;
-}
+
+
 /* apotica */
 .services-nav__content li a span {
 
@@ -1469,6 +1466,118 @@ position: relative;
 min-height: 1px;
 padding-right: 15px;
 padding-left: 15px;
+max-width: 85%;
+margin: 0 6%;
+margin-bottom: 70px;
+}
+
+/* apotica */
+
+
+
+/* apotica */
+.table-heading {
+  margin-right: -15px;
+  margin-left: -15px;
+  background: #333;
+  padding: 0 0 10px 40px;
+  height: 90px;
+}
+
+/* apotica */
+.table-header {
+  display: flex;
+  margin-top: 60px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* apotica */
+.table-heading::before {
+  display: table;
+  content: " ";
+}
+
+
+/* apotica */
+.table-title {
+  color: #fff;
+  font-size: 30px;
+  line-height: 90px;
+  font-weight: 300;
+  margin: 0 0 0 20px;
+}
+
+/* apotica */
+.pricing-heading {
+  width: 20%;
+  display: inline-block;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: #fff;
+}
+
+/* apotica */
+.pricing-content {
+  width: 22%;
+  display: inline-block;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  color: #fff;
+}
+
+/* apotica */
+.pricing-content h3 {
+  margin: 0 0 0 20px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #3d3f45;
+}
+
+/* apotica */
+.pricing-content p {
+  font-size: 16px;
+  color: #3d3f45;
+  line-height: 23px;
+  font-weight: 300;
+}
+
+/* apotica */
+.pricing-content p a {
+  color: #79c745;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.pricing-content p a:hover {
+  text-decoration: underline;
+}
+
+
+/* apotica */
+.pricing_badge {
+  color: #3d3f45;
+  font-weight: 600;
+  font-size: 22px;
+  background: #fff;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  position: relative;
+  top: -16px;
+  margin: 0 10px;
+  width: 20%;
+}
+
+/* apotica */
+.pricing-table__tiers {
 }
 /* end support.html */
 
