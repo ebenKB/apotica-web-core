@@ -1,0 +1,40 @@
+<div class="services-hero">
+  <div class="hero-text-wrapper__services">
+    <div class="hero-text__services max-width-halfcol">
+      <div class="services-container">
+        <p class="m-t-45">
+          <b>Services</b> Your steps to a Succesful Mobile Deployment
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="services_content">
+  <div class="services-nav">
+    <ul class="services-nav__content">
+      <%if (type.toLowerCase() == 'education'){%>
+        <li><a href="#" class="active"><span>1</span>Education</a></li>
+      <%}else{%>
+        <li><a href="/services" ><span>1</span>Education</a></li>
+      <%}%>
+
+      <%if(type.toLowerCase() == 'deployment') {%>
+        <li><a href="#" class="active"><span>2</span>Deployment</a></li>
+      <%}else{%>
+        <li><a href="/deployment" ><span>2</span>Deployment</a></li>
+      <%}%>
+
+      <%if(type.toLowerCase() == 'consulting') {%>
+        <li><a href="#" class="active"><span>3</span>Consulting</a></li>
+      <%}else {%>
+        <li><a href="/consulting" ><span>3</span>Consulting</a></li>
+      <%}%>
+
+      <%if(type.toLowerCase() == 'support') {%>
+        <li><a href="#" class="active"><span>4</span>Support</a></li>
+      <%}else {%>
+        <li><a href="/support"><span>4</span>Support</a></li>
+      <%}%>
+    </ul>
+  </div>
+</div>

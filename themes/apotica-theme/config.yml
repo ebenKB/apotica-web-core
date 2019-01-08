@@ -1,0 +1,8 @@
+# Header
+menu:
+  Home: /
+    Services: /services
+    Deployment: /deployment
+    Consulting: /consulting
+    Pricing: /pricing
+
