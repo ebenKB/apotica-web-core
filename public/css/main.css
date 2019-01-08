@@ -221,6 +221,7 @@ header a:hover {
 	transition: all 0.3s ease-in-out;
 }
 
+<<<<<<< HEAD
 .hero {
 	position: relative;
 	padding: 40px;
@@ -232,12 +233,36 @@ header a:hover {
 			rgba(131, 173, 139, 0.35)
 		),
 		url("https://images.unsplash.com/photo-1527153818091-1a9638521e2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5fce4ce8856a711cc50a14e03e58783a&auto=format&fit=crop&w=858&q=80");
+=======
+.hero,
+.small-hero {
+	position: relative;
+	padding: 40px;
+	width: cal (100vw - 40px);
+>>>>>>> hero-partials
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	overflow: hidden;
 }
 
+<<<<<<< HEAD
+=======
+.small-hero {
+	min-height: 280px;
+}
+
+.hero {
+	min-height: 450px;
+	height: 78vh;
+	background-image: linear-gradient(
+		rgba(5, 5, 5, 0.9),
+		rgba(131, 173, 139, 0.35)
+	),
+	url("https://images.unsplash.com/photo-1527153818091-1a9638521e2a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=5fce4ce8856a711cc50a14e03e58783a&auto=format&fit=crop&w=858&q=80");
+}
+
+>>>>>>> hero-partials
 nav {
 	position: absolute;
 	top: 0;
@@ -423,6 +448,11 @@ nav {
 .dropdown .menu-sub-item span {
 	font-size: 12px;
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> hero-partials
 /* apotica */
 .hero-bottom__caption {
 	background: url("/images/banner-1.jpg");
@@ -552,6 +582,18 @@ nav {
 	min-height: 40vh;
 }
 
+<<<<<<< HEAD
+=======
+.small-hero__partner {
+	color:#fff;
+	background-image: linear-gradient(
+		rgba(5, 5, 5, 0.9),
+		rgba(131, 173, 139, 0.35)
+	),
+	url("https://www.efsa.europa.eu/sites/default/files/All%20staff%20picture%20new.jpg");
+}
+
+>>>>>>> hero-partials
 /* apotica */
 .advert h3 {
 	color: var(--white);
@@ -836,6 +878,13 @@ h6 {
 	margin-top: 5%;
 }
 
+<<<<<<< HEAD
+=======
+.small-hero .hero-text-wrapper {
+	text-align: center;
+}
+
+>>>>>>> hero-partials
 /* apotica */
 .hero-text {
 	width: 86%;
