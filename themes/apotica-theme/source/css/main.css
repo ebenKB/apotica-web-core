@@ -236,6 +236,8 @@ header a:hover {
 	min-height: 280px;
 }
 
+
+
 .hero {
 	min-height: 450px;
 	height: 78vh;
@@ -857,6 +859,15 @@ h6 {
 
 .small-hero .hero-text-wrapper {
 	text-align: center;
+	margin-top: 10%;
+}
+
+.small-hero .hero-text-wrapper h1 {
+	color: #fff;
+	font-weight: 300;
+	font-size: 30px;
+	text-align: center;
+	margin-top: 0;
 }
 
 /* apotica */
