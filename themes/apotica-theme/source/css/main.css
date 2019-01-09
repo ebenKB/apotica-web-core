@@ -20,6 +20,10 @@ body {
 	font-family: "proxima-nova", sans-serif;
 }
 
+.clickable {
+	cursor: hand;
+}
+
 a {
 	text-decoration: none;
 	color: var(--font-body);
@@ -366,10 +370,6 @@ nav {
 	font-weight: bold;
 }
 
-.dropdown p {
-	margin: 0;
-}
-
 /* apotica */
 .dropdown {
 	font-size: 12px;
@@ -394,6 +394,14 @@ nav {
 	z-index: 1;
 }
 
+.dropdown p {
+	margin: 0;
+}
+
+.dropdown a,
+.dropdown .link {
+	cursor: hand;
+}
 .service__dropdown {
 	margin-left: -50px;
 }
@@ -455,6 +463,7 @@ nav {
 .dropdown .menu-sub-item span {
 	font-size: 12px;
 }
+
 
 
 /* apotica */
