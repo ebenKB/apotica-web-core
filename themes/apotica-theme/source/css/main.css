@@ -368,7 +368,7 @@ nav {
 	border-radius: 2.5px;
 	left: 0;
 	margin-top: 25px;
-	margin-left: -10px;
+	/* margin-left: -50px; */
 	right: 0;
 	min-width: max-content;
 	min-width: intrinsic;
@@ -385,6 +385,9 @@ nav {
 	z-index: 1;
 }
 
+.service__dropdown {
+	margin-left: -50px;
+}
 .dropdown ul,
 .dropdown ul li {
 	margin: 0;
@@ -401,13 +404,17 @@ nav {
 	position: absolute;
 	content: "";
 	margin-top: -5px;
-	min-height: 40px;
-	min-width: 40px;
+	height: 40px;
+	width: 40px;
 	background-color: var(--white);
 	transform: rotate(45deg);
 	text-align: left;
-	margin-left: 17.5%;
+	margin-left: 20%;
 	z-index: -1;
+}
+
+.partner__dropdown::before {
+	margin-left: 12.5%;
 }
 
 .dropdown-container {
