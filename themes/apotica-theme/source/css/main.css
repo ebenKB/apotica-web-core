@@ -327,8 +327,14 @@ nav {
 }
 
 /* apotica */
-.nav-links li:not(:last-child):hover > a {
+.nav-links li:hover > a {
 	border-bottom: 1px solid var(--white);
+}
+
+
+/* apotica */
+.nav-links .dropdown li:hover > a {
+	border-bottom: 0;
 }
 
 /* apotica */
@@ -396,7 +402,6 @@ nav {
 
 .dropdown ul li:not(last-child) {
 	display: block;
-	/* margin-bottom: 20px; */
 	padding: 10px 0;
 }
 /* apotica */
@@ -423,6 +428,11 @@ nav {
 	grid-template-columns: 1fr;
 	grid-template-rows: 2;
 	color: var(--dark);
+}
+
+.dropdown .menu li:hover {
+	background: var(--secondary);
+	color:var(--white);
 }
 
 .custom-link-item a {
