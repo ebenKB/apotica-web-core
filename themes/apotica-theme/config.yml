@@ -1,8 +1,9 @@
 # Header
 menu:
   Home: /
-    Services: /services
+    Services: /services/eben
     Deployment: /deployment
     Consulting: /consulting
     Pricing: /pricing
+    Education: /services/education
 
