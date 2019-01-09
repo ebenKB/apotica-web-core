@@ -1670,7 +1670,14 @@ margin-bottom: 70px;
 /* end support.html */
 
 
+/* partners.html */
+/* apotica */
+.partnership-interests__content {
+	border: none;
+	margin: none;
+}
 
+/* end partners.html */
 
 
 
