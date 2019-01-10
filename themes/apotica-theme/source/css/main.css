@@ -595,6 +595,21 @@ nav {
 	url("https://www.efsa.europa.eu/sites/default/files/All%20staff%20picture%20new.jpg");
 }
 
+.medium-hero__about {
+	color:#fff;
+	background-image: linear-gradient(
+		rgba(5, 5, 5, 0.9),
+		rgba(131, 173, 139, 0.35)
+	),
+	url("https://www.efsa.europa.eu/sites/default/files/All%20staff%20picture%20new.jpg");
+}
+
+/* apotica */
+.hero-text__content{
+	margin-left: 60%;
+}
+
+
 /* apotica */
 .advert h3 {
 	color: var(--white);
@@ -1809,8 +1824,73 @@ margin-bottom: 70px;
 
 
 
-/*  */
+/* about */
+.about-apotica {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 85%;
+}
 
+/* apotica */
+.company-statement{
+	width: 70%;
+	margin: 0 17%;
+}
+
+.company-statement h2 {
+	color: #3d3f45;
+	font-size: 26px;
+	line-height: 33px;
+	font-weight: 300;
+	margin-bottom: 16px;
+	margin-top: 46px;
+}
+
+.company-statement p {
+	font-size: 18px;
+	line-height: 26px;
+	color: #3d3f45;
+	font-weight: 300;
+	margin-bottom: 16px;
+}
+
+.about-page__pictures{
+	margin: 40px auto 30px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr)
+}
+
+.about-page__picture{
+	width: 50%;
+}
+
+.company-statement h3 {
+	margin-top: 20px;
+	color: #3d3f45;
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: 600;
+	margin: 15px 0;
+	margin-bottom: 15px;
+}
+
+.about-page__bottom-links p{
+	font-size: 18px;
+	line-height: 26px;
+	color: #3d3f45;
+	font-weight: 300;
+	margin-bottom: 6px;
+}
+
+.about-page__bottom-links p a {
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 600;
+	color: #79C745;
+}
+	/* end about */
 
 /* end container 2 styling */
 
