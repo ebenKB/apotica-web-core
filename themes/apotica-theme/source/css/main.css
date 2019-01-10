@@ -335,15 +335,8 @@ nav {
 }
 
 /* apotica */
-.nav-links li:hover > a,
-.nav-links li:hover >.link {
+.nav-links li:not(:last-child):hover > a {
 	border-bottom: 1px solid var(--white);
-}
-
-
-/* apotica */
-.nav-links .dropdown li:hover > a {
-	border-bottom: 0;
 }
 
 /* apotica */
@@ -380,7 +373,7 @@ nav {
 	border-radius: 2.5px;
 	left: 0;
 	margin-top: 25px;
-	/* margin-left: -50px; */
+	margin-left: -10px;
 	right: 0;
 	min-width: max-content;
 	min-width: intrinsic;
@@ -397,17 +390,6 @@ nav {
 	z-index: 1;
 }
 
-.dropdown p {
-	margin: 0;
-}
-
-.dropdown a,
-.dropdown .link {
-	cursor: hand;
-}
-.service__dropdown {
-	margin-left: -50px;
-}
 .dropdown ul,
 .dropdown ul li {
 	margin: 0;
@@ -416,6 +398,7 @@ nav {
 
 .dropdown ul li:not(last-child) {
 	display: block;
+	/* margin-bottom: 20px; */
 	padding: 10px 0;
 }
 /* apotica */
@@ -428,12 +411,8 @@ nav {
 	background-color: var(--white);
 	transform: rotate(45deg);
 	text-align: left;
-	margin-left: 20%;
+	margin-left: 17.5%;
 	z-index: -1;
-}
-
-.partner__dropdown::before {
-	margin-left: 12.5%;
 }
 
 .dropdown-container {
@@ -604,7 +583,7 @@ nav {
 		rgba(5, 5, 5, 0.9),
 		rgba(131, 173, 139, 0.35)
 	),
-	url("https://www.efsa.europa.eu/sites/default/files/All%20staff%20picture%20new.jpg");
+	url("/images/partners-background.jpg");
 }
 
 .medium-hero__capabilities {
@@ -615,6 +594,21 @@ nav {
 	),
 	url("https://www.efsa.europa.eu/sites/default/files/All%20staff%20picture%20new.jpg");
 }
+
+.medium-hero__about {
+	color:#fff;
+	background-image: linear-gradient(
+		rgba(5, 5, 5, 0.9),
+		rgba(131, 173, 139, 0.35)
+	),
+	url("https://www.efsa.europa.eu/sites/default/files/All%20staff%20picture%20new.jpg");
+}
+
+/* apotica */
+.hero-text__content{
+	margin-left: 60%;
+}
+
 
 /* apotica */
 .advert h3 {
@@ -1728,12 +1722,175 @@ margin-bottom: 70px;
 /* end support.html */
 
 
+/* partners.html */
+/* apotica */
+.partnership-interests{
+	display: block;
+	background: #3e3f44;
+	color: #fff;
+}
+/* apotica */
+.partnership-interests__content {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: 50px;
+	max-width: 85%;
+}
+
+/* apotica */
+.partnership-interests__content h4 {
+	display: inline-block;
+	color: #fff;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 23px;
+	position: relative;
+	margin-top: 30px;
+}
+
+/* apotica */
+.partnership-interests__content h4 div.h4-line{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -10px;
+	width: 100px;
+	height: 2px;
+	background: #666;
+}
+
+/* apotica */
+.partnership-interests__content h2 {
+	padding-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+	color: #fff;
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 36px;
+}
+
+/* apotica */
+.partner-list{
+	padding-right: 15px;
+	padding-left: 15px;
+	display: grid;
+	grid-template-columns: repeat(4, 300px);
+	padding-bottom: 30px;
+	margin: 0;
+}
+
+/* apotica */
+.partner-list__item {
+	border-right: 1px solid #666;
+}
+
+/* apotica */
+.partner-list__item p {
+	font-size: 18px;
+	text-align: center;
+	color: #fff;
+	line-height: 23px;
+	font-weight: 300;
+	margin: 0 5px 10px;
+}
+
+/* apotica */
+.partner-nav{
+	position: relative;
+	bottom: 100%;
+	margin: 0;
+	margin-left: 4%;
+}
+/* apotica */
+.partner-nav__item {
+	/* width: 80%; */
+	color: #79c745;
+	padding-bottom: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 18px;
+	line-height: 60px;
+	font-weight: 600;
+	cursor: pointer;
+	margin: 0;
+	/* margin-left: 25px; */
+	text-align: center;
+	display: inline-block;
+
+}
+/* end partners.html */
 
 
 
+/* about */
+.about-apotica {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 85%;
+}
 
-/*  */
+/* apotica */
+.company-statement{
+	width: 70%;
+	margin: 0 17%;
+}
 
+.company-statement h2 {
+	color: #3d3f45;
+	font-size: 26px;
+	line-height: 33px;
+	font-weight: 300;
+	margin-bottom: 16px;
+	margin-top: 46px;
+}
+
+.company-statement p {
+	font-size: 18px;
+	line-height: 26px;
+	color: #3d3f45;
+	font-weight: 300;
+	margin-bottom: 16px;
+}
+
+.about-page__pictures{
+	margin: 40px auto 30px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr)
+}
+
+.about-page__picture{
+	width: 50%;
+}
+
+.company-statement h3 {
+	margin-top: 20px;
+	color: #3d3f45;
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: 600;
+	margin: 15px 0;
+	margin-bottom: 15px;
+}
+
+.about-page__bottom-links p{
+	font-size: 18px;
+	line-height: 26px;
+	color: #3d3f45;
+	font-weight: 300;
+	margin-bottom: 6px;
+}
+
+.about-page__bottom-links p a {
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 600;
+	color: #79C745;
+}
+	/* end about */
 
 /* end container 2 styling */
 
