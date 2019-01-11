@@ -649,13 +649,20 @@ nav {
 	padding: 0;
 }
 
-#CapaSticky ul li {
+#CapaSticky ul li{
 	color: #fff;
 	font-size: 16px;
 	line-height: 19px;
 	list-style: none;
 	text-align: center;
 	font-weight: 600;
+}
+
+#CapaSticky ul li a {
+	color: #fff;
+}
+
+#CapaSticky ul li:not(:last-child) {
 	border-right: 1px solid #F5F5F5;
 }
 
