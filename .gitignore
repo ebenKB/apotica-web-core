@@ -6,4 +6,4 @@ db.json
 # compiled output
 /dist/
 /tmp/
-/public/
+# /public/
