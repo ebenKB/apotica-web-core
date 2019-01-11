@@ -12,10 +12,10 @@
 <div class="services_content">
   <div class="services-nav">
     <ul class="services-nav__content">
-      <%if (type.toLowerCase() == 'education'){%>
-        <li><a href="#" class="active"><span>1</span>Education</a></li>
-      <%}else{%>
-        <li><a href="/services/education" ><span>1</span>Education</a></li>
+      <%if(type.toLowerCase() == 'consulting') {%>
+        <li><a href="#" class="active"><span>1</span>Supplies</a></li>
+      <%}else {%>
+        <li><a href="/services/consulting" ><span>1</span>Supplies</a></li>
       <%}%>
 
       <%if(type.toLowerCase() == 'deployment') {%>
@@ -24,16 +24,16 @@
         <li><a href="/services/deployment" ><span>2</span>Deployment</a></li>
       <%}%>
 
-      <%if(type.toLowerCase() == 'consulting') {%>
-        <li><a href="#" class="active"><span>3</span>Consulting</a></li>
+      <%if(type.toLowerCase() == 'support') {%>
+        <li><a href="#" class="active"><span>3</span>Support</a></li>
       <%}else {%>
-        <li><a href="/services/consulting" ><span>3</span>Consulting</a></li>
+        <li><a href="/services/support"><span>3</span>Support</a></li>
       <%}%>
 
-      <%if(type.toLowerCase() == 'support') {%>
-        <li><a href="#" class="active"><span>4</span>Support</a></li>
-      <%}else {%>
-        <li><a href="/services/support"><span>4</span>Support</a></li>
+      <%if (type.toLowerCase() == 'education'){%>
+        <li><a href="#" class="active"><span>4</span>Education</a></li>
+      <%}else{%>
+        <li><a href="/services/education" ><span>4</span>Education</a></li>
       <%}%>
     </ul>
   </div>
