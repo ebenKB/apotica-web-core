@@ -410,6 +410,14 @@ nav {
 	z-index: 1;
 }
 
+.services__dropdown {
+	margin-left: -40px;
+}
+
+.company__dropdown {
+	margin-left: 5px;
+}
+
 .dropdown ul,
 .dropdown ul li {
 	margin: 0;
@@ -421,6 +429,7 @@ nav {
 	/* margin-bottom: 20px; */
 	padding: 10px 0;
 }
+
 /* apotica */
 .dropdown::before {
 	position: absolute;
