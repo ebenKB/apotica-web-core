@@ -2,7 +2,9 @@
 	--primary: #073151;
 	--secondary: #37a0ef;
 	--secondary__light: rgba(55,160,239,0.5);
+	--secondary__very__light:rgba(55,160,239,0.2);
 	--complement: #000;
+	--light-gray:rgba(132, 133, 134, 0.5);
 	--dark: #363f44;
 	--font-body: #54626a;
 	--white: #fff;
@@ -650,7 +652,7 @@ nav {
 }
 
 #CapaSticky {
-	background: #79C745;
+	background: var(--primary);
 	padding: 23px 0;
 }
 
@@ -967,7 +969,7 @@ h6 {
 
 /* apotica */
 .btn.green:hover {
-	background-color: var(--secondary);
+	background-color: var(--secondary__light);
 	color: var(--white);
 }
 
@@ -977,7 +979,7 @@ h6 {
 }
 
 .circle-btn {
-	background-color: var(--secondary);
+	background-color: var(--secondary__very__light);
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
@@ -1007,7 +1009,7 @@ h6 {
 }
 
 .green {
-	background-color: var(--primary);
+	background-color: var(--secondary);
 }
 
 .dark {
@@ -1380,7 +1382,7 @@ h6 {
 
 /* apotica */
 .footer {
-	background: #363f44;
+	background: var(--primary);
 	overflow: hidden;
 	width: 100%;
 	font-weight: 350;
