@@ -465,9 +465,10 @@ nav {
 	color: var(--dark);
 }
 
+/* hover on dropdwon menu options */
 .dropdown-container a:hover * div,
 .dropdown-container a:hover * .faint {
-	color: var(--primary);
+	color: var(--secondary);
 }
 
 .dropdown-container a:hover .circle-btn {
