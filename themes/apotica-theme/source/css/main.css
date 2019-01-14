@@ -295,27 +295,27 @@ nav {
 	background: red;
 	background: -moz-linear-gradient(
 		left,
-		#8dca38 0%,
-		#63ad53 25%,
-		#2a8878 50%,
+		var(--primary) 0%,
+		var(--secondary) 25%,
+		var(--secondary__light) 50%,
 		#147984 78%,
-		#23697b 100%
+		var(--secondary) 100%
 	);
 	background: -webkit-linear-gradient(
 		left,
-		#8dca38 0%,
-		#63ad53 25%,
-		#2a8878 50%,
+		var(--primary) 0%,
+		var(--secondary) 25%,
+		var(--secondary__light) 50%,
 		#147984 78%,
-		#23697b 100%
+		var(--secondary) 100%
 	);
 	background: linear-gradient(
 		to right,
-		#8dca38 0%,
-		#63ad53 25%,
-		#2a8878 50%,
+		var(--primary) 0%,
+		var(--secondary) 25%,
+		var(--secondary__light) 50%,
 		#147984 78%,
-		#23697b 100%
+		var(--secondary) 100%
 	);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dca38', endColorstr='#23697b',GradientType=1 );
 }
@@ -1803,7 +1803,7 @@ margin-bottom: 70px;
 
 /* apotica */
 .pricing-content h3 {
-  margin: 0 0 0 20px;
+  /* margin: 0 0 0 5px; */
   font-size: 18px;
   line-height: 25px;
   font-weight: 600;
@@ -1820,7 +1820,7 @@ margin-bottom: 70px;
 
 /* apotica */
 .pricing-content p a {
-  color: #79c745;
+  color: var(--secondary);
   font-weight: 600;
   font-size: 18px;
 }
@@ -1832,7 +1832,7 @@ margin-bottom: 70px;
 
 /* apotica */
 .pricing_badge {
-  color: #3d3f45;
+  color: #fff;
   font-weight: 600;
   font-size: 22px;
   background: var(--secondary);
@@ -1936,7 +1936,7 @@ margin-bottom: 70px;
 /* apotica */
 .partner-nav__item {
 	/* width: 80%; */
-	color: #79c745;
+	color: var(--secondary);
 	padding-bottom: 30px;
 	padding-right: 15px;
 	padding-left: 15px;
@@ -1949,6 +1949,11 @@ margin-bottom: 70px;
 	text-align: center;
 	display: inline-block;
 
+}
+
+.partner-nav__item:hover {
+	transition: transform all .3s;
+	color: var(--primary);
 }
 /* end partners.html */
 
@@ -2018,7 +2023,12 @@ margin-bottom: 70px;
 	font-size: 18px;
 	line-height: 26px;
 	font-weight: 600;
-	color: #79C745;
+	color: var(--primary);
+}
+
+.about-page__bottom-links p a:hover {
+	transition: all .2s ease-in;
+	color: var(--secondary)
 }
 	/* end about */
 
@@ -2333,16 +2343,6 @@ margin-bottom: 70px;
 	.desktop-only {
 		display: none;
 	}
-
-	/* apotica */
-	/* .border-gradient {
-  margin-top: 90px;
-} */
-
-	/* apotica */
-	/* .nav-menu-content-wrapper {
-  background: transparent;
-} */
 
 	/* apotica */
 	.mobile-menu {
