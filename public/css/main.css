@@ -1,6 +1,7 @@
 :root {
-	--primary: #62a339;
-	--secondary: #4a96e8;
+	--primary: #073151;
+	--secondary: #37a0ef;
+	--secondary__light: rgba(55,160,239,0.5);
 	--complement: #000;
 	--dark: #363f44;
 	--font-body: #54626a;
@@ -468,7 +469,7 @@ nav {
 }
 
 .dropdown-container a:hover .circle-btn {
-	background-color: rgba(0, 174, 85, 0.7);
+	background-color: var(--secondary__light);
 }
 
 .dropdown .menu-sub-item span {
@@ -609,7 +610,7 @@ nav {
 .advert .wrap-content h2,
 .mobility .wrap-content h2 {
 	font-weight: normal;
-	color: #fff;
+	color: var(--white);
 	font-size: 35px;
 	line-height: 42px;
 	margin-bottom: 20px;
@@ -631,7 +632,7 @@ nav {
 }
 
 .small-hero__partner {
-	color:#fff;
+	color:var(--white);
 	background-image: linear-gradient(
 		rgba(5, 5, 5, 0.9),
 		rgba(131, 173, 139, 0.35)
@@ -640,7 +641,7 @@ nav {
 }
 
 .medium-hero__capabilities {
-	color:#fff;
+	color:var(--white);
 	background-image: linear-gradient(
 		rgba(5, 5, 5, 0.01),
 		rgba(131, 173, 139, 0.05)
@@ -659,7 +660,7 @@ nav {
 }
 
 #CapaSticky ul li{
-	color: #fff;
+	color: var(--white);
 	font-size: 16px;
 	line-height: 19px;
 	list-style: none;
@@ -668,7 +669,7 @@ nav {
 }
 
 #CapaSticky ul li a {
-	color: #fff;
+	color: var(--white);
 }
 
 #CapaSticky ul li:not(:last-child) {
@@ -676,7 +677,7 @@ nav {
 }
 
 .medium-hero__get-support {
-	color:#fff;
+	color:var(--white);
 	background-image:
 	url("/images/hero-Img.jpg");
 }
@@ -687,7 +688,7 @@ nav {
 	padding: 10px;
 	margin-left: 15px;
 	border: 1px solid rgba(151,151,151,0.46);
-	background-color: #FFFFFF;
+	background-color: var(--white);
 	text-align: center;
 	height: 288px;
 	position: relative;
@@ -721,7 +722,7 @@ nav {
 }
 
 .medium-hero__about {
-	color:#fff;
+	color:var(--white);
 	background-image: linear-gradient(
 		rgba(5, 5, 5, 0.9),
 		rgba(131, 173, 139, 0.35)
@@ -765,11 +766,11 @@ nav {
 }
 
 .customer-spotlight h2 {
-	color: #fff;
+	color: var(--white);
 	font-size: 45px;
 	line-height: 47px;
 	font-weight: 300;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid var(--white);
 	margin-bottom: 0.3em;
 	margin-left: 30px;
 	padding-bottom: 0.5em;
@@ -966,7 +967,7 @@ h6 {
 
 /* apotica */
 .btn.green:hover {
-	background-color: #67b632;
+	background-color: var(--secondary);
 	color: var(--white);
 }
 
@@ -976,7 +977,7 @@ h6 {
 }
 
 .circle-btn {
-	background-color: rgba(20, 155, 8, 0.7);
+	background-color: var(--secondary);
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
@@ -1004,6 +1005,7 @@ h6 {
 	width: 100%;
 	margin-left: 10%;
 }
+
 .green {
 	background-color: var(--primary);
 }
@@ -1028,7 +1030,7 @@ h6 {
 }
 
 .small-hero .hero-text-wrapper h1 {
-	color: #fff;
+	color: var(--white);
 	font-weight: 300;
 	font-size: 30px;
 	text-align: center;
@@ -1040,7 +1042,7 @@ h6 {
 }
 
 .medium-hero .hero-text h4 {
-	color: #fff;
+	color: var(--white);
 	font-size: 18px;
 	line-height: 50px;
 	margin: 0;
@@ -1442,13 +1444,13 @@ div.footer-bottom-left {
 .footer-bottom-left > a:hover {
 	padding: 10px;
 	transition: all 0.2s ease-out;
-	color: #00ae55;
+	color: var(--secondary__light);
 }
 .footer-body,
 div > a:hover,
 .footer-bottom-left > a:hover {
 	transition: all 0.2s ease-out;
-	color: #00ae55;
+	color: var(--secondary__light);
 }
 
 .footer-content {
@@ -1537,7 +1539,7 @@ div > a:hover,
 /* apotica */
 .services-container p b:after {
 	content: "";
-	border-right: 1.5px solid #fff;
+	border-right: 1.5px solid var(--secondary);
 	padding-right: 10px;
 }
 
@@ -1567,9 +1569,9 @@ div > a:hover,
 
 /* apotica */
 .services-nav__content li a span {
-	color: #fff;
+	color: var(--white);
 	font-weight: 600;
-	background: #0095d3;
+	background: var(--secondary);
 	width: 30px;
 	height: 23px;
 	border-radius: 50%;
@@ -1582,12 +1584,12 @@ div > a:hover,
 /* apotica */
 .services-nav__content li a.active {
 	color: #616365;
-	background-color: #fff;
+	background-color: var(--white);
 }
 
 /* apotica */
 .services-nav__content a {
-	color: #fff;
+	color: var(--white);
 	text-align: left;
 	font-size: 20px;
 	font-weight: 300;
@@ -1640,7 +1642,7 @@ div > a:hover,
 	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
-	color: #fff;
+	color: var(--white);
 	/* max-width: 70%; */
 	display: grid;
 	grid-template-columns: repeat(2, 660px);
@@ -1725,7 +1727,7 @@ div > a:hover,
 
 /* apotica */
 .deployment-grid div p a{
-  color: green;
+  color: var(--secondary);
 }
 
 /* support.html */
@@ -1770,7 +1772,7 @@ margin-bottom: 70px;
 
 /* apotica */
 .table-title {
-  color: #fff;
+  color: var(--white);
   font-size: 30px;
   line-height: 90px;
   font-weight: 300;
@@ -1785,7 +1787,7 @@ margin-bottom: 70px;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  color: #fff;
+  color: var(--white);
 }
 
 /* apotica */
@@ -1796,7 +1798,7 @@ margin-bottom: 70px;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  color: #fff;
+  color: var(--white);
 }
 
 /* apotica */
@@ -1833,7 +1835,7 @@ margin-bottom: 70px;
   color: #3d3f45;
   font-weight: 600;
   font-size: 22px;
-  background: #fff;
+  background: var(--secondary);
   text-align: center;
   display: inline-block;
   padding: 10px;
@@ -1855,7 +1857,7 @@ margin-bottom: 70px;
 .partnership-interests{
 	display: block;
 	background: #3e3f44;
-	color: #fff;
+	color: var(--white);
 }
 /* apotica */
 .partnership-interests__content {
@@ -1869,7 +1871,7 @@ margin-bottom: 70px;
 /* apotica */
 .partnership-interests__content h4 {
 	display: inline-block;
-	color: #fff;
+	color: var(--white);
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 23px;
@@ -1893,7 +1895,7 @@ margin-bottom: 70px;
 	padding-top: 30px;
 	margin-bottom: 30px;
 	text-align: center;
-	color: #fff;
+	color: var(--white);
 	font-weight: 300;
 	font-size: 28px;
 	line-height: 36px;
@@ -1918,7 +1920,7 @@ margin-bottom: 70px;
 .partner-list__item p {
 	font-size: 18px;
 	text-align: center;
-	color: #fff;
+	color: var(--white);
 	line-height: 23px;
 	font-weight: 300;
 	margin: 0 5px 10px;
