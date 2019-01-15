@@ -97,7 +97,7 @@ header a {
 
 /* apotica */
 header a:hover {
-	color: var(--primary);
+	color: var(--secondary);
 }
 
 /* apotica */
@@ -164,6 +164,55 @@ header a:hover {
 	min-height: calc(100vh - 400px);
 }
 
+.form-wrapper {
+	position: relative;
+	background: var(--secondary__very__light);
+	margin-top: 15%;
+	margin-bottom: 10%;
+	width: 70%;
+	margin-left: 15%;
+	padding: 10px;
+	min-height:500px;
+}
+
+.form-items {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	grid-gap: 10px;
+}
+
+.form-wrapper .caption h2 {
+	font-size: 30px;
+	margin-left: 10px;
+}
+
+.form-items .form-item .header {
+	font-weight: 900;
+}
+
+.form-items .form-item,
+.full-form-items .form-item {
+	width: 100%;
+	height: 40px;
+	padding: 20px;
+}
+
+.form-items .form-item input {
+	height: 100%;
+	width: 90%;
+	border: transparent;
+	border-radius: 2.5px;
+	margin-top: 5px;
+}
+
+.full-form-items textarea {
+	width: 94%;
+}
+
+.form-items .form-item label {
+	width: 100% ;
+}
 .mobile-menu {
 	position: relative;
 	/* top: 0; */
@@ -178,7 +227,6 @@ header a:hover {
 	position: absolute;
 	top: 0;
 	left: 0;
-
 	height: 530px;
 	width: 100%;
 	display: none;
