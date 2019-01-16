@@ -2279,6 +2279,101 @@ margin-bottom: 70px;
 }
 
 @media screen and (max-width: 640px) {
+
+	/* apotica */
+	.services-intro h3 {
+    text-align: center;
+    color: #3d3f45;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 33px;
+    width: 90%;
+		margin: 0 auto 64px;
+	}
+	/* apotica */
+	.deployment-grid {
+    display: block;
+	}
+
+
+	/* apotica */
+	.deployment-grid div.deployment-grid__left {
+    margin-left: 5%;
+		text-align: left;
+		width: 90%;
+	}
+
+	/* apotica */
+	.deployment-grid div.deployment-grid__right {
+    min-width: 85%;
+		margin-left: 5%;
+		margin-right: 5%;
+    text-align: left;
+	}
+
+	/* apotica */
+	.footer-callout__container {
+    background: linear-gradient( #009fe0 50%, #014a7f 50%);
+    height: 500px;
+	}
+
+	/* apotica */
+	.footer-callout {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--white);
+    /* max-width: 70%; */
+    display: block;
+	}
+
+	/* apotica */
+	.footer-callout div {
+		text-align: center;
+		padding: 0;
+		margin-top: 50px;
+		height: 250px;
+	}
+
+	/* apotica */
+	.advert h3 {
+    color: var(--white);
+    font-size: 28px;
+		text-align: center;
+		font-weight: 300;
+	}
+
+	/* apotica */
+	.advert ul {
+		display: none;
+	}
+
+	/* apotica */
+	.green {
+    background-color: var(--primary);
+	}
+
+	/* apotica */
+	.btn {
+		padding: 10px 17.5px;
+		min-width: 60px;
+		text-align: center;
+		border: 0px;
+		color: var(--white);
+		border-radius: 3px;
+		text-transform: none;
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	/* apotica */
+
+	.wrap-content button{
+		margin-left: 24%;
+	}
+
+
 	.mobile-view {
 		display: block;
 	}
@@ -2435,6 +2530,9 @@ margin-bottom: 70px;
 
 /* ****IPAD *** */
 @media screen and (max-width: 768px) and (min-wdth: 361px) {
+
+
+
 	.attestation .four-column-grid > div {
 		margin-bottom: 10%;
 	}
