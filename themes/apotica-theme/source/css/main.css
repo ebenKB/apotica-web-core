@@ -1943,15 +1943,14 @@ margin-bottom: 70px;
 }
 
 /* apotica */
-.partnership-interests__content h2 {
+/* .partnership-interests__content h2 {
 	padding-top: 30px;
 	margin-bottom: 30px;
 	text-align: center;
-	color: var(--white);
 	font-weight: 300;
 	font-size: 28px;
 	line-height: 36px;
-}
+} */
 
 /* apotica */
 .partner-list{
@@ -1972,7 +1971,6 @@ margin-bottom: 70px;
 .partner-list__item p {
 	font-size: 18px;
 	text-align: center;
-	color: var(--white);
 	line-height: 23px;
 	font-weight: 300;
 	margin: 0 5px 10px;
@@ -2002,10 +2000,15 @@ margin-bottom: 70px;
 	display: inline-block;
 
 }
-
+/* apotica */
 .partner-nav__item:hover {
 	transition: transform all .3s;
 	color: var(--primary);
+}
+
+/* apotica */
+.mobile-partners{
+	display: none;
 }
 /* end partners.html */
 
@@ -2088,6 +2091,206 @@ margin-bottom: 70px;
 
 @media screen and (min-width: 320px) and (max-width: 812px) {
 	/* Add max-width: 812px to cover iPhone X */
+
+	/* apotica */
+	.services-intro h3 {
+    text-align: center;
+    color: #3d3f45;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 33px;
+    width: 90%;
+		margin: 0 auto 64px;
+	}
+	/* apotica */
+	.deployment-grid {
+    display: block;
+	}
+
+
+	/* apotica */
+	.deployment-grid div.deployment-grid__left {
+    margin-left: 5%;
+		text-align: left;
+		width: 90%;
+	}
+
+	/* apotica */
+	.deployment-grid div.deployment-grid__right {
+    min-width: 85%;
+		margin-left: 5%;
+		margin-right: 5%;
+    text-align: left;
+	}
+
+	/* apotica */
+	.footer-callout__container {
+    background: linear-gradient( #009fe0 50%, #014a7f 50%);
+    height: 500px;
+	}
+
+	/* apotica */
+	.footer-callout {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--white);
+    /* max-width: 70%; */
+    display: block;
+	}
+
+	/* apotica */
+	.footer-callout div {
+		text-align: center;
+		padding: 0;
+		margin-top: 50px;
+		height: 250px;
+	}
+
+	/* apotica */
+	.advert h3 {
+    color: var(--white);
+    font-size: 28px;
+		text-align: center;
+		font-weight: 300;
+	}
+
+	/* apotica */
+	.advert ul {
+		display: none;
+	}
+
+	/* apotica */
+	.green {
+    background-color: var(--primary);
+	}
+
+	/* apotica */
+	.btn {
+		padding: 10px 17.5px;
+		min-width: 60px;
+		text-align: center;
+		border: 0px;
+		color: var(--white);
+		border-radius: 3px;
+		text-transform: none;
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	/* apotica */
+
+	.wrap-content button{
+		margin-left: 24%;
+	}
+
+
+	/* apotica */
+	.service-cta{
+		margin-left: 35%;
+	}
+
+
+	/* apotica */
+	.partnership-interests{
+		display: block;
+		background: white;
+		color: #3e3f44;
+	}
+
+	/* apotica */
+	.partner-list__item {
+		color: #3e3f44;
+		padding-right: 5px;
+		padding-left: 5px;
+		display: block;
+		padding-bottom: 30px;
+		margin: 0;
+	}
+
+	/* apotica */
+	.partner-list__item {
+		border: none;
+	}
+
+	/* apotica */
+	.partner-list {
+		padding-right: 0;
+    padding-left: 0;
+    display: block;
+    padding-bottom: 30px;
+    margin: 0;
+	}
+
+	/* apotica */
+	.partner-list__item p {
+    font-size: 19px;
+    text-align: left;
+    line-height: 23px;
+    font-weight: 300;
+    margin: 0 1px 2px;
+	}
+
+	/* apotica */
+	.partnership-interests__content {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: 5px;
+    max-width: 85%;
+	}
+
+
+
+	.mobile-partners{
+		display: block;
+	}
+
+	/* apotica */
+
+
+
+	.mobile-partners__heading {
+		padding-top: 5px;
+    margin-bottom: 10px;
+    text-align: left;
+    /* color: var(--white); */
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+	}
+
+	/* apotica */
+	.mobile-view {
+		display: block;
+	}
+
+	/* apotica */
+	.mobile-menu {
+		display: block;
+	}
+
+	/* apotica */
+	.partner-list__links{
+		display: none;
+	}
+
+	.partnership-interests__content h4 div.h4-line {
+		display: none;
+	}
+
+	/* apotica */
+	.partners-cta__label{
+		display: none;
+	}
+/* ============================================================================================================================= */
+
+
+
+
+
+
 	.box-info {
 		background-color: var(--dark);
 		color: var(--white) f;
@@ -2279,113 +2482,6 @@ margin-bottom: 70px;
 }
 
 @media screen and (max-width: 640px) {
-
-	/* apotica */
-	.services-intro h3 {
-    text-align: center;
-    color: #3d3f45;
-    font-weight: 300;
-    font-size: 26px;
-    line-height: 33px;
-    width: 90%;
-		margin: 0 auto 64px;
-	}
-	/* apotica */
-	.deployment-grid {
-    display: block;
-	}
-
-
-	/* apotica */
-	.deployment-grid div.deployment-grid__left {
-    margin-left: 5%;
-		text-align: left;
-		width: 90%;
-	}
-
-	/* apotica */
-	.deployment-grid div.deployment-grid__right {
-    min-width: 85%;
-		margin-left: 5%;
-		margin-right: 5%;
-    text-align: left;
-	}
-
-	/* apotica */
-	.footer-callout__container {
-    background: linear-gradient( #009fe0 50%, #014a7f 50%);
-    height: 500px;
-	}
-
-	/* apotica */
-	.footer-callout {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    color: var(--white);
-    /* max-width: 70%; */
-    display: block;
-	}
-
-	/* apotica */
-	.footer-callout div {
-		text-align: center;
-		padding: 0;
-		margin-top: 50px;
-		height: 250px;
-	}
-
-	/* apotica */
-	.advert h3 {
-    color: var(--white);
-    font-size: 28px;
-		text-align: center;
-		font-weight: 300;
-	}
-
-	/* apotica */
-	.advert ul {
-		display: none;
-	}
-
-	/* apotica */
-	.green {
-    background-color: var(--primary);
-	}
-
-	/* apotica */
-	.btn {
-		padding: 10px 17.5px;
-		min-width: 60px;
-		text-align: center;
-		border: 0px;
-		color: var(--white);
-		border-radius: 3px;
-		text-transform: none;
-		font-size: 16px;
-		font-weight: 700;
-	}
-
-	/* apotica */
-
-	.wrap-content button{
-		margin-left: 24%;
-	}
-
-
-	/* apotica */
-	.service-cta{
-		margin-left: 35%;
-	}
-
-	.mobile-view {
-		display: block;
-	}
-
-	.mobile-menu {
-		display: block;
-	}
 
 	/* apotica */
 	.nav-inner-content {
