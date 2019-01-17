@@ -2310,6 +2310,21 @@ margin-bottom: 70px;
     text-align: center;
     margin-top: 15%;
 	}
+
+	/* apotica */
+	.about-page__pictures {
+		display: none;
+	}
+	/* apotica */
+	.company-statement {
+    width: 95%;
+    margin: 0;
+	}
+
+	/* apotica */
+	.medium-hero {
+    min-height: 250px;
+	}
 /* ============================================================================================================================= */
 
 
