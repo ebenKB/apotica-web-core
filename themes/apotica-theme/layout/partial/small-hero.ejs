@@ -1,5 +1,11 @@
 <div class="small-hero small-hero__<%= type %>">
-  <div class="hero-text-wrapper ">
+  <%if(isInLine == 'true') {%>
+    <div class="hero-text-wrapper ">
+      <h1><%= mainContent %> </h1>
+    </div>
+  <%}else {%>
+    <div class="hero-text-wrapper ">
       <h1><strong>  <%= leftContent %> </strong> |  <%= mainContent %> </h1>
-  </div>
+    </div>
+ <% } %>
 </div>
