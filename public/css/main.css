@@ -349,7 +349,7 @@ nav {
 }
 
 .border-gradient {
-	height: 6px;
+	height: 1px;
 	background: red;
 	background: -moz-linear-gradient(
 		left,
