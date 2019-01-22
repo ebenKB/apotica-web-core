@@ -326,7 +326,7 @@ header a:hover {
 
 .hero {
 	min-height: 450px;
-	height: 78vh;
+	height: 88vh;
 	background-image: linear-gradient(
 		rgba(5, 5, 5, 0.9),
 		rgba(131, 173, 139, 0.35)
@@ -533,38 +533,6 @@ nav {
 
 .dropdown .menu-sub-item span {
 	font-size: 12px;
-}
-
-
-
-/* apotica */
-.hero-bottom__caption {
-	background: url("/images/banner-1.jpg");
-}
-
-.hero-bottom__caption .content {
-	display: grid;
-	grid-template-columns: 8fr max-content;
-	align-items: baseline;
-	grid-gap: 10px;
-	text-align: center;
-	color: var(--white);
-	padding: 20px;
-	font-size: 18px;
-	line-height: 1.3em;
-	font-weight: 300;
-}
-
-/* apotica */
-.hero-bottom__caption div {
-	font-size: 18px;
-	line-height: 1.3em;
-	font-weight: 300;
-}
-
-/* apotica */
-.hero-bottom__caption div + div {
-	float: left;
 }
 
 .row {
@@ -2821,12 +2789,6 @@ margin-bottom: 70px;
 	/* apotica */
 	.media-probe button {
 		margin-bottom: 25px;
-	}
-
-	/* apotica */
-	.hero-bottom__caption .content {
-		grid-template-columns: 1fr;
-		padding: 20px 0;
 	}
 
 	.media-probe .btn {
