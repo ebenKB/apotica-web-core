@@ -825,10 +825,11 @@ nav {
 .social-media .row {
 	text-align: center;
 }
+
 /* apotica */
 .social-media .grid {
 	display: grid;
-	grid-template-columns: repeat(6, auto);
+	grid-template-columns: repeat(5, auto);
 }
 
 /* apotica */
