@@ -22,6 +22,6 @@ document.getElementById('media-mob').addEventListener('click', () => {
   }
 });
 
-window.addEventListener('scroll', function(e) {
-  document.getElementById('contact-header').classList.add('hide')
-})
+// window.addEventListener('scroll', function(e) {
+//   document.getElementById('contact-header').classList.add('hide')
+// })
