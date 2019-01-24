@@ -1628,30 +1628,30 @@ div > a:hover,
 }
 
 .footer-social__twitter>svg {
-	transform: scale(.6);
+	transform: scale(.8);
 	position: absolute;
-	margin-top: -5px;
-	margin-left: -35px;
+	margin-top: -10px;
+	margin-left: -15px;
 	float: left;
 	width: 50px;
 	height: 50px;
 }
 
 .footer-social__linkedin>svg {
-	transform: scale(.6);
+	transform: scale(.8);
 	position: absolute;
-	margin-top: 30px;
-	margin-left: -35px;
+	margin-top: 40px;
+	margin-left: -15px;
 	float: left;
 	width: 50px;
 	height: 50px;
 }
 
 .footer-social__facebook>svg {
-	transform: scale(.6);
+	transform: scale(.8);
 	position: absolute;
-	margin-top: 70px;
-	margin-left: -35px;
+	margin-top: 90px;
+	margin-left: -15px;
 	float: left;
 	width: 50px;
 	height: 50px;
