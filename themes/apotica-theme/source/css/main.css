@@ -137,6 +137,9 @@ header a:hover {
 	padding: 0;
 }
 
+.invert li{
+	color: var(--dark)
+}
 /* apotica */
 .wrap-content ul li {
 	padding: 0;
@@ -1181,12 +1184,12 @@ h6 {
 }
 
 .medium-hero .hero-text {
-	width: 50%;
+	width: 62%;
 }
 
 .medium-hero .hero-text h4 {
 	color: var(--white);
-	font-size: 18px;
+	font-size: 36px;
 	line-height: 50px;
 	margin: 0;
 	font-weight: 600;
@@ -1207,8 +1210,8 @@ h6 {
 
 .medium-hero .hero-text h1 {
 	font-weight: 300;
-	font-size: 36px;
-	line-height: 54px;
+	font-size: 24px;
+	line-height: 30px;
 }
 
 .faint {
