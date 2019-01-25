@@ -154,6 +154,10 @@ header a:hover {
 	color: var(--white);
 }
 
+.wrap-content .invert li{
+	color: var(--dark)
+}
+
 .caption {
 	font-weight: 600;
 }
@@ -1181,12 +1185,12 @@ h6 {
 }
 
 .medium-hero .hero-text {
-	width: 50%;
+	width: 62%;
 }
 
 .medium-hero .hero-text h4 {
 	color: var(--white);
-	font-size: 18px;
+	font-size: 36px;
 	line-height: 50px;
 	margin: 0;
 	font-weight: 600;
@@ -1206,9 +1210,9 @@ h6 {
 }
 
 .medium-hero .hero-text h1 {
-	font-weight: 300;
+	font-weight: 900;
 	font-size: 36px;
-	line-height: 54px;
+	line-height: 30px;
 }
 
 .faint {

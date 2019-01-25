@@ -137,9 +137,6 @@ header a:hover {
 	padding: 0;
 }
 
-.invert li{
-	color: var(--dark)
-}
 /* apotica */
 .wrap-content ul li {
 	padding: 0;
@@ -155,6 +152,10 @@ header a:hover {
 	line-height: 32px;
 	margin-top: 16px;
 	color: var(--white);
+}
+
+.wrap-content .invert li{
+	color: var(--dark)
 }
 
 .caption {
