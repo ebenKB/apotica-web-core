@@ -1223,6 +1223,24 @@ h6 {
 	display: none;
 }
 
+.fadeout {
+	animation: fadeOut 3s linear 0s infinite forwards ;
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 0;
+		display: none;
+	}
+}
 .full-width {
 	width: 100%;
 }
