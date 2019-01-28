@@ -1903,13 +1903,13 @@ div > a:hover,
 
 /* apotica */
 .deployment-grid div.deployment-grid__left {
-  text-align: left;
+  text-align: justify;
 }
 
 /* apotica */
 .deployment-grid div.deployment-grid__right {
 	max-width: 100%;
-	text-align: left;
+	text-align: justify;
 }
 
 /* apotica */
