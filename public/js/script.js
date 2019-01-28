@@ -1,4 +1,4 @@
-// humburger logic
+// humburger
 document.getElementById('media-mob').addEventListener('click', () => {
   const burgerTop = document.getElementById('burger-top');
   const burgerMid = document.getElementById('burger-mid');
@@ -31,11 +31,11 @@ function toggleHeader(current, previous) {
 
   if(current > previous) {
     //scroll-down
-    document.getElementById('contact-header').classList.add('fadeout');
+    document.getElementById('contact-header').classList.add('hide');
 
   }else if(previous > current) {
     //scroll up
-    document.getElementById('contact-header').classList.remove('fadeout');
+    document.getElementById('contact-header').classList.remove('hide');
   }
 }
 
