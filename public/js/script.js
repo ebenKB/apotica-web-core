@@ -22,6 +22,32 @@ document.getElementById('media-mob').addEventListener('click', () => {
   }
 });
 
-// window.addEventListener('scroll', function(e) {
-//   document.getElementById('contact-header').classList.add('hide')
-// })
+// scroll positions
+let last_known_scroll_position = 0;
+let current_pos = last_known_scroll_position;
+let ticking = false;
+
+function toggleHeader(current, previous) {
+
+  if(current > previous) {
+    //scroll-down
+    document.getElementById('contact-header').classList.add('fadeout');
+
+  }else if(previous > current) {
+    //scroll up
+    document.getElementById('contact-header').classList.remove('fadeout');
+  }
+}
+
+// detect scroll
+window.addEventListener('scroll', function(e) {
+  last_known_scroll_position = current_pos;
+  current_pos = window.scrollY;
+  if(!ticking) {
+    window.requestAnimationFrame(function() {
+      toggleHeader(current_pos, last_known_scroll_position);
+      ticking=false;
+    });
+    ticking = true;
+  }
+})
