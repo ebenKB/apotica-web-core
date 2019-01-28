@@ -1759,6 +1759,16 @@ div > a:hover,
 }
 
 /* apotica */
+.training-cta {
+	margin: 0 2%;
+
+}
+
+.training-cta__button {
+	margin-left: 38%;
+
+
+}
 
 /* apotica */
 .services-nav__content li a span {
@@ -1825,6 +1835,7 @@ div > a:hover,
 
 /* apotica */
 .footer-callout__container {
+	margin-top: 2%;
 	background: linear-gradient(to right, #009fe0 50%, #009fe0 50%, #014a7f 50%);
 	height: 370px;
 }
