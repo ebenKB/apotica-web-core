@@ -1738,37 +1738,38 @@ div > a:hover,
 
 /* apotica */
 .services-nav {
+	grid-template-columns: repeat(4, 1fr);
 	margin-top: -56px;
+	width: 60%;
 	margin-left: 20%;
 }
 
 .services-nav__content {
+	width: 100%;
+	grid-template-columns: repeat(4,1fr);
+	display: grid;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	font-size: 0;
-	/* color: #fff; */
 }
 
 /* apotica */
 .services-nav__content li {
 	background: #3e3f44;
 	display: inline-block;
-	width: 190px;
+	max-width: 99.6%;
 	border-right: 1px solid #616365;
 }
 
 /* apotica */
 .training-cta {
 	margin: 0 2%;
-	margin-bottom: 2%;
-
+	margin-bottom: 60px;
 }
 
 .training-cta__button {
 	margin-left: 38%;
-
-
 }
 
 /* apotica */
@@ -1800,7 +1801,7 @@ div > a:hover,
 	padding: 12px;
 	display: inline-block;
 	cursor: pointer;
-	width: 100%;
+	width: calc(100% - 24px);
 }
 
 /* apotica */
@@ -2813,6 +2814,10 @@ margin-bottom: 70px;
 	.media-probe .four-column-grid {
 		width: 92%;
 		margin-left: 8%;
+	}
+
+	.services-nav__content {
+		grid-template-columns: auto;
 	}
 }
 
