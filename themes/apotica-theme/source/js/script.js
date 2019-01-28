@@ -31,11 +31,11 @@ function toggleHeader(current, previous) {
 
   if(current > previous) {
     //scroll-down
-    document.getElementById('contact-header').classList.add('fadeOut');
+    document.getElementById('contact-header').classList.add('fadeout');
 
   }else if(previous > current) {
     //scroll up
-    document.getElementById('contact-header').classList.remove('fadeOut');
+    document.getElementById('contact-header').classList.remove('fadeout');
   }
 }
 
