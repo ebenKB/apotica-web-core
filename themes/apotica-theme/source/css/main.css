@@ -1761,6 +1761,7 @@ div > a:hover,
 /* apotica */
 .training-cta {
 	margin: 0 2%;
+	margin-bottom: 2%;
 
 }
 
@@ -1892,22 +1893,22 @@ div > a:hover,
 
 /* apotica */
 .deployment-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 560px);
-  text-align: center;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	text-align: center;
 }
 
 /* apotica */
 .deployment-grid div.deployment-grid__left {
-  margin-left: 15%;
+  margin-left: 10%;
   text-align: left;
 }
 
 /* apotica */
 .deployment-grid div.deployment-grid__right {
-  min-width: 100%;
-  margin-left: 20%;
-  text-align: left;
+	max-width: 90%;
+	margin-left: 5%;
+	text-align: left;
 }
 
 /* apotica */
