@@ -1893,21 +1893,22 @@ div > a:hover,
 
 /* apotica */
 .deployment-grid {
+	margin-left: 10%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	text-align: center;
+	width: 80%;
+	grid-gap: 50px;
 }
 
 /* apotica */
 .deployment-grid div.deployment-grid__left {
-  margin-left: 10%;
   text-align: left;
 }
 
 /* apotica */
 .deployment-grid div.deployment-grid__right {
-	max-width: 90%;
-	margin-left: 5%;
+	max-width: 100%;
 	text-align: left;
 }
 
