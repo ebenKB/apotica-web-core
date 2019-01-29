@@ -3111,6 +3111,10 @@ margin-bottom: 70px;
 /* set the width for very large screens */
 @media only screen and (min-width: 1440px)  {
 	.hero-text {
-		width: 900px;
+		width: 950px;
+	}
+
+	.hero-text-wrapper {
+		margin-top: 15%;
 	}
 }
