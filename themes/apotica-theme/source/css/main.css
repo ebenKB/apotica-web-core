@@ -2308,6 +2308,13 @@ margin-bottom: 70px;
 }
 
 /* apotica */
+.card-link {
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+
+/* apotica */
 .card-arrow{
 	position: absolute;
 	top: 15px;
@@ -2322,6 +2329,14 @@ margin-bottom: 70px;
 	transition: .33s all ease;
 	text-align: center;
 }
+
+/* apotica */
+.card-link:hover, .card-arrow:hover {
+	transition: .33s;
+	background-position: right center;
+}
+
+
 
 .privacy-section {
 	background:rgba(132, 133, 134, 0.054);
@@ -2344,19 +2359,21 @@ margin-bottom: 70px;
 }
 
 /* apotica */
-.card-arrow::before {
+.card-minimize::before {
 	content: '-';
-	opacity: 0;
+	opacity: 1;
 }
 
 /* apotica */
-.card-arrow::after {
+.card-expand::after {
 	content: '+';
 	opacity: 1;
 }
 
 
-.card-arrow::after, .card-arrow::before {
+
+/* apotica */
+.card-expand::after, .card-minimize::before {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -2369,7 +2386,19 @@ margin-bottom: 70px;
 	transition: .22s;
 }
 
+/* apotica */
+.privacy-section__card-content {
+	display: none;
+	margin-top: 25px;
+	border-top: 1px solid #333;
+	padding-top: 5px;
+	font-size: 15px;
+	font-weight: 300;
 
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
 
 .privacy-section__wrapper div {
 	max-width: 100%;

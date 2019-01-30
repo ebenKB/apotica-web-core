@@ -51,3 +51,40 @@ window.addEventListener('scroll', function(e) {
     ticking = true;
   }
 })
+
+// accordion menu /privacy
+var acc = document.getElementsByClassName("card-link");
+// var trigger = document.querySelector(".card-expand");
+
+var i;
+
+for (i = 0; i < acc.length; i++) {
+//  console.log(acc[i].nextElementSibling )
+ acc[i].addEventListener("click", function() {
+   /* Toggle between adding and removing the "active" class,
+   to highlight the button that controls the panel */
+   this.classList.toggle("active");
+
+
+   /* Toggle between hiding and showing the active panel */
+   var panel = this.nextElementSibling;
+   var panelActive = this.firstElementChild;
+  // console.log(this.firstElementChild)
+
+   if (panel.style.display === "block") {
+     panel.style.display = "none";
+     panelActive.classList.add("card-expand");
+     panelActive.classList.remove("card-minimize");
+   } else {
+     panel.style.display = "block";
+     panelActive.classList.remove("card-expand");
+     panelActive.classList.add("card-minimize");
+    }
+  if (panel.style.maxHeight){
+    panel.style.maxHeight = null;
+    } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  }
+
+ });
+}
