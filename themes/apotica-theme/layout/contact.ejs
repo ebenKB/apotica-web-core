@@ -34,27 +34,43 @@
       </div>
     </div>
     <div class="contact-sales__form">
+      <form action="https://formspree.io/unveilface@gmail.com" method="POST" id="contact-form">
       <div class="two-column-grid content">
+        <div class="form-wrap">
         <div class="form-item">
-          <input type="text" placeholder="Your Name" required>
+          <input type="text" placeholder="Your Name" name="name" required minlength="3" maxlength="32">
         </div>
-        <div class="form-item">
-          <input type="text"  placeholder="Phone">
+        <!-- <div class="error">Error is here</div> -->
+      </div>
+        <div class="form-wrap">
+            <div class="form-item">
+              <input type="phone"  name="phone" placeholder="Phone" required>
+            </div>
+            <!-- <div class="error">
+              Phone error is here
+            </div> -->
         </div>
       </div>
       <div class="row">
+        <div class="form-wrap">
         <div class="form-item">
-          <textarea name="" id="" cols="58" rows="8" placeholder="Your Message" required></textarea>
+          <textarea name="message" id="" cols="62" rows="8" placeholder="Your Message" minlength="4" required></textarea>
         </div>
+        <!-- <div class="error">Error is here</div> -->
+      </div>
       </div>
       <div class="two-column-grid content">
+        <div class="form-wrap">
         <div class="form-item">
-          <input type="text"  placeholder="Business Email" required>
+          <input type="email" name="_replyto" placeholder="Business Email" required >
         </div>
-        <div class="form-item">
-          <button class="btn large">SEND MESSAGE</button>
+        <!-- <div class="error">Error is here</div> -->
+      </div>
+        <div class="form-item__btn">
+          <button class="btn large" type="submit" id="submit">SEND MESSAGE</button>
         </div>
       </div>
+    </form>
     </div>
   </div>
 </section>
