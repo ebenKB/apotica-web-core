@@ -51,3 +51,23 @@ window.addEventListener('scroll', function(e) {
     ticking = true;
   }
 })
+
+//listen to form submit event
+const subhmitbtn = document.getElementById('submit');
+if(subhmitbtn !=null) {
+  subhmitbtn.addEventListener('click', (event) => {
+    // alert ('you want to subhmit');
+    const form = document.getElementById('contact-form');
+    form.classList.add('validate');
+  });
+}
+
+// on form submit
+const form = document.getElementById('contact-form');
+if(form !=null) {
+  form.addEventListener('submit', (e) => {
+    console.log("you want to submit");
+    // e.preventDefault();
+  });
+}
+
