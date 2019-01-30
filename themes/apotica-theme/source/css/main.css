@@ -2421,7 +2421,7 @@ margin-bottom: 70px;
 .privacy-section__card-content {
 	display: none;
 	margin-top: 25px;
-	border-top: 1px solid #333;
+	border-top: 1px solid rgba(53, 54, 54, 0.2);
 	padding-top: 5px;
 	font-size: 15px;
 	font-weight: 300;
