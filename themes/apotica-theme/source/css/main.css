@@ -30,13 +30,11 @@ body {
 }
 
 [data-scroll="in"] {
-	color: green;
 	opacity: 1;
 	transform: translateX(0);
 }
 
 [data-scroll="out"] {
-	color: red;
 	opacity: 0;
 	transform: translateX(-200px);
 }
