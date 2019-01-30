@@ -50,4 +50,60 @@ window.addEventListener('scroll', function(e) {
     });
     ticking = true;
   }
-})
+});
+
+//listen to form submit event
+const subhmitbtn = document.getElementById('submit');
+if(subhmitbtn !=null) {
+  subhmitbtn.addEventListener('click', (event) => {
+    // alert ('you want to subhmit');
+    const form = document.getElementById('contact-form');
+    form.classList.add('validate');
+  });
+}
+
+// on form submit
+const form = document.getElementById('contact-form');
+if(form !=null) {
+  form.addEventListener('submit', (e) => {
+    console.log("you want to submit");
+    // e.preventDefault();
+  });
+}
+
+// accordion menu /privacy
+let acc = document.getElementsByClassName("card-link");
+// let trigger = document.querySelector(".card-expand");
+
+let i;
+
+for (i = 0; i < acc.length; i++) {
+//  console.log(acc[i].nextElementSibling )
+ acc[i].addEventListener("click", function() {
+   /* Toggle between adding and removing the "active" class,
+   to highlight the button that controls the panel */
+   this.classList.toggle("active");
+
+
+   /* Toggle between hiding and showing the active panel */
+   let panel = this.nextElementSibling;
+   let panelActive = this.firstElementChild;
+  // console.log(this.firstElementChild)
+
+   if (panel.style.display === "block") {
+     panel.style.display = "none";
+     panelActive.classList.add("card-expand");
+     panelActive.classList.remove("card-minimize");
+   } else {
+     panel.style.display = "block";
+     panelActive.classList.remove("card-expand");
+     panelActive.classList.add("card-minimize");
+    }
+  if (panel.style.maxHeight){
+    panel.style.maxHeight = null;
+    } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
+  }
+
+ });
+}
