@@ -53,10 +53,10 @@ window.addEventListener('scroll', function(e) {
 })
 
 // accordion menu /privacy
-var acc = document.getElementsByClassName("card-link");
-// var trigger = document.querySelector(".card-expand");
+let acc = document.getElementsByClassName("card-link");
+// let trigger = document.querySelector(".card-expand");
 
-var i;
+let i;
 
 for (i = 0; i < acc.length; i++) {
 //  console.log(acc[i].nextElementSibling )
@@ -67,8 +67,8 @@ for (i = 0; i < acc.length; i++) {
 
 
    /* Toggle between hiding and showing the active panel */
-   var panel = this.nextElementSibling;
-   var panelActive = this.firstElementChild;
+   let panel = this.nextElementSibling;
+   let panelActive = this.firstElementChild;
   // console.log(this.firstElementChild)
 
    if (panel.style.display === "block") {
