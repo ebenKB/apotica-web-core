@@ -2317,6 +2317,13 @@ margin-bottom: 70px;
 
 /* end container 2 styling */
 
+/* This implemented should be done in another way as it is a little quirk to get things to work */
+.privacy-section a {
+	padding-right: 190px;
+	padding-top: 15px;
+	padding-bottom: 15px
+}
+
 /* privacy */
 /* apotica */
 .privacy-section__wrapper {
