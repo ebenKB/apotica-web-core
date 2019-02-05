@@ -431,20 +431,6 @@ nav {
 	align-items: center;
 }
 
-.nav-left {
-	background: red;
-	grid-area: nav-left;
-}
-
-.nav-right {
-	background: green;
-	grid-area: nav-right;
-}
-
-.nav-body {
-	background: yellow;
-	grid-area: nav-body;
-}
 /* .body{
 	display: block;
 } */
@@ -2933,6 +2919,21 @@ margin-bottom: 70px;
 		grid-template-rows:2;
 		align-items: center;
 	}
+	}
+
+	.nav-left {
+		background: red;
+		grid-area: nav-left;
+	}
+
+	.nav-right {
+		background: green;
+		grid-area: nav-right;
+	}
+
+	.nav-body {
+		background: yellow;
+		grid-area: nav-body;
 	}
 
 	.nav-menu-content {
