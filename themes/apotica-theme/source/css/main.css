@@ -2908,34 +2908,33 @@ margin-bottom: 70px;
 	.nav-inner-content {
 		/* display: block;
 		margin-left: 0%; */
+
 		position: relative;
 		/* width: 100%; */
 		margin-left: 0;
 		display: grid;
-		grid-template-columns: 5fr 5fr;
 		grid-template-areas:
 		"nav-left nav-right"
 		"nav-body nav-body";
-		grid-template-rows:2;
+		grid-template-columns: 5fr 5fr;
+		grid-template-rows:auto;
 		align-items: center;
-	}
 	}
 
 	.nav-left {
-		background: red;
+		/* background: red; */
 		grid-area: nav-left;
 	}
 
-	.nav-right {
-		background: green;
+	 .nav-right {
+		/* background: green; */
 		grid-area: nav-right;
 	}
 
-	.nav-body {
+	 .nav-body {
 		background: yellow;
 		grid-area: nav-body;
 	}
-
 	.nav-menu-content {
 		display: none;
 	}
