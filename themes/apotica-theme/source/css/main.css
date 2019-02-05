@@ -2948,7 +2948,7 @@ margin-bottom: 70px;
 	}
 
 	.nav-links {
-		background: #04ccfc;
+		background: var(--secondary);
 	}
 
 	.nav-links li {
@@ -2962,7 +2962,6 @@ margin-bottom: 70px;
 
 	.dropdown {
 		position: relative;
-		background: transparent;
 	}
 
 	.dropdown::before {
