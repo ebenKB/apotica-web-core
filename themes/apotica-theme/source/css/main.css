@@ -893,7 +893,7 @@ section .two-column-grid .grid-item {
 
 /* apotica */
 .social-media {
-	height: 300px;
+	min-height: 300px;
 }
 
 /* apotica */
@@ -1301,11 +1301,6 @@ h6 {
 	width: 72%;
 	margin-left: 8%;
 	color: var(--white);
-}
-
-.hero-text {
-	width: 98%;
-	margin-left: 2%;
 }
 
 /* apotica */
@@ -2931,12 +2926,18 @@ margin-bottom: 70px;
 		grid-area: nav-right;
 	}
 
-	 .nav-body {
+	.nav-body {
 		background: yellow;
 		grid-area: nav-body;
 	}
+
 	.nav-menu-content {
 		display: none;
+	}
+
+	.hero-text {
+		width: 98%;
+		margin-left: 2%;
 	}
 
 	.grid-block {
@@ -3118,9 +3119,19 @@ margin-bottom: 70px;
 		grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 	}
 
+	.social-media .row h2 {
+    font-size: 28px;
+    line-height: 40px;
+	}
+
 	.service__dropdown {
     width: 100%;
     margin-left: 0;
+	}
+
+	.row {
+		width: 92%;
+		margin-left: 4%;
 	}
 }
 
