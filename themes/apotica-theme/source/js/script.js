@@ -34,13 +34,28 @@ let current_pos = last_known_scroll_position;
 let ticking = false;
 
 function toggleHeader(current, previous) {
-
   if(current > previous) {
     //scroll-down
-    document.getElementById('contact-header').classList.add('hide');
+    console.log('this is previous', previous, "this is current", current, "this is the last pos", last_known_scroll_position)
+    if(current >=100) {
 
+      document.getElementById('contact-header').classList.add('fadeout');
+        setTimeout(() => {
+          if(last_known_scroll_position>=100) {
+            document.getElementById('contact-header').classList.add('hide');
+          }
+
+        }, 750);
+
+    }
   }else if(previous > current) {
     //scroll up
+    if(current == 0) {
+      document.getElementById('contact-header').classList.remove('fadeout');
+      document.getElementById('contact-header').classList.remove('hide');
+    }
+  }else if(current ==0) {
+    document.getElementById('contact-header').classList.remove('fadeout');
     document.getElementById('contact-header').classList.remove('hide');
   }
 }
