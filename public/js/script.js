@@ -45,7 +45,7 @@ function toggleHeader(current, previous) {
             document.getElementById('contact-header').classList.add('hide');
           }
 
-        }, 750);
+        }, 300);
 
     }
   }else if(previous > current) {
