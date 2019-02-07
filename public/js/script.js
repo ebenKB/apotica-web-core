@@ -3,21 +3,27 @@ document.getElementById('media-mob').addEventListener('click', () => {
   const burgerTop = document.getElementById('burger-top');
   const burgerMid = document.getElementById('burger-mid');
   const burgerDown = document.getElementById('burger-down');
-  const mobileView = document.getElementById('mobile-container');
+  const mobileView = document.getElementById('menu');
+
 
   burgerTop.classList.toggle('burger-top-rotate');
   burgerDown.classList.toggle('burger-down-rotate');
 
   burgerMid.classList.toggle('hide');
-  mobileView.classList.toggle('hide');
+  mobileView.classList.remove('menu-toggle');
+  // mobileView.classList.toggle('hide');
+  mobileView.classList.toggle('grid-block');
+  // document.getElementsByClassName('nav-menu-content')[0].style="display: none";
 
   if (burgerTop.classList.contains('burger-top-rotate')) {
-    burgerDown.classList.add('green');
-    burgerTop.classList.add('green');
+    // burgerDown.classList.add('green');
+    // burgerTop.classList.add('green');
+    // document.getElementsByClassName('nav-menu-content')[0].style="display: block";
 
   } else {
     burgerDown.style.backgroundColor = '#fff';
     burgerTop.style.backgroundColor = '#fff';
+    // document.getElementsByClassName('nav-menu-content')[0].style="display: none";
 
   }
 });
