@@ -356,7 +356,14 @@ header a:hover {
 }
 
 .medium-hero {
-	min-height: 450px;
+	/* min-height: 450px; */
+	/* margin-top: 100px; */
+	min-height: 408px;
+	margin-top: 105px;
+}
+
+.medium-hero .hero-text-wrapper {
+	margin-top: 4%;
 }
 
 .hero {
@@ -695,6 +702,10 @@ section .two-column-grid .grid-item {
 	margin-bottom: 100px;
 }
 
+section .two-column-grid .grid-item img {
+	height: 100%;
+}
+
 .advert .wrap-content h2,
 .mobility .wrap-content h2 {
 	font-weight: normal;
@@ -733,7 +744,7 @@ section .two-column-grid .grid-item {
 		rgba(5, 5, 5, 0.9),
 		rgba(131, 173, 139, 0.35)
 	),
-	url("https://images.unsplash.com/photo-1529636444744-adffc9135a5e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=854&q=80");
+	url("/images/contact-us/contactsales_hero.jpg");
 }
 
 .medium-hero__cybersecurity {
@@ -742,25 +753,23 @@ section .two-column-grid .grid-item {
 		rgba(5, 5, 5, 0.01),
 		rgba(131, 173, 139, 0.05)
 	),
-	url("/images/CC_Hero_Image.jpg");
+	linear-gradient( rgba(5, 5, 5, 0.9), rgba(131, 173, 139, 0.35) ),
+	url("/images/cybersecurity/cybersecurity_hero.jpg");
 }
 
 .medium-hero__infrastructure {
 	color:var(--white);
-	background-image: linear-gradient(
-		rgba(5, 5, 5, 0.01),
-		rgba(131, 173, 139, 0.05)
-	),
-	url("https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80");
+	background-image: linear-gradient( rgba(5, 5, 5, 0.8), rgba(70, 119, 158,0.8) ),
+	url("/images/digital-infrastructure/digitalinfrastructure_hero.jpg");
 }
 
 .medium-hero__cloud {
 	color:var(--white);
 	background-image: linear-gradient(
-		rgba(5, 5, 5, 0.01),
-		rgba(131, 173, 139, 0.05)
+		rgba(5, 5, 5, 0.85),
+		rgba(131, 173, 139, 0.5)
 	),
-	url("https://images.unsplash.com/photo-1483478550801-ceba5fe50e8e?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+	url("/images/cloud/cloud_hero.jpg");
 }
 
 #CapaSticky {
@@ -838,10 +847,11 @@ section .two-column-grid .grid-item {
 .medium-hero__about {
 	color:var(--white);
 	background-image: linear-gradient(
-		rgba(5, 5, 5, 0.9),
-		rgba(131, 173, 139, 0.35)
+		rgba(5, 5, 5, 0.5),
+		rgba(131, 173, 139, 0.5)
 	),
-	url("https://images.unsplash.com/photo-1525422847952-7f91db09a364?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=765&q=80");
+	url("/images/about-us/aboutus_hero.jpg");
+	background-position: 100% 30%;
 }
 
 /* apotica */
@@ -952,6 +962,7 @@ section .two-column-grid .grid-item {
 .two-column-grid {
 	display: grid;
 	grid-template-rows: auto;
+	grid-template-columns: repeat(2, 1fr);
 	/* padding: 10px 0px; */
 }
 
