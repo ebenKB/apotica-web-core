@@ -2349,10 +2349,10 @@ margin-bottom: 70px;
 }
 
 .about-page__pictures{
-	margin: 0 5%;
+	margin: 3%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-gap: 10px;
+	grid-gap: 30px
 }
 
 .about-page__picture{
