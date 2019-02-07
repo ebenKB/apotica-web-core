@@ -605,6 +605,11 @@ nav {
 	margin-left: 25%;
 	margin-right: 25%;
 }
+
+/* apotica */
+.media-probe {
+	height: 100vh;
+}
 /* apotica */
 .media-probe .row {
 	margin-top: 40px;
@@ -748,6 +753,13 @@ section .two-column-grid .grid-item img {
 	url("/images/contact-us/contactsales_hero.jpg");
 }
 
+.medium-hero__contact {
+	background-image: linear-gradient(
+		rgba(5, 5, 5, 0.9),
+		rgba(131, 173, 139, 0.35)
+	),
+	url("/images/contact-us/contactsales_hero.jpg");
+}
 .medium-hero__cybersecurity {
 	color:var(--white);
 	background-image: linear-gradient(
