@@ -608,7 +608,7 @@ nav {
 
 /* apotica */
 .media-probe {
-	height: 100vh;
+	height: calc(100vh + 20px);
 }
 /* apotica */
 .media-probe .row {
