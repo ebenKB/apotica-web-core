@@ -356,11 +356,8 @@ header a:hover {
 }
 
 .medium-hero {
-	/* min-height: 450px; */
-	/* margin-top: 100px; */
-	/* min-height: 408px; */
 	min-height: 300px;
-	margin-top: 100px;
+	margin-top: 20px;
 }
 
 .medium-hero .hero-text-wrapper {
@@ -3385,6 +3382,6 @@ margin-bottom: 70px;
 	}
 
 	.medium-hero {
-		margin-top: 70px;
+		margin-top: 20px;
 	}
 }
