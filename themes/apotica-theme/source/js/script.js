@@ -36,12 +36,11 @@ let ticking = false;
 function toggleHeader(current, previous) {
   if(current > previous) {
     //scroll-down
-    console.log('this is previous', previous, "this is current", current, "this is the last pos", last_known_scroll_position)
+    // console.log('this is previous', previous, "this is current", current, "this is the last pos", last_known_scroll_position)
     if(current >=100) {
-
       document.getElementById('contact-header').classList.add('fadeout');
         setTimeout(() => {
-          if(last_known_scroll_position>=100) {
+          if(current >= 100) {
             document.getElementById('contact-header').classList.add('hide');
           }
 
@@ -87,7 +86,7 @@ if(subhmitbtn !=null) {
 const form = document.getElementById('contact-form');
 if(form !=null) {
   form.addEventListener('submit', (e) => {
-    console.log("you want to submit");
+    // console.log("you want to submit");
     // e.preventDefault();
   });
 }
