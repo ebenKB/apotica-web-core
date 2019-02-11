@@ -156,5 +156,5 @@ function animate(elem, style, unit, from, to, time, prop) {
 
 document.getElementById('to-media-mob').addEventListener('click', () =>{
   let target = document.getElementById("media-probe");
-  animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop, 2000, true);
+  animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop, 1500, true);
 });
