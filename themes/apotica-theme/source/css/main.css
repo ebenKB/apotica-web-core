@@ -39,6 +39,10 @@ body {
 	transform: translateX(-200px);
 }
 
+[data-scroll-dir-y] {
+	transition: 5s ease-in-out;
+}
+
 .clickable {
 	cursor: hand;
 }
@@ -673,7 +677,7 @@ nav {
 }
 
 .banner {
-	background: url("/images/landingpage_section3.jpg");
+	background: url("/images/hero/landingpage_section3\ copy.jpg");
 	height: 100vh;
 	/* background-size: cover; */
 	background-size: 100% 100%;
