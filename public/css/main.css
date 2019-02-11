@@ -672,6 +672,7 @@ nav {
 	height: 100vh;
 	background-size: cover;
 	padding: 10px;
+	opacity: 0.5;
 }
 
 .banner-row {
