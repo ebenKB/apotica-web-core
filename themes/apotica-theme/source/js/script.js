@@ -127,3 +127,7 @@ for (i = 0; i < acc.length; i++) {
 
  });
 }
+
+$('html, body').animate({
+  scrollDown: target
+}, 2000000);

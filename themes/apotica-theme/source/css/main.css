@@ -371,7 +371,8 @@ header a:hover {
 		rgba(5, 5, 5, 0.9),
 		rgba(131, 173, 139, 0.35)
 	),
-	url("https://images.unsplash.com/photo-1497348411082-7ab34fa26e2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+	url("/images/hero/landing_hero_test2.jpg");
+	/* url("https://images.unsplash.com/photo-1497348411082-7ab34fa26e2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"); */
 }
 
 nav {
@@ -617,7 +618,7 @@ nav {
 
 /* apotica */
 .two-row-grid {
-	display: grid;
+	display: grid;DJEI
 	grid-template-columns: 1fr;
 	grid-template-rows: 2;
 	/* background-color: yellow; */
@@ -1087,10 +1088,6 @@ section .two-column-grid .grid-item img {
 	border-bottom: none;
 	/* padding: 0; */
 }
-
-/* .contact-sales .two-column-grid > div {
-	margin-left: 8%;
-} */
 
 .contact-sales__form .two-column-grid >div{
 	margin-left: 0;
