@@ -160,6 +160,10 @@ header a:hover {
 .wrap-content li img {
 	width: 60%;
 }
+/* apotica */
+.landing-link {
+	color: #fff;
+}
 
 .wrap-content li {
 	font-size: 20px;
@@ -668,9 +672,10 @@ nav {
 }
 
 .banner {
-	background: url("/images/apotica-flare.jpg");
+	background: url("/images/landingpage_section3.jpg");
 	height: 100vh;
-	background-size: cover;
+	/* background-size: cover; */
+	background-size: 100% 100%;
 	padding: 10px;
 }
 
