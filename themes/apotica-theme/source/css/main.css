@@ -3382,4 +3382,13 @@ margin-bottom: 70px;
 	.medium-hero {
 		margin-top: 20px;
 	}
+
+	.about-page__pictures {
+		margin: 5% 0;
+		margin-left: 10%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 30px;
+	}
+
 }
