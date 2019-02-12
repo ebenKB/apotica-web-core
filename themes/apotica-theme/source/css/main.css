@@ -2624,23 +2624,25 @@ margin-bottom: 70px;
 
 
 /* partners.html */
+
 /* apotica */
-.partnership-interests{
+/* .partnership-interests{
 	display: block;
 	background: #3e3f44;
 	color: var(--white);
-}
+} */
+
 /* apotica */
-.partnership-interests__content {
+/* .partnership-interests__content {
 	padding-right: 15px;
 	padding-left: 15px;
 	margin-right: auto;
 	margin-left: 50px;
 	max-width: 85%;
-}
+} */
 
 /* apotica */
-.partnership-interests__content h4 {
+/* .partnership-interests__content h4 {
 	display: inline-block;
 	color: var(--white);
 	font-weight: 500;
@@ -2648,10 +2650,10 @@ margin-bottom: 70px;
 	line-height: 23px;
 	position: relative;
 	margin-top: 30px;
-}
+} */
 
 /* apotica */
-.partnership-interests__content h4 div.h4-line{
+/* .partnership-interests__content h4 div.h4-line{
 	content: '';
 	display: block;
 	position: absolute;
@@ -2659,52 +2661,51 @@ margin-bottom: 70px;
 	width: 100px;
 	height: 2px;
 	background: #666;
-}
+} */
 
 /* apotica */
-.partnership-interests__content h2 {
+/* .partnership-interests__content h2 {
 	padding-top: 30px;
 	margin-bottom: 30px;
 	text-align: center;
 	font-weight: 300;
 	font-size: 28px;
 	line-height: 36px;
-}
+} */
 
 /* apotica */
-.partner-list{
+/* .partner-list{
 	padding-right: 15px;
 	padding-left: 15px;
 	display: grid;
 	grid-template-columns: repeat(4, 300px);
 	padding-bottom: 30px;
 	margin: 0;
-}
+} */
 
 /* apotica */
-.partner-list__item {
+/* .partner-list__item {
 	border-right: 1px solid #666;
-}
+} */
 
 /* apotica */
-.partner-list__item p {
+/* .partner-list__item p {
 	font-size: 18px;
 	text-align: center;
 	line-height: 23px;
 	font-weight: 300;
 	margin: 0 5px 10px;
-}
+} */
 
 /* apotica */
-.partner-nav{
+/* .partner-nav{
 	position: relative;
 	bottom: 100%;
 	margin: 0;
 	margin-left: 4%;
-}
+} */
 /* apotica */
-.partner-nav__item {
-	/* width: 80%; */
+/* .partner-nav__item {
 	color: var(--secondary);
 	padding-bottom: 30px;
 	padding-right: 15px;
@@ -2714,16 +2715,15 @@ margin-bottom: 70px;
 	font-weight: 600;
 	cursor: pointer;
 	margin: 0;
-	/* margin-left: 25px; */
 	text-align: center;
 	display: inline-block;
 
-}
+} */
 /* apotica */
-.partner-nav__item:hover {
+/* .partner-nav__item:hover {
 	transition: transform all .3s;
 	color: var(--primary);
-}
+} */
 
 /* apotica */
 .mobile-partners{
@@ -3050,6 +3050,7 @@ margin-bottom: 70px;
 		/* padding-bottom: 30px; */
 		margin: 0;
 	}
+
 
 
 	/* apotica */
