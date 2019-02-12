@@ -379,8 +379,7 @@ header a:hover {
 		rgba(5, 5, 5, 0.9),
 		rgba(131, 173, 139, 0.35)
 	),
-	url("/images/hero/landing_hero_test2.jpg");
-	/* url("https://images.unsplash.com/photo-1497348411082-7ab34fa26e2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"); */
+	url("/images/hero/landingpage_hero.jpg");
 }
 
 nav {
@@ -1371,7 +1370,7 @@ h6 {
 }
 
 .hide {
-	display: none;
+	display: none !important;
 	visibility: hidden;
 	-moz-backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
