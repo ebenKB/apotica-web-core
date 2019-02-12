@@ -444,11 +444,6 @@ nav {
 	align-items: center;
 }
 
-/* .body{
-	display: block;
-} */
-
-
 .grid-block {
 	display: grid;
 }
@@ -478,18 +473,11 @@ nav {
 }
 
 /* apotica */
-.nav-links li:not(:last-child):hover > a {
-	border-bottom: 1px solid var(--white);
-}
-
-/* apotica */
 .nav-links li {
 	position: relative;
 	display: inline-block;
 	margin-left: 1.5%;
 	font-family: Helvetica, sans-serif;
-	/* font-weight: 400; */
-	/* font-size: 12px; */
 	padding: 20px 10px;
 }
 
@@ -550,7 +538,6 @@ nav {
 
 .dropdown ul li:not(last-child) {
 	display: block;
-	/* margin-bottom: 20px; */
 	padding: 10px 0;
 }
 

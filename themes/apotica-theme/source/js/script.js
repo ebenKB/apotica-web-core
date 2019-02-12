@@ -73,12 +73,24 @@ window.addEventListener('scroll', function(e) {
 });
 
 //listen to form submit event
-const subhmitbtn = document.getElementById('submit');
-if(subhmitbtn !=null) {
-  subhmitbtn.addEventListener('click', (event) => {
+const submitbtn = document.getElementById('submit');
+if(submitbtn !=null) {
+  submitbtn.addEventListener('click', (event) => {
     // alert ('you want to subhmit');
     const form = document.getElementById('contact-form');
     form.classList.add('validate');
+
+     Email.send({
+      Host : "smtp.office365.com",
+      Username : "relay@apotica.net",
+      Password : "Apotica@123",
+      To : 'eakbo23@gmail.com',
+      From : "you@isp.com",
+      Subject : "This is the subject",
+      Body : "And this is the body"
+    }).then(
+    message => alert(message)
+    );
   });
 }
 
