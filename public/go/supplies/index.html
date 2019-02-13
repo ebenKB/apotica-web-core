@@ -12,12 +12,10 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,800" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113448247-1"></script>
-  <!-- <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-113448247-1');
-  </script> -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <script src="/js/analytics.js"></script>
+  <script src="/js/mailer.js"></script>
   <link rel="stylesheet" href="/css/util/util.css">
   <link rel="stylesheet" href="/css/partial/header.css">
   <link rel="stylesheet" href="/css/partial/footer.css">
@@ -177,55 +175,9 @@
                         </div>
                     </li>
                     <li>
-                        <span class="link">Partners</span>
-                        <div class="dropdown partner__dropdown">
-                            <div class="dropdown-container">
-                                <div class="top-row">
-                                    <div class="two-row-grid">
-                                        <div class="two-column-grid-static">
-                                            <div>
-                                                <ul class="menu">
-                                                    <li class="custom-link-item">
-                                                        <a href="/go/partners"> Cisco</a>
-                                                    </li>
-                                                    <li class="custom-link-item">
-                                                        <a href="/go/partners"> Dell EMC</a>
-                                                    </li>
-                                                    <li class="custom-link-item">
-                                                        <a href="/go/partners"> Fortinet</a>
-                                                    </li>
-                                                    <li class="custom-link-item">
-                                                        <a href="/go/partners"> HPE</a>
-                                                    </li>
-                                                    <li class="custom-link-item">
-                                                        <a href="/go/partners"> Ivanti</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div>
-                                                <ul class="menu">
-                                                    <li class="custom-link-item">
-                                                        <a href="/go/partners">Commvault</a>
-                                                    </li>
-                                                    <li class="custom-link-item">
-                                                        <a href="/go/partners"> Kotage</a>
-                                                    </li>
-                                                    <li class="custom-link-item">
-                                                        <a href="/go/partners">Microsoft</a>
-                                                    </li>
-                                                    <li class="custom-link-item">
-                                                            <a href="/go/partners"> Oracle</a>
-                                                    </li>
-                                                    <li class="custom-link-item">
-                                                        <a href="/go/partners"> VMware</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <a href="/go/partners">
+                            <span class="link">Partners</span>
+                        </a>
                     </li>
                     <li>
                     <span class="link">Company</span>
@@ -322,9 +274,9 @@
                     </div>
                     <div>
                         <div class="faint-white footer-menu--heading">SOLUTIONS</div>
-                        <div class="m-tb-10"> <a class="faint" href="#"> Cybersecurity</a> </div>
-                        <div class="m-tb-10"> <a class="faint" href="#"> Digital Infrastructure</a> </div>
-                        <div class="m-tb-10"> <a class="faint" href="#"> Cloud</a> </div>
+                        <div class="m-tb-10"> <a class="faint" href="/go/cybersecurity"> Cybersecurity</a> </div>
+                        <div class="m-tb-10"> <a class="faint" href="/go/infrastructure"> Digital Infrastructure</a> </div>
+                        <div class="m-tb-10"> <a class="faint" href="/go/cloud"> Cloud</a> </div>
                     </div>
                     <div>
                         <div class="faint-white footer-menu--heading">SERVICES</div>

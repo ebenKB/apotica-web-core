@@ -73,12 +73,24 @@ window.addEventListener('scroll', function(e) {
 });
 
 //listen to form submit event
-const subhmitbtn = document.getElementById('submit');
-if(subhmitbtn !=null) {
-  subhmitbtn.addEventListener('click', (event) => {
+const submitbtn = document.getElementById('submit');
+if(submitbtn !=null) {
+  submitbtn.addEventListener('click', (event) => {
     // alert ('you want to subhmit');
     const form = document.getElementById('contact-form');
     form.classList.add('validate');
+
+     Email.send({
+      Host : "smtp.office365.com",
+      Username : "relay@apotica.net",
+      Password : "Apotica@123",
+      To : 'eakbo23@gmail.com',
+      From : "unveilface@gmail.com",
+      Subject : "This is the subject",
+      Body : "And this is the body"
+    }).then(
+    message => alert(message)
+    );
   });
 }
 
@@ -156,5 +168,5 @@ function animate(elem, style, unit, from, to, time, prop) {
 
 document.getElementById('to-media-mob').addEventListener('click', () =>{
   let target = document.getElementById("media-probe");
-  animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop, 1500, true);
+  animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop, 1000, true);
 });
