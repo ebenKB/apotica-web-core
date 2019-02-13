@@ -2940,7 +2940,7 @@ margin-bottom: 70px;
 	}
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
 	/* apotica */
 	nav {
 		position: fixed;
@@ -3018,10 +3018,6 @@ margin-bottom: 70px;
 	.dropdown::before {
 		display: none;
 		content: "";
-	}
-
-	.dropdown-container .two-column-grid-static {
-		/* display: block; */
 	}
 
 	/* apotica */
@@ -3204,10 +3200,15 @@ margin-bottom: 70px;
 	}
 }
 
+@media screen and (max-width: 768px) and (min-wdth: 641px) {
+
+
+}
+
+
 /* ****IPAD *** */
-@media screen and (max-width: 768px) and (min-wdth: 361px) {
-
-
+/* @media screen and (max-width: 768px) and (min-wdth: 361px) { */
+	/* @media screen and (max-width: 768px)  {
 
 	.attestation .four-column-grid > div {
 		margin-bottom: 10%;
@@ -3251,7 +3252,7 @@ margin-bottom: 70px;
 	.full-width .m-t-120 {
 		margin-top: -40px;
 	}
-}
+} */
 
 /* ****IPAD PRO *** */
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
