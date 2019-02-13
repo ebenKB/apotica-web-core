@@ -85,7 +85,7 @@ if(submitbtn !=null) {
       Username : "relay@apotica.net",
       Password : "Apotica@123",
       To : 'eakbo23@gmail.com',
-      From : "you@isp.com",
+      From : "unveilface@gmail.com",
       Subject : "This is the subject",
       Body : "And this is the body"
     }).then(
@@ -168,5 +168,5 @@ function animate(elem, style, unit, from, to, time, prop) {
 
 document.getElementById('to-media-mob').addEventListener('click', () =>{
   let target = document.getElementById("media-probe");
-  animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop, 1500, true);
+  animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop, 1000, true);
 });

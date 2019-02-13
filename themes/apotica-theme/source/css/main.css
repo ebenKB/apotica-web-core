@@ -373,8 +373,9 @@ header a:hover {
 }
 
 .hero {
+	background-position: 100% -50%;
 	min-height: 450px;
-	height: calc(100vh - 58px);
+	height: calc(100vh - 70px);
 	background-image: linear-gradient(
 		rgba(5, 5, 5, 0.9),
 		rgba(131, 173, 139, 0.35)
