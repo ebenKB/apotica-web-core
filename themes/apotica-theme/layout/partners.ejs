@@ -8,9 +8,18 @@
   })%>
 </section>
 <section class="partnership-interests m-t-10">
-  <div class="ui button" data-tooltip="Add users to your feed" data-position="right center">
-    Right Center
-  </div>
+    <div class="container">
+        <div class="ui custom button">Show custom popup</div>
+      </div>
+      <div class="ui custom popup top left transition hidden">
+        <ul>
+          <li>one</li>
+          <li>Two</li>
+          <li>Three</li>
+          <li>Four</li>
+          <li>Five</li>
+        </ul>
+    </div>
   <!-- Errors likely caused by JQuery not working in semantic-UI. Check the console.  -->
 </section>
 <section class="services">
@@ -38,3 +47,11 @@
     </div>
   </div>
 </section>
+<script>
+$('.container .custom.button')
+  .popup({
+    position : 'right center',
+    popup : $('.custom.popup'),
+    on    : 'hover'
+  });
+</script>
