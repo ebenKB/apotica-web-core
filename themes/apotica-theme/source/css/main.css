@@ -670,21 +670,21 @@ nav {
 	}
 
 	50%{
-		transform: scale(1.4)
+		transform: scale(1.4);
 	}
 
 	75% {
-		transform: scale(1.2)
+		transform: scale(1.2);
 	}
 
 	100%{
-		transform: scale(1)
+		transform: scale(1);
 	}
 }
 
 .banner {
 	background: url("/images/hero/landingpage_section3\ copy.jpg");
-	height: 100vh;
+	height: 700px;
 	/* background-size: cover; */
 	background-size: 100% 100%;
 	padding: 10px;
