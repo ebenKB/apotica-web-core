@@ -3030,9 +3030,9 @@ margin-bottom: 70px;
 		margin-left: 24%;
 	}
 
-
-	/* apotica */
-
+	.partner-logo div img{
+		width: 100%;
+	}
 
 	/* apotica */
 	.partnership-interests{
@@ -3316,6 +3316,55 @@ margin-bottom: 70px;
 		margin-right: 0;
 	}
 
+}
+
+/* show partners images */
+.partnership-interests__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+	grid-gap: 15px;
+}
+
+.partner-details__head h1 {
+	padding: 8px;
+}
+
+.partnership-interests__grid .ui.button {
+	background: yellow;
+}
+
+.partnership-interests__grid .ui.popup{
+	padding: 0;
+}
+
+
+.partnership-interests__grid ul {
+	padding: 0;
+	list-style-type: disc;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 0px;
+}
+
+.partner-details__content ul {
+	padding: 10px 20px;
+}
+
+.partnership-interests__grid ul li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	/* float: left; */
+	display: block;
+	text-align: left;
+
+}
+
+.partner-details__head {
+	background: var(--light-gray);
+	font-weight: 900;
 }
 
 /* apotica */
