@@ -3423,4 +3423,7 @@ margin-bottom: 70px;
 		grid-gap: 30px;
 	}
 
+	.banner {
+		height: 100vh;
+	}
 }
