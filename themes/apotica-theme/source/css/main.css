@@ -961,11 +961,12 @@ section .two-column-grid .grid-item img {
 }
 
 /* apotica */
-.social-media .row h2 {
+.social-media .row h2,
+.main-home .row h2 {
 	color: #3d3f45;
-	font-size: 40px;
+	font-size: 24px;
 	line-height: 50px;
-	font-weight: 300;
+	font-weight: 500;
 	font-family: "proxima-nova", sans-serif;
 }
 
