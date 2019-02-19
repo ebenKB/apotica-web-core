@@ -988,7 +988,6 @@ section .two-column-grid .grid-item img {
 	/* width: 35%; */
 	height: 50px;
 	filter: grayscale(100%);
-	transform: scale(1.3);
 }
 
 /* apotica */
