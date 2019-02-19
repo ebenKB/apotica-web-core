@@ -376,7 +376,7 @@ header a:hover {
 	background-position: 100% -50%;
 	min-height: 450px;
 	/* height: calc(100vh - 70px); */
-	height: calc(100vh - 130px);
+	height: calc(100vh - 120px);
 	background-image: linear-gradient(
 		rgba(5, 5, 5, 0.9),
 		rgba(131, 173, 139, 0.35)
@@ -389,7 +389,7 @@ header a:hover {
 	background-position: 50% 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 50px;
+	height: 40px;
 
 }
 

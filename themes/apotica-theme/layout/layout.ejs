@@ -7,6 +7,15 @@
 
       <%- partial('partial/footer') %>
   </div>
+  <script type="text/javascript">
+    (function() {
+      window._pa = window._pa || {};
+
+      var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+      pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.marinsm.com/serve/5c6b3068d08f452c610000c3.js";
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+    })();
+   </script>
 </body>
 <%- js('js/script') %>
 <%- js('js/scroll-out.min') %>
