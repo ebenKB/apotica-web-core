@@ -961,6 +961,11 @@ section .two-column-grid .grid-item img {
 	padding: 10px 0;
 }
 
+.home .p-caption {
+	font-size: 26px;
+	line-height: 35px;
+}
+
 .invert a {
 	background: #fff;
 	color: var(--secondary);
