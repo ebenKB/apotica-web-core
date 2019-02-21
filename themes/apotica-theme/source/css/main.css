@@ -129,6 +129,23 @@ header a:hover {
 	grid-gap: 5px;
 }
 
+
+.float  {
+	position: fixed;
+	width: 40px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background: url(../images/down-arrow.svg);
+	transform: rotate(180deg);
+	background-repeat: no-repeat;
+	/* animation: shake 0.3s ease-in-out 0s infinite forwards normal; */
+}
+
+.float button {
+	position: static;
+}
+
 /* apotica */
 .wrap-content .row {
 	margin-left: 50px;
@@ -488,7 +505,6 @@ nav {
 	position: relative;
 	display: inline-block;
 	margin-left: 1.5%;
-	font-family: Helvetica, sans-serif;
 	padding: 20px 10px;
 }
 
@@ -693,6 +709,27 @@ nav {
 	}
 }
 
+@keyframes shake {
+	0% {
+		transform: rotate(182deg);
+	}
+
+	25%{
+		transform: rotate(185deg)
+	}
+
+	50% {
+		transform: rotate(190deg)
+	}
+
+	75% {
+		transform: rotate(185deg);
+	}
+
+	100% {
+		transform: rotate(180deg);
+	}
+}
 .banner {
 	background: url("/images/hero/landingpage_section3\ copy.jpg");
 	height: 700px;
