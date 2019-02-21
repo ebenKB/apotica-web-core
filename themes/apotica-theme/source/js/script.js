@@ -142,31 +142,55 @@ for (i = 0; i < acc.length; i++) {
 
 //adding scroll - animates scrolling
 
-function animate(elem, style, unit, from, to, time, prop) {
-  if (!elem) {
-      return;
-  }
+// function animate(elem, style, unit, from, to, time, prop) {
+//   if (!elem) {
+//       return;
+//   }
 
-  let start = new Date().getTime(),
-      timer = setInterval(function () {
-          let step = Math.min(1, (new Date().getTime() - start) / time);
-          if (prop) {
-              elem[style] = (from + step * (to - from))+unit;
-          } else {
-              elem.style[style] = (from + step * (to - from))+unit;
-          }
-          if (step === 1) {
-              clearInterval(timer);
-          }
-      }, 25);
-  if (prop) {
-        elem[style] = from+unit;
-  } else {
-        elem.style[style] = from+unit;
-  }
-}
+//   let start = new Date().getTime(),
+//       timer = setInterval(function () {
+//           let step = Math.min(1, (new Date().getTime() - start) / time);
+//           if (prop) {
+//               elem[style] = (from + step * (to - from))+unit;
+//           } else {
+//               elem.style[style] = (from + step * (to - from))+unit;
+//           }
+//           if (step === 1) {
+//               clearInterval(timer);
+//           }
+//       }, 25);
+//   if (prop) {
+//         elem[style] = from+unit;
+//   } else {
+//         elem.style[style] = from+unit;
+//   }
+// }
 
-document.getElementById('to-media-mob').addEventListener('click', () =>{
-  let target = document.getElementById("media-probe");
-  animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop, 1000, true);
+
+
+$("document").ready(function() {
+  // add scroll for all scrollable containers
+  scroll('endpoint', 'endpoint_security', 800);
+  scroll('network', 'network_security', 1000);
+  scroll('application', 'application_security', 1500);
+  scroll('security', 'security_services', 1650);
+
+  scroll('netK', 'networking', 800);
+  scroll('manage', 'data_management', 1200);
+  scroll('data', 'data_center', 1500);
+  scroll('to-media-mob', 'media-probe', 1000);
+
+  // cloud infrastructure
+  scroll('business', 'business_productivity', 800);
+  scroll('enterprise', 'enterprise_security', 1000);
+
+  scroll('top','', 1000);
 });
+
+function scroll(id, to, delay) {
+  $('#'+id).click(() =>{
+    $('html, body').animate({
+      scrollTop: $('#'+to).offset().top
+    }, delay)
+  });
+}
