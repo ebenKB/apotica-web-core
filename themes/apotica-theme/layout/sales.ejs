@@ -1,5 +1,17 @@
 <section class="contact-sales m-t-50 m-b-50">
   <div class="sales-container">
+    <div class="sales-row sales-heading">
+      <h1 class="sales-heading__content">Contact Sales</h1>
+    </div>
+    <div class="m-t-40">
+      <div class="sales-statement sales-row m-b-80">
+          <p>Contact sales to <b>discuss</b> your environment and assess your requirements.
+            Need an immediate answer? Have you checked
+            <a href="#" target="_blank" class="sales-link">Apotica's Blogs</a>? Realize the power of the
+            <b>community</b>!
+          </p>
+      </div>
+    </div>
     <div class="sales-row">
       <div class="sales-content">
         <div class="sales-form__wrapper">
@@ -11,26 +23,36 @@
                     <form action="">
                       <div class="input-wrapper">
                         <label for="name" class="sales-input">
-                          <input type="text" placeholder="What's your name?" class="sales-input__item">
+                          <input type="text" name="user_name" placeholder="Full name" class="sales-input__item">
+                        </label>
+                      </div>
+                      <div class="input-wrapper">
+                        <label for="user" class="sales-input">
+                          <input type="text" name="user_title" placeholder="Job Title" class="sales-input__item">
+                        </label>
+                      </div>
+                      <div class="input-wrapper">
+                        <label for="company" class="sales-input">
+                          <input type="text" name="user_company" placeholder="Company" class="sales-input__item">
                         </label>
                       </div>
                       <div class="input-wrapper">
                         <label for="email" class="sales-input">
-                          <input type="text" placeholder="Please enter your business E-Mail" class="sales-input__item">
+                          <input type="text" name="user_email" placeholder="Business email" class="sales-input__item">
+                        </label>
+                      </div>
+                      <div class="input-wrapper">
+                        <label for="user" class="sales-input">
+                          <input type="text" name="user_phone" placeholder="Phone" class="sales-input__item">
                         </label>
                       </div>
                       <div class="input-wrapper">
                         <label for="product-details" class="sales-input__textarea">
-                          <input type="textarea" placeholder="Product Details" class="sales-input__item sales-textarea">
-                        </label>
-                      </div>
-                      <div class="input-wrapper">
-                        <label for="phone" class="sales-input">
-                          <input type="text" placeholder="Phone" class="sales-input__item">
+                          <input type="textarea" name="message" placeholder="Message" class="sales-input__item sales-textarea">
                         </label>
                       </div>
                       <div class="form-item__btn">
-                        <button class="btn__full-width large" type="submit" id="submit">SEND REQUEST</button>
+                        <button class="btn__full-width large" type="submit" id="submit">Send my Question</button>
                       </div>
                     </form>
                   </div>
