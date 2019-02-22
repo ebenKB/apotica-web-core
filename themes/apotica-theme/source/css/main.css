@@ -458,7 +458,7 @@ nav {
 		#147984 78%,
 		var(--secondary) 100%
 	);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dca38', endColorstr='#23697b',GradientType=1 );
+	/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8dca38', endColorstr='#23697b',GradientType=1 ); */
 }
 
 /* apotica */
