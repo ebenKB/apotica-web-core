@@ -43,11 +43,10 @@ function toggleHeader(current, previous) {
           if(current >= 100) {
             document.getElementById('contact-header').classList.add('hide');
           }
-
         }, 300);
 
     }
-  }else if(previous > current) {
+  } else if(previous > current) {
     //scroll up
     if(current == 0) {
       document.getElementById('contact-header').classList.remove('fadeout');
@@ -71,37 +70,6 @@ window.addEventListener('scroll', function(e) {
     ticking = true;
   }
 });
-
-//listen to form submit event
-const submitbtn = document.getElementById('submit');
-if(submitbtn !=null) {
-  submitbtn.addEventListener('click', (event) => {
-    // alert ('you want to subhmit');
-    const form = document.getElementById('contact-form');
-    form.classList.add('validate');
-
-     Email.send({
-      Host : "smtp.office365.com",
-      Username : "relay@apotica.net",
-      Password : "Apotica@123",
-      To : 'eakbo23@gmail.com',
-      From : "unveilface@gmail.com",
-      Subject : "This is the subject",
-      Body : "And this is the body"
-    }).then(
-    message => alert(message)
-    );
-  });
-}
-
-// on form submit
-const form = document.getElementById('contact-form');
-if(form !=null) {
-  form.addEventListener('submit', (e) => {
-    // console.log("you want to submit");
-    // e.preventDefault();
-  });
-}
 
 // accordion menu /privacy
 let acc = document.getElementsByClassName("card-link");

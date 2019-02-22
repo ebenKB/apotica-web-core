@@ -257,8 +257,12 @@ header a:hover {
 
 .validate *:invalid{
 	color: red;
-	border-bottom: 1px solid red;
-	/* font-size: 100px; */
+	border: 1px solid red !important;
+}
+
+.validate *:valid {
+	color: #000;
+	border: 1px solid green !important;
 }
 
 .form-items .form-item input {
@@ -1197,6 +1201,50 @@ section .two-column-grid .grid-item img {
 	border-right: transparent;
  } */
 
+.success-container {
+	position: relative;
+	height: 340px;
+	/* background: red; */
+}
+
+.success-banner {
+	position: relative;
+	min-height: 150px;
+	border-left: 2px solid var(--secondary);
+	width: 50%;
+	margin-top: 12%;
+}
+
+.swipeFromLeft {
+	animation: swipeIn 1s ease 0s 1 forwards normal;
+}
+
+.success-banner h1 {
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.success-banner h1,
+.success-banner p {
+	padding: 10px;
+}
+
+.success-banner p {
+	font-size: 20px;
+}
+
+@keyframes swipeIn {
+	0% {
+		transform: translateX(-190px);
+	}
+
+
+	100% {
+		transform: translateX(100px);
+		transform: translateY(40px);
+	}
+}
+
 .sales-container {
 	padding-right: 15px;
 	padding-left: 15px;
@@ -1238,7 +1286,7 @@ section .two-column-grid .grid-item img {
 	padding: 20px;
 	position: relative;
 	border: 1px solid #DADCE0;
-	border-top: 5px solid var(--secondary);
+	border-top: 2px solid var(--secondary);
 	border-radius: 0;
 	background: #fff;
 }
@@ -1309,7 +1357,7 @@ section .two-column-grid .grid-item img {
 
 .btn__full-width {
 	padding: 15px 17.5px;
-	width: 97%;
+	width: 100%;
 	text-align: center;
 	border: 1px solid grey;
 	background-color: transparent;
@@ -1323,6 +1371,15 @@ section .two-column-grid .grid-item img {
 .btn__full-width:hover {
 	transition: all .35s ease-in-out;
 	color: var(--secondary);
+}
+
+
+.btn__full-width:disabled{
+	background: var(--light-gray);
+}
+
+.btn__full-width:disabled:hover {
+	color: var(--white);
 }
 
 /* .btn__full-width:hover {
@@ -1344,8 +1401,10 @@ section .two-column-grid .grid-item img {
 	border-radius: 4px;
 } */
 
-input[type=text].sales-input__item {
-	width: 95%;
+input[type=text].sales-input__item,
+input[type=phone].sales-input__item,
+input[type=email].sales-input__item {
+	width: 98%;
 	font-family: proxima-nova;
   border: 1px solid #DADCE0;
 	border-radius: 3px;
@@ -1359,7 +1418,7 @@ input[type=text].sales-input__item {
 }
 
 input[type=textarea].sales-input__item {
-	width: 95%;
+	width: 98%;
 	font-family: proxima-nova;
   border: 1px solid #DADCE0;
 	border-radius: 3px;
