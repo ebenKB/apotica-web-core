@@ -1512,6 +1512,70 @@ input[type=textarea].sales-input__item {
 	padding: 0;
 }
 
+
+
+.contact-information__heading::before {
+	content: "";
+	display: table;
+
+}
+
+.contact-information__heading {
+	padding: 0 15px;
+	border-bottom: 1px solid rgba(132, 133, 134, 0.2);
+	border-spacing: 0px 1rem;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+}
+
+
+.margin-bottom__hr {
+	border-bottom: 1px solid rgba(132, 133, 134, 0.2);
+}
+
+.contact-information__heading h2 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 45px;
+	font-weight: 500;
+}
+
+.apotica-link__secondary {
+	color: var(--secondary)
+}
+
+.contact-information__item {
+	padding: 0 15px;
+	padding-bottom: 15px;
+	padding-top: 10px;
+}
+
+.contact-information {
+	margin: 0 15%;
+	color: #000;
+}
+
+.contact-information__item h4 {
+	margin: 10px 0;
+	font-weight: 500;
+}
+
+.contact-information__item p {
+	font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .thumb-item p,
 h1,
 h2,
@@ -3094,6 +3158,8 @@ margin-bottom: 70px;
 	.medium-hero {
     min-height: 250px;
 	}
+
+
 /* ============================================================================================================================= */
 
 
