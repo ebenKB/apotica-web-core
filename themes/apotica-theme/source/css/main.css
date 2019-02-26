@@ -1111,12 +1111,13 @@ section .two-column-grid .grid-item img {
 	margin: 0;
 }
 
-/* .contact-sales .two-column-grid {
+/* Redundant classes for contact sales */
+.contact-sales .two-column-grid {
 	grid-template-columns: 4fr 7fr;
 	grid-gap: 10px;
-} */
+}
 
-/* .contact-sales__form .form-item {
+.contact-sales__form .form-item {
 	background: #f5f5f5;
 	padding: 5px 0;
 }
@@ -1199,9 +1200,11 @@ section .two-column-grid .grid-item img {
 
 .contact-sales__form .two-column-grid > div:first-child {
 	border-right: transparent;
- } */
+ }
 
-.success-container {
+ /* End redundant classes for contact sales */
+
+ .success-container {
 	position: relative;
 	height: 340px;
 	/* background: red; */
