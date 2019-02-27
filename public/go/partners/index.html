@@ -16,6 +16,7 @@
   <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
   <script src="/js/analytics.js"></script>
+  <script src="/js/mailer.js"></script>
   <script src="/js/jquery.min.js"></script>
   <link rel="stylesheet" href="/css/util/util.css">
   <link rel="stylesheet" href="/css/partial/header.css">
@@ -176,7 +177,7 @@
                         </div>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="/go/partners">
                             <span class="link">Partners</span>
                         </a>
                     </li>
@@ -211,84 +212,375 @@
         <div class="border-gradient"></div>
     </div>
   </nav>
+  <div class="header-position"></div>
 </section>
 
       <section>
-  <div class="small-hero small-hero__partner">
-  
-    <div class="hero-text-wrapper ">
-      <h1><strong>  Partners </strong> |  Better Together. </h1>
+  <div class="medium-hero medium-hero__partners">
+  <div class="hero-text-wrapper ">
+    
+      <div class="hero-text">
+        <h4> Partners </h4>
+        <h1> Authorized dealerships with leading information and communications technology vendors enable us to help clients speed up their digital transformation. </h1>
     </div>
- 
+    
+  </div>
 </div>
 
 </section>
-<section class="partnership-interests">
-  <div class="partnership-interests__content">
-    <h4 class="partners-cta__label">Your Partnership Interest
-      <div class="h4-line partners-cta__label"></div>
-    </h4>
-    <h2 class="partners-cta__label">I'd like to: </h2>
-    <div class="partner-list">
-      <article class="partner-list__item">
-        <h2 class="mobile-partners mobile-partners__heading">Technology Partner</h2>
-        <p><b>Integrate my hardware or software systems </b> with AirWatch and provide
-        a more comprehensive solution for my customers.</p>
-        <a href="#" class="mobile-partners mobile-partners__button btn green">Learn More</a>
-      </article>
-      <article class="partner-list__item">
-        <h2 class="mobile-partners mobile-partners__heading">VMware Solution Provider</h2>
-        <p><b>Resell AirWatch products</b> and services to increase my profitability and give me a competitive edge.</p>
-        <a href="#" class="mobile-partners mobile-partners__button btn green">Learn More</a>
-      </article>
-      <article class="partner-list__item">
-        <h2 class="mobile-partners mobile-partners__heading">VMware Service Provider</h2>
-        <p> Offer hosted solutions to third parties by <b>combining my managed services offering with VMware products</b> and services. </p>
-        <a href="#" class="mobile-partners mobile-partners__button btn green">Learn More</a>
-      </article>
-      <article class="partner-list__item">
-        <h2 class="mobile-partners mobile-partners__heading">AppConfig Community</h2>
-        <p> <b>Build enterprise apps</b> that support native operating system capabilities and integrate with the AirWatch platform. </p>
-        <a href="#" class="mobile-partners mobile-partners__button btn green">Learn More</a>
-      </article>
+<section class="partnership-interests m-t-80 m-b-80">
+<div class="partnership-interests__grid">
+  <div class="partnership-interest__grid-item">
+    <div class="partner-logo">
+      <div class="ui custom button partner">
+        <img src="/images/partners/show-partners/logo_cisco.png" class="reduce">
+      </div>
     </div>
-    <ol class="partner-list partner-list__links">
-      <li class="partner-nav__item">Technology Partner</li>
-      <li class="partner-nav__item">VMware Solution Provider</li>
-      <li class="partner-nav__item">VMware Service Provider</li>
-      <li class="partner-nav__item">AppConfig Community</li>
-    </ol>
-  </div>
-</section>
-<section class="services">
-  <div class="footer-callout__container">
-    <div class="footer-callout">
-        <div class="footer-callout__left">
-            <h2><span>Why Workspace One?</span></h2>
-            <p>
-                AirWatch unified endpoint management (UEM) technology now powers VMware Workspace ONE,
-                an integrated platform for the digital workspace.
-            </p>
-            <h3>
-                <a href="#" class="btn-outline__rounded">LEARN MORE</a>
-            </h3>
+    <div class="partner-details">
+      <div class="ui custom-popup top left transition ">
+        <div class="partner-details__head">
+          <h1>Cisco</h1>
         </div>
-        <div class="footer-callout__right">
-            <h2><span>Pricing</span></h2>
-            <p>
-                Explore product pricing and compare packages and features.
-            </p>
-            <h3>
-                <a href="#" class="btn-outline__rounded">SEE PRICING</a>
-            </h3>
+        <div class="partner-details__content">
+          <ul>
+            <li>Collaboration</li>
+            <li>Data Center</li>
+            <li>Mobility</li>
+            <li>Networking</li>
+            <li>Security</li>
+            <li>Service Provider</li>
+        </ul>
         </div>
+      </div>
     </div>
   </div>
-</section>
+</div>
+<div class="partnership-interests__grid">
+    <div class="partnership-interest__grid-item">
+      <div class="partner-logo">
+        <div class="ui custom button partner">
+          <img src="/images/partners/show-partners/logo_ibm.png" class="reduce">
+        </div>
+      </div>
+      <div class="partner-details">
+        <div class="ui custom-popup top left transition ">
+          <div class="partner-details__head">
+            <h1>IBM</h1>
+          </div>
+          <div class="partner-details__content">
+            <ul>
+              <li>Cloud</li>
+              <li>Data Center</li>
+              <li>Networking</li>
+              <li>Security</li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partnership-interests__grid">
+      <div class="partnership-interest__grid-item">
+        <div class="partner-logo">
+          <div class="ui custom button partner">
+            <img src="/images/partners/show-partners/logo_fortinet.png" class="enlarge">
+          </div>
+        </div>
+        <div class="partner-details">
+          <div class="ui custom-popup top left transition ">
+            <div class="partner-details__head">
+              <h1>Fortinet</h1>
+            </div>
+            <div class="partner-details__content">
+              <ul>
+                <li>Data Center</li>
+                <li>Networking</li>
+                <li>Security</li>
+
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="partnership-interests__grid">
+      <div class="partnership-interest__grid-item">
+        <div class="partner-logo">
+          <div class="ui custom button partner">
+            <img src="/images/partners/show-partners/logo_vmware.png">
+          </div>
+        </div>
+        <div class="partner-details">
+          <div class="ui custom-popup top left transition ">
+            <div class="partner-details__head">
+              <h1>VMware</h1>
+            </div>
+            <div class="partner-details__content">
+              <ul>
+                <li>Cloud</li>
+                <li>Data Center</li>
+
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="partnership-interests__grid">
+      <div class="partnership-interest__grid-item">
+        <div class="partner-logo">
+          <div class="ui custom button partner">
+            <img src="/images/partners/show-partners/logo_microsoft.png">
+          </div>
+        </div>
+        <div class="partner-details">
+          <div class="ui custom-popup top left transition ">
+            <div class="partner-details__head">
+              <h1>Microsoft</h1>
+            </div>
+            <div class="partner-details__content">
+              <ul>
+                <li>Cloud</li>
+                <li>Data Center</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="partnership-interests__grid custom-details__top">
+    <div class="partnership-interest__grid-item custom-details__top">
+      <div class="partner-logo">
+        <div class="ui custom-popup button partner">
+          <img src="/images/partners/show-partners/logo_ivanti.png">
+        </div>
+      </div>
+      <div class="partner-details">
+        <div class="ui custom-popup top left transition ">
+          <div class="partner-details__head">
+            <h1>Ivanti</h1>
+          </div>
+          <div class="partner-details__content">
+            <ul>
+              <li>
+                <p>Security</p>
+              </li>
+              <br>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partnership-interests__grid">
+    <div class="partnership-interest__grid-item">
+      <div class="partner-logo">
+        <div class="ui custom button partner">
+          <img src="/images/partners/show-partners/logo_commvault.png" class="reduce">
+        </div>
+      </div>
+      <div class="partner-details">
+        <div class="ui custom-popup top left transition ">
+          <div class="partner-details__head">
+            <h1>Commvault</h1>
+          </div>
+          <div class="partner-details__content">
+            <ul>
+              <li>Cloud</li>
+              <li>Data  Protection</li>
+              <li>Disaster Recovery</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partnership-interests__grid custom-details__top">
+    <div class="partnership-interest__grid-item">
+      <div class="partner-logo">
+        <div class="ui custom button partner">
+          <img src="/images/partners/show-partners/logo_veeam.png" class="enlarge">
+        </div>
+      </div>
+      <div class="partner-details">
+        <div class="ui custom-popup top left transition ">
+          <div class="partner-details__head">
+            <h1>Veeam</h1>
+          </div>
+          <div class="partner-details__content">
+            <ul>
+              <li>Cloud</li>
+              <li>Data Protection</li>
+              <li>Disaster Recovery</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partnership-interests__grid">
+    <div class="partnership-interest__grid-item">
+      <div class="partner-logo">
+        <div class="ui custom button partner">
+          <img src="/images/partners/show-partners/logo_hpe.svg">
+        </div>
+      </div>
+      <div class="partner-details">
+        <div class="ui custom-popup top left transition ">
+          <div class="partner-details__head">
+            <h1>HPE</h1>
+          </div>
+          <div class="partner-details__content">
+            <ul>
+              <li>Data Center</li>
+              <li>Networking</li>
+              <li>Security</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partnership-interests__grid">
+    <div class="partnership-interest__grid-item">
+      <div class="partner-logo">
+        <div class="ui custom button partner">
+          <img src="/images/partners/show-partners/logo_dellemc.png" class="reduce">
+        </div>
+      </div>
+      <div class="partner-details">
+        <div class="ui custom-popup top left transition ">
+          <div class="partner-details__head">
+            <h1>Dell EMC</h1>
+          </div>
+          <div class="partner-details__content">
+            <ul>
+              <li>Data Center</li>
+              <li>Networking</li>
+              <li>Security</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partnership-interests__grid">
+    <div class="partnership-interest__grid-item">
+      <div class="partner-logo">
+        <div class="ui custom button partner">
+          <img src="/images/partners/show-partners/logo_aruba.png" class="reduce">
+        </div>
+      </div>
+      <div class="partner-details">
+        <div class="ui custom-popup top left transition ">
+          <div class="partner-details__head">
+            <h1>Aruba</h1>
+          </div>
+          <div class="partner-details__content">
+            <ul>
+              <li>Cloud</li>
+              <li>Mobility</li>
+              <li>Networking</li>
+              <li>Security</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partnership-interests__grid">
+      <div class="partnership-interest__grid-item">
+        <div class="partner-logo">
+          <div class="ui custom button partner">
+            <img src="/images/partners/show-partners/logo_symantec.png" class="enlarge">
+          </div>
+        </div>
+        <div class="partner-details">
+          <div class="ui custom-popup top left transition ">
+            <div class="partner-details__head">
+              <h1>Symantec</h1>
+            </div>
+            <div class="partner-details__content">
+              <ul>
+                <li>Security</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="partnership-interests__grid custom-details__top">
+      <div class="partnership-interest__grid-item">
+        <div class="partner-logo">
+          <div class="ui custom button partner">
+            <img src="/images/partners/show-partners/logo_f5.png" class="reduce-more">
+          </div>
+        </div>
+        <div class="partner-details">
+          <div class="ui custom-popup top left transition ">
+            <div class="partner-details__head">
+              <h1>F5</h1>
+            </div>
+            <div class="partner-details__content">
+              <ul>
+                <li>Data Center</li>
+                <li>Networking</li>
+                <li>Security</li>
+                <li>Service Provider</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="partnership-interests__grid">
+    <div class="partnership-interest__grid-item">
+      <div class="partner-logo">
+        <div class="ui custom button partner">
+          <img src="/images/partners/show-partners/logo_oracle.png" class="enlarge">
+        </div>
+      </div>
+      <div class="partner-details custom-details__right">
+        <div class="ui custom-popup top left transition ">
+          <div class="partner-details__head">
+            <h1>Oracle</h1>
+          </div>
+          <div class="partner-details__content">
+            <ul>
+              <li>Cloud</li>
+              <li>Data Center</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="partnership-interests__grid">
+      <div class="partnership-interest__grid-item">
+        <div class="partner-logo">
+          <div class="ui custom button partner">
+            <img src="/images/partners/show-partners/logo_kotage.png" class="enlarge">
+          </div>
+        </div>
+        <div class="partner-details">
+          <div class="ui custom-popup top left transition ">
+            <div class="partner-details__head">
+              <h1>Kotage</h1>
+            </div>
+            <div class="partner-details__content">
+              <ul>
+                <li>eSourcing</li>
+                <li>Procurement</li>
+                <li>Invoicing</li>
+          </ul></div>
+        </div>
+      </div>
+  </div>
+</div></section>
 
 
-      
-<a href="#" class="float" id="top"></a>
+
+      <!-- 
+<a href="#" class="float" id="top"></a> -->
 
       <section class="footer">
     <div class="footer-row">
