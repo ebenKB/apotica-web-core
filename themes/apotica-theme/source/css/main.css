@@ -373,7 +373,7 @@ header a:hover {
 .medium-hero {
 	position: relative;
 	padding: 40px;
-	width: calc(100vw - 110px);
+	/* width: calc(100vw - 110px); */
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
