@@ -1545,6 +1545,12 @@ input[type=textarea].sales-input__item {
 	margin-bottom: 30px;
 }
 
+.contact-information__heading_help-page {
+	padding: 0 15px;
+	border-spacing: 0px 1rem;
+	padding-bottom: 20px;
+}
+
 
 .margin-bottom__hr {
 	border-bottom: 1px solid rgba(132, 133, 134, 0.2);
