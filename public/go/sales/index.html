@@ -12,9 +12,10 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,800" rel="stylesheet">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113448247-1"></script>
+  <!-- Add mail to smtp server -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
   <script src="/js/analytics.js"></script>
-  <script src="/js/mailer.js"></script>
   <script src="/js/jquery.min.js"></script>
   <link rel="stylesheet" href="/css/util/util.css">
   <link rel="stylesheet" href="/css/partial/header.css">
@@ -212,39 +213,65 @@
   </nav>
 </section>
 
-      <section class="contact-sales m-t-50 m-b-50">
-  <div class="sales-container">
+      <section class="success-container hide" id="success-banner">
+  <div class="container">
+    <div class="success-banner swipeFromLeft">
+      <h1>Thanks for getting in touch</h1>
+      <p>Someone will reach out to you shortly regarding your message.</p>
+    </div>
+  </div>
+</section>
+<section class="contact-sales m-t-50 m-b-50 ">
+  <div class="sales-container" id="sales-container">
+    <div class="sales-row sales-heading">
+      <h1 class="sales-heading__content">Contact Sales</h1>
+    </div>
+    <div class="m-t-40">
+      <div class="sales-statement sales-row m-b-30">
+          <p>Contact sales to discuss your environment, assess your requirements, or request for quote.</p>
+      </div>
+    </div>
     <div class="sales-row">
-      <div class="sales-content">
+      <div class="sales-content  " id="sales-content">
         <div class="sales-form__wrapper">
             <div class="sales-form__parbase">
               <div class="sales-form">
                 <div class="sales-form__theme">
-                  <h4 class="sales-form__heading">Contact Sales</h4>
+                  <!-- <h4 class="sales-form__heading">Contact Sales</h4> -->
                   <div class="sales-form__content">
-                    <form action="">
+                    <form action="" id="sales-form">
                       <div class="input-wrapper">
                         <label for="name" class="sales-input">
-                          <input type="text" placeholder="What's your name?" class="sales-input__item">
+                          <input type="text" name="user_name" placeholder="Full name" required min="4" max="32" class="sales-input__item">
+                        </label>
+                      </div>
+                      <div class="input-wrapper">
+                        <label for="user" class="sales-input">
+                          <input type="text" name="user_title" placeholder="Job Title" required min="3" max="32" class="sales-input__item">
+                        </label>
+                      </div>
+                      <div class="input-wrapper">
+                        <label for="company" class="sales-input">
+                          <input type="text" name="user_company" placeholder="Company" min="3" max="32" required class="sales-input__item">
                         </label>
                       </div>
                       <div class="input-wrapper">
                         <label for="email" class="sales-input">
-                          <input type="text" placeholder="Please enter your business E-Mail" class="sales-input__item">
+                          <input type="email" name="user_email" placeholder="Business email" required class="sales-input__item">
+                        </label>
+                      </div>
+                      <div class="input-wrapper">
+                        <label for="user" class="sales-input">
+                          <input type="phone" name="user_phone" placeholder="Phone" required class="sales-input__item">
                         </label>
                       </div>
                       <div class="input-wrapper">
                         <label for="product-details" class="sales-input__textarea">
-                          <input type="textarea" placeholder="Product Details" class="sales-input__item sales-textarea">
-                        </label>
-                      </div>
-                      <div class="input-wrapper">
-                        <label for="phone" class="sales-input">
-                          <input type="text" placeholder="Phone" class="sales-input__item">
+                          <input type="textarea" name="message" placeholder="Message" required min="8" max="320" class="sales-input__item sales-textarea">
                         </label>
                       </div>
                       <div class="form-item__btn">
-                        <button class="btn__full-width large" type="submit" id="submit">SEND REQUEST</button>
+                        <button class="btn__full-width large" type="submit" id="submit">Send my Question</button>
                       </div>
                     </form>
                   </div>
@@ -350,6 +377,7 @@
 </body>
 <script src="/js/script.js"></script>
 <script src="/js/scroll-out.min.js"></script>
+<script src="/js/mailer.js"></script>
 <script>
   ScrollOut({
     threshold: 0.5

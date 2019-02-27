@@ -1,17 +1,40 @@
-// Email.send({
+(function(){
+  emailjs.init("user_BitlFtyfkTJwLUCehZvke");
+})();
 
-//   UseDefaultCredentials: false,
-//   Host : "smtp.office365.com",
-//   ssl:true,
-//   tls:true,
-//   port:587,
-//   Username : "relay@apotica.net",
-//   Password : "Apotica@123",
-//   To : 'web@apotica.net',
-//   Username : "relay@apotica.net",
-//   From : "relay@apotica.net",
-//   Subject : "This is the subject",
-//   Body : "And this is the body"
-// }).then(
-// message => alert(message)
-// );
+window.onload = function() {
+  // validate form when the user tries to submit
+  const submitbtn = document.getElementById('submit');
+
+  if(submitbtn !=null) {
+    submitbtn.addEventListener('click', () => {
+      const form = document.getElementById('sales-form');
+      form.classList.add('validate');
+    });
+  }
+
+// SEND form
+const form = document.getElementById('sales-form');
+if (form != null) {
+  form.addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    $('#submit').text("Sending Message ...");
+
+    document.getElementById('submit').setAttribute("disabled", "disabled");
+
+    emailjs.sendForm('apotica', 'contact_us', this)
+      .then((data) => {
+        if (data.status == '200') {
+          $('#sales-container').addClass('hide');
+          $('#success-banner').removeClass('hide');
+          $('#success-banner').addClass('swipeFromLeft')
+        }
+      })
+      .catch((err) =>{
+        console.log("an error occured while sending mail")
+      })
+});
+}
+}
+
