@@ -155,7 +155,6 @@ $("document").ready(function() {
   scroll('top','', 1000);
 });
 
-<<<<<<< HEAD
 function scroll(id, to, delay) {
   $('#'+id).click(() =>{
     $('html, body').animate({
@@ -163,12 +162,3 @@ function scroll(id, to, delay) {
     }, delay)
   });
 }
-=======
-const goDown = document.getElementById('to-media-mob');
-if(goDown != null && goDown != 'undefined') {
-  goDown.addEventListener('click', () =>{
-    let target = document.getElementById("media-probe");
-    animate(document.scrollingElement || document.documentElement, "scrollTop", "", 0, target.offsetTop, 1500, true);
-  });
-}
->>>>>>> improve partners page

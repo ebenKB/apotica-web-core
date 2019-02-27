@@ -373,11 +373,12 @@ header a:hover {
 .medium-hero {
 	position: relative;
 	padding: 40px;
-	width: cal (100vw - 40px);
+	width: calc(100vw - 110px);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	overflow: hidden;
+	text-align: justify;
 }
 
 .small-hero {
@@ -2279,7 +2280,8 @@ div > a:hover,
 	background: url(//storage.googleapis.com/airwatch_assets/images/services-background.jpg) no-repeat #464648;
 	min-height: 250px;
 	min-width: 100%;
-	margin-top: 150px;
+	/* margin-top: 150px; */
+	margin-top: -70px;
 	background-size: cover;
 }
 
@@ -3357,27 +3359,31 @@ margin-bottom: 70px;
 	left: 89%;
 	display: none;
 	z-index: 1;
-	background: white;
 	border: 1px solid rgba(218, 215, 215,0.5);
 	border-radius: 5px;
 }
 
+.partner-details,
+.partner-details__head,
+.partner-details__content {
+	background: white;
+}
+
+.partner-details__content {
+	border: 1px solid rgba(218, 215, 215,0.5);
+}
+
+
 .custom-details__top .partner-details {
-	top: 30%;
+	top: 20%;
 }
 
-/* .custom-details__right {
-	left: 98%;
-}
 
-.custom-details__right::after {
-	left: 94%;
-} */
 
 .partner-logo::after {
 	position: absolute;
 	/* left: 96.5%; */
-	left: 85%;
+	left: 87%;
 	top: 50%;
 	transform: rotate(45deg);
 	content: "";
@@ -3391,7 +3397,7 @@ margin-bottom: 70px;
 .partnership-interests {
 	display: grid;
 	/* grid-template-columns: repeat(5, 1fr); */
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: repeat(5, 1fr);
 	grid-row-gap: 20px;
 	grid-column-gap: 20px;
 	align-items: center;
@@ -3402,9 +3408,7 @@ margin-bottom: 70px;
 	position: relative;
 }
 
-/* .partnership-interest__grid-item:hover .partner-details {
-	display: block;
-} */
+
 
 .partner-logo img {
 	width: 70%;
@@ -3463,7 +3467,7 @@ margin-bottom: 70px;
 
 .partnership-interests__grid ul li{
 	list-style: none;
-	padding: 0;
+	padding: 8px 0 0 0;
 	margin: 0;
 	/* float: left; */
 	display: block;
@@ -3471,9 +3475,19 @@ margin-bottom: 70px;
 
 }
 
+.partnership-interests__grid ul li:first-child {
+	padding: 0 0 0 0;
+}
+
 .partner-details__head {
-	background: var(--light-gray);
+	padding: 1px;
+	background: #cfcece;
 	font-weight: 900;
+}
+
+.partner-details__head h1 {
+	padding: 8px;
+	margin: 0;
 }
 
 /* apotica */
