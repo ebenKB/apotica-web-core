@@ -386,7 +386,8 @@ header a:hover {
 
 .medium-hero {
 	min-height: 300px;
-	margin-top: 20px;
+	/* margin-top: 20px; */
+	margin-top: 0;
 }
 
 .medium-hero .hero-text-wrapper {
@@ -397,7 +398,7 @@ header a:hover {
 	background-position: 100% -50%;
 	min-height: 450px;
 	/* height: calc(100vh - 70px); */
-	height: calc(100vh - 120px);
+	height: calc(100vh - 179px);
 	background-image: linear-gradient(
 		rgba(5, 5, 5, 0.9),
 		rgba(131, 173, 139, 0.35)
@@ -513,6 +514,10 @@ nav {
 	font-family: Helvetica, sans-serif
 }
 
+.header-position{
+	position: relative;
+	height: 59px;
+}
 
 .menu {
 	width: 100%;
@@ -3793,9 +3798,9 @@ margin-bottom: 70px;
 		margin-top: 15%;
 	}
 
-	.medium-hero {
+	/* .medium-hero {
 		margin-top: 20px;
-	}
+	} */
 
 	.about-page__pictures {
 		margin: 5% 0;
