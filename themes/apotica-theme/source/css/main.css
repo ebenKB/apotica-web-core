@@ -395,7 +395,7 @@ header a:hover {
 }
 
 .hero {
-	background-position: 100% -50%;
+	background-position: 100% 50%;
 	min-height: 450px;
 	/* height: calc(100vh - 70px); */
 	height: calc(100vh - 179px);
@@ -1091,7 +1091,6 @@ section .two-column-grid .grid-item img {
 	display: grid;
 	grid-template-rows: auto;
 	grid-template-columns: repeat(2, 1fr);
-	/* padding: 10px 0px; */
 }
 
 .sale-item {
@@ -1549,6 +1548,13 @@ input[type=textarea].sales-input__item {
 	padding: 0 15px;
 	border-spacing: 0px 1rem;
 	padding-bottom: 20px;
+}
+
+.contact-information__heading_help-page h1 {
+	margin-top: 30px;
+	margin-bottom: 40px;
+	font-size: 30px;
+	font-family: "proxima_nova",Helvetica,Arial,sans-serif;
 }
 
 
@@ -3506,6 +3512,11 @@ margin-bottom: 70px;
 }
 
 @media screen and (max-width: 768px) {
+	.hero {
+		background-position: 70% 20%;
+		height: 500px;
+	}
+
 	/* apotica */
 	nav {
 		position: fixed;
@@ -3593,7 +3604,8 @@ margin-bottom: 70px;
 	}
 
 	.hero-text-wrapper {
-		margin-top: 30%;
+		/* margin-top: 30%; */
+		margin-top: 10%;
 	}
 
 	.hero-text p {
@@ -3763,10 +3775,48 @@ margin-bottom: 70px;
 	.banner-row {
 		margin-top: 250px;
 	}
+	
+	.media-probe .item:not(last-child) {
+		margin-bottom: 80px;
+	}
+
+	.two-column-grid {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+	}
+
+	section .two-column-grid .grid-item {
+		margin-top: 30px;
+		margin-bottom: 0;
 }
 
-@media screen and (max-width: 768px) and (min-wdth: 641px) {
+.phone-img img {
+	width: 100%;
+	margin-right: 0;
+}
 
+.home .wrap-content h2 {
+	margin-top: 30px;
+}
+
+.advert {
+	height: 580px;
+}
+
+.media-probe {
+	margin-bottom: 20px;
+}
+
+.social-media {
+	margin-top: 40px;
+}
+
+.social-media .social-media-content {
+	margin-top: 60px;
+}
+}
+
+/* --redundant */
+@media screen and (max-width: 768px) and (min-wdth: 641px) {
 
 }
 
