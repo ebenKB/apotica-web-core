@@ -1570,6 +1570,15 @@ input[type=textarea].sales-input__item {
 	font-family: "proxima_nova",Helvetica,Arial,sans-serif;
 }
 
+
+.contact-information__heading_help-page p{
+	width: 60%;
+	padding-bottom: 25px;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	font-size: 18px;
+}
 .apotica-link__secondary {
 	color: var(--secondary)
 }
@@ -1595,6 +1604,7 @@ input[type=textarea].sales-input__item {
 
 .contact-information__item p {
 	font-weight: 500;
+	margin: 10px 0;
 }
 
 
@@ -3775,7 +3785,7 @@ margin-bottom: 70px;
 	.banner-row {
 		margin-top: 250px;
 	}
-	
+
 	.media-probe .item:not(last-child) {
 		margin-bottom: 80px;
 	}
