@@ -3034,7 +3034,7 @@ margin-bottom: 70px;
 
 	/* apotica */
 	.advert ul {
-		display: none;
+		/* display: none; */
 	}
 
 	/* apotica */
@@ -3523,6 +3523,10 @@ margin-bottom: 70px;
 		height: 500px;
 	}
 
+	.medium-hero .hero-text {
+		width: 98%;
+	}
+
 	/* apotica */
 	nav {
 		position: fixed;
@@ -3819,13 +3823,11 @@ margin-bottom: 70px;
 .social-media .social-media-content {
 	margin-top: 60px;
 }
+
+.mobility .two-column-grid .m-l-120 {
+	margin-left: 10px;
 }
-
-/* --redundant */
-@media screen and (max-width: 768px) and (min-wdth: 641px) {
-
 }
-
 
 /* ****IPAD *** */
 /* @media screen and (max-width: 768px) and (min-wdth: 361px) { */
