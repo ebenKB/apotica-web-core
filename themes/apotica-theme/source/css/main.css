@@ -219,6 +219,7 @@ header a:hover {
 
 .wrapper {
 	min-height: calc(100vh - 400px);
+	overflow: hidden;
 }
 
 .form-wrapper {
@@ -2304,19 +2305,21 @@ div > a:hover,
 /* apotica */
 .services-hero {
 	background: url(//storage.googleapis.com/airwatch_assets/images/services-background.jpg) no-repeat #464648;
-	min-height: 250px;
+	min-height: 300px;
 	min-width: 100%;
 	/* margin-top: 150px; */
-	margin-top: -70px;
+	/* margin-top: -70px; */
 	background-size: cover;
 }
 
 /* apotica */
 .hero-text-wrapper__services {
-	margin-top: -50px;
-	text-align: center;
+	width: 96%;
+	margin-top: -60px;
+	text-align: left;
 	font-weight: 700;
-	position: relative;
+	/* position: relative; */
+	position: absolute;
 }
 
 /* apotica */
@@ -3533,6 +3536,10 @@ margin-bottom: 70px;
 		width: 98%;
 	}
 
+	.services-hero .hero-text-wrapper__services {
+		margin-top: 0;
+	}
+
 	/* apotica */
 	nav {
 		position: fixed;
@@ -3852,6 +3859,55 @@ margin-bottom: 70px;
 
 .sub-nav .container ul li {
 	padding: 10px 0;
+}
+
+#CapaSticky ul li:not(:last-child) {
+	border-right: none;
+}
+.service-cta {
+	margin-left: 32%;
+}
+
+.services-intro {
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.services-intro h2 {
+	font-size: 24px;
+	text-align: center;
+}
+
+.services-intro h3 {
+	text-align: center;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 23px;
+	width: 90%;
+	margin: 0 auto 64px;
+}
+
+.hero-text__services {
+	margin-left: 7%;
+}
+
+.services-container {
+	margin-top: 10%;
+}
+
+.services-container p {
+	margin-top: 90px;
+	text-align: center;
+}
+
+.training-cta {
+	width: 90%;
+	margin-bottom: 60px;
+}
+
+.training-cta__button {
+	margin-left: 32%;
 }
 }
 
