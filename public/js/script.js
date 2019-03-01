@@ -38,6 +38,13 @@ function toggleHeader(current, previous) {
     //scroll-down
     // console.log('this is previous', previous, "this is current", current, "this is the last pos", last_known_scroll_position)
     if(current >=100) {
+
+      // show floatingn button
+      if (current >= 700) {
+        document.getElementById('float-btn').classList.remove('hide')
+      } else {
+        document.getElementById('float-btn').classList.add('hide')
+      }
       document.getElementById('contact-header').classList.add('fadeout');
         setTimeout(() => {
           if(current >= 100) {
@@ -48,6 +55,10 @@ function toggleHeader(current, previous) {
     }
   } else if(previous > current) {
     //scroll up
+    // hide the floating button 
+    if (current <= 300) {
+      document.getElementById('float-btn').classList.add('hide');
+    }
     if(current == 0) {
       document.getElementById('contact-header').classList.remove('fadeout');
       document.getElementById('contact-header').classList.remove('hide');
@@ -153,6 +164,9 @@ $("document").ready(function() {
   scroll('enterprise', 'enterprise_security', 1000);
 
   scroll('top','', 1000);
+
+  //floating button
+  scroll('float-btn', 'home', 1000)
 });
 
 function scroll(id, to, delay) {

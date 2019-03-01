@@ -31,8 +31,8 @@ if (form != null) {
           $('#success-banner').addClass('swipeFromLeft')
         }
       })
-      .catch((err) =>{
-        console.log("an error occured while sending mail")
+      .catch(() =>{
+        alert("an error occured while sending mail");
       })
 });
 }
