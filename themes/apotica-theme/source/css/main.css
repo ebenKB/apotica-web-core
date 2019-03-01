@@ -369,11 +369,6 @@ header a:hover {
 	transition: all 0.3s ease-in-out;
 }
 
-/* #media-mob:active .nav-menu-content{
-
-} */
-
-
 .hero,
 .small-hero,
 .medium-hero {
@@ -433,6 +428,10 @@ nav {
 	background-color: #464547;
 	width: 100%;
 	z-index: 10;
+}
+
+.sub-nav .container span {
+	display: block;
 }
 
 @media screen and (min-width: 641px) {
@@ -3332,10 +3331,7 @@ margin-bottom: 70px;
 	}
 
 	.footer {
-		background: #363f44;
-		overflow: hidden;
-		font-weight: 350;
-		height: 520px;
+		min-height: 350px;
 	}
 
 	.footer-body {
@@ -3819,7 +3815,11 @@ margin-bottom: 70px;
 }
 
 .advert {
-	height: 580px;
+	min-height: 580px;
+}
+
+.advert .wrap-content h2 {
+	font-size: 30px;
 }
 
 .media-probe {
@@ -3835,7 +3835,23 @@ margin-bottom: 70px;
 }
 
 .mobility .two-column-grid .m-l-120 {
-	margin-left: 10px;
+	margin-left: 0;
+}
+
+.contact-information {
+	margin-left: 8%;
+}
+
+.grid-item img {
+	width: 100%;
+}
+
+.sub-nav .container span {
+	display: inline-block;
+}
+
+.sub-nav .container ul li {
+	padding: 10px 0;
 }
 }
 
@@ -4023,12 +4039,6 @@ margin-bottom: 70px;
 		font-size: 24px;
 	}
 
-	.footer {
-		background: #363f44;
-		overflow: hidden;
-		font-weight: 350;
-		height: 630px;
-	}
 	.footer-content {
 		margin: 0;
 	}
