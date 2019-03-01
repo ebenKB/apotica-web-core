@@ -134,12 +134,18 @@ header a:hover {
 	position: fixed;
 	width: 40px;
 	height: 60px;
-	bottom: 40px;
+	bottom: 5px;
 	right: 40px;
-	background: url(../images/down-arrow.svg);
-	transform: rotate(180deg);
+	opacity: 0.6;
+	cursor: pointer;
+	/* background: url(../images/down-arrow.svg); */
+	/* transform: rotate(180deg); */
 	background-repeat: no-repeat;
 	/* animation: shake 0.3s ease-in-out 0s infinite forwards normal; */
+}
+
+.float img {
+	width: 100%;
 }
 
 .float button {
@@ -3038,7 +3044,7 @@ margin-bottom: 70px;
 
 	/* apotica */
 	.advert ul {
-		display: none;
+		/* display: none; */
 	}
 
 	/* apotica */
@@ -3527,6 +3533,10 @@ margin-bottom: 70px;
 		height: 500px;
 	}
 
+	.medium-hero .hero-text {
+		width: 98%;
+	}
+
 	/* apotica */
 	nav {
 		position: fixed;
@@ -3823,13 +3833,11 @@ margin-bottom: 70px;
 .social-media .social-media-content {
 	margin-top: 60px;
 }
+
+.mobility .two-column-grid .m-l-120 {
+	margin-left: 10px;
 }
-
-/* --redundant */
-@media screen and (max-width: 768px) and (min-wdth: 641px) {
-
 }
-
 
 /* ****IPAD *** */
 /* @media screen and (max-width: 768px) and (min-wdth: 361px) { */
