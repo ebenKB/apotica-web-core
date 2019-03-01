@@ -3909,6 +3909,33 @@ margin-bottom: 70px;
 .training-cta__button {
 	margin-left: 32%;
 }
+
+.sales-statement {
+	width: 100%;
+	float: left;
+	padding-bottom: 25px;
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	font-size: 18px;
+	margin-left: 5px;
+	padding: 0;
+}
+
+.sales-container {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: 35px;
+	margin-top: 10%;
+	min-height: 850px;
+	color: #000000;
+}
+
+.sales-content {
+	width: 90%;
+	float: left;
+}
 }
 
 /* ****IPAD *** */
