@@ -9,6 +9,7 @@
 	--font-body: #54626a;
 	--white: #fff;
 	--blue: #007bff;
+	--black: #000;
 	--orange: #fd7e14
 }
 
@@ -517,6 +518,7 @@ nav {
 .header-position{
 	position: relative;
 	height: 59px;
+	/* height: 100px; */
 }
 
 .menu {
@@ -815,6 +817,11 @@ section .two-column-grid .grid-item img {
 
 .advert__items ul li a {
 	color: var(--white);
+}
+
+.tiny-hero {
+	height: 220px;
+	background: url(../images/black-bg-hero.jpg);
 }
 
 .small-hero__partner {
@@ -1736,6 +1743,21 @@ h6 {
 .small-hero .hero-text-wrapper {
 	text-align: center;
 	margin-top: 10%;
+}
+
+.tiny-hero .hero-text-wrapper {
+	margin-top: 0.7%;
+	margin-left: 10%;
+	padding-top: 100px;
+	color: var(--white);
+}
+
+.tiny-hero .hero-text-wrapper h1 {
+	font-size: 36px;
+}
+
+.tiny-hero .hero-text-wrapper span {
+	color: var(--secondary);
 }
 
 .small-hero .hero-text-wrapper h1 {
@@ -3520,46 +3542,73 @@ margin-bottom: 70px;
 	margin-right: 3%;
 }
 
+.campaign-container .campaign-content .content-row {
+	display: grid;
+	grid-template-columns: min-content auto;
+	grid-column-gap: 20px;
+	align-items: center;
+}
+
+.campaign-container .campaign-content .content-row_header h2 {
+	margin-bottom: 20px;
+	font-weight: 900;
+	color: var(--black);
+}
+
+.campaign-container .campaign-content .content-row .img-holder {
+	width: 140px;
+}
+
 .container-large {
 	grid-area: container-large;
-	background: green;
+}
+
+.container-large .campaign-content .content-caption {
+	font-weight: 900;
+	font-size: 18px;
 }
 
 .container-small {
 	grid-area: container-small;
 	background: #000;
+	border-top: 4px solid var(--secondary);
 }
 
 .campaign-form-container {
 	width: 90%;
 	margin-left: 5%;
 	background: #000;
-	color: #fff;
-	font-size: 16px;
 }
 
 .campaign-container .form-caption span,
 .campaign-container .form-caption h2 {
 	padding: 10px 0;
+	color: var(--white);
 }
 .campaign-form-container form-body .input-wrap {
 	width: 96%;
 	margin-left: 2%;
 	margin-right: 2%;
 }
-.campaign-form-container form-body .input-wrap input{
+
+.campaign-form-container form-body input {
+	width: calc(100% - 10px);
+}
+
+.campaign-form-container form-body input[type=submit] {
 	width: 100%;
+}
+
+.campaign-form-container form-body .input-wrap input{
 	border-radius: 2.5px;
 	height: 50px;
 	background: #000;
 	color:#fff;
 	border: 1px solid #fff;
 	padding-left: 10px;
+	font-size: 16px;
 }
 
-.campaign-form-container form-body .input-wrap input {
-	color: var(--dark);
-}
 .campaign-form-container form-body .input-wrap input:focus{
 	outline: none;
 	background: var(--light-gray);
