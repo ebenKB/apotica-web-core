@@ -871,8 +871,7 @@ section .two-column-grid .grid-item img {
 }
 
 .tiny-hero {
-	/* margin-top: -60px; */
-	height: 250px;
+	height: 220px;
 	background: url(../images/black-bg-hero.jpg);
 }
 
@@ -1569,7 +1568,7 @@ input[type=textarea].sales-input__item {
 }
 
 .media-probe .four-column-grid {
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-row-gap: 30px;
 }
 
