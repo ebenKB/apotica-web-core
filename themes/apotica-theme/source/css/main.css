@@ -871,7 +871,8 @@ section .two-column-grid .grid-item img {
 }
 
 .tiny-hero {
-	height: 220px;
+	/* margin-top: -60px; */
+	height: 250px;
 	background: url(../images/black-bg-hero.jpg);
 }
 
