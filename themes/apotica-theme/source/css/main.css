@@ -821,7 +821,7 @@ nav {
 
 /* apotica */
 .advert {
-	background: url("/images/Blue_BG.jpg");
+	background: url("../images/Blue_BG.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
