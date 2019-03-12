@@ -405,7 +405,7 @@ header a:hover {
 		rgba(5, 5, 5, 0.9),
 		rgba(131, 173, 139, 0.35)
 	),
-	url("/images/hero/landingpage_hero.jpg");
+	url("../images/hero/landingpage_hero.jpg");
 }
 
 .transition {
