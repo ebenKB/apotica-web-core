@@ -399,11 +399,11 @@ header a:hover {
 		rgba(5, 5, 5, 0.9),
 		rgba(131, 173, 139, 0.35)
 	),
-	url("/images/hero/landingpage_hero.jpg");
+	url("../images/hero/landingpage_hero.jpg");
 }
 
 .transition {
-	background-image: url('/images/banner-2.jpg');
+	background-image: url('../images/banner-2.jpg');
 	background-position: 50% 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -743,7 +743,7 @@ nav {
 	}
 }
 .banner {
-	background: url("/images/hero/landingpage_section3\ copy.jpg");
+	background: url("../images/hero/landingpage_section3\ copy.jpg");
 	height: 700px;
 	/* background-size: cover; */
 	background-size: 100% 100%;
@@ -770,7 +770,7 @@ nav {
 
 /* apotica */
 .advert {
-	background: url("/images/Blue_BG.jpg");
+	background: url("../images/Blue_BG.jpg");
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -821,7 +821,7 @@ section .two-column-grid .grid-item img {
 
 .tiny-hero {
 	height: 220px;
-	background: url(../images/black-bg-hero.jpg);
+	background: url(..../images/black-bg-hero.jpg);
 }
 
 .small-hero__partner {
@@ -830,7 +830,7 @@ section .two-column-grid .grid-item img {
 		rgba(5, 5, 5, 0.9),
 		rgba(131, 173, 139, 0.35)
 	),
-	url("/images/partners-background.jpg");
+	url("../images/partners-background.jpg");
 }
 
 .small-hero__contact {
@@ -838,7 +838,7 @@ section .two-column-grid .grid-item img {
 		rgba(5, 5, 5, 0.9),
 		rgba(131, 173, 139, 0.35)
 	),
-	url("/images/contact-us/contactsales_hero.jpg");
+	url("../images/contact-us/contactsales_hero.jpg");
 }
 
 .medium-hero__contact {
@@ -846,7 +846,7 @@ section .two-column-grid .grid-item img {
 		rgba(5, 5, 5, 0.9),
 		rgba(131, 173, 139, 0.35)
 	),
-	url("/images/contact-us/contactsales_hero.jpg");
+	url("../images/contact-us/contactsales_hero.jpg");
 }
 
 .medium-hero__cybersecurity {
@@ -856,13 +856,13 @@ section .two-column-grid .grid-item img {
 		rgba(131, 173, 139, 0.05)
 	),
 	linear-gradient( rgba(5, 5, 5, 0.9), rgba(131, 173, 139, 0.35) ),
-	url("/images/cybersecurity/cybersecurity_hero.jpg");
+	url("../images/cybersecurity/cybersecurity_hero.jpg");
 }
 
 .medium-hero__infrastructure {
 	color:var(--white);
 	background-image: linear-gradient( rgba(5, 5, 5, 0.8), rgba(70, 119, 158,0.8) ),
-	url("/images/digital-infrastructure/digitalinfrastructure_hero.jpg");
+	url("../images/digital-infrastructure/digitalinfrastructure_hero.jpg");
 }
 
 .medium-hero__cloud {
@@ -871,14 +871,14 @@ section .two-column-grid .grid-item img {
 		rgba(5, 5, 5, 0.85),
 		rgba(131, 173, 139, 0.5)
 	),
-	url("/images/cloud/cloud_hero.jpg");
+	url("../images/cloud/cloud_hero.jpg");
 }
 
 .medium-hero__partners {
 	/* min-height: 500px; */
 	color:var(--white);
 	background-image: linear-gradient( rgba(5, 5, 5, 0.3), rgba(70, 119, 158,0.3) ),
-	url("/images/hero/partnerspage_hero2.jpg");
+	url("../images/hero/partnerspage_hero2.jpg");
 }
 
 /* .medium-hero__partners .hero-text-wrapper {
@@ -915,7 +915,7 @@ section .two-column-grid .grid-item img {
 .medium-hero__get-support {
 	color:var(--white);
 	background-image:
-	url("/images/hero-Img.jpg");
+	url("../images/hero-Img.jpg");
 }
 
 .box {
@@ -963,7 +963,7 @@ section .two-column-grid .grid-item img {
 		rgba(5, 5, 5, 0.5),
 		rgba(131, 173, 139, 0.5)
 	),
-	url("/images/about-us/aboutus_hero.jpg");
+	url("../images/about-us/aboutus_hero.jpg");
 	background-position: 100% 30%;
 }
 
@@ -1020,7 +1020,7 @@ section .two-column-grid .grid-item img {
 	background-repeat: no-repeat;
 	background-repeat: no-repeat;
 	width: 100%;
-	background: url("/images/customer-spotlight-home-depot.jpg");
+	background: url("../images/customer-spotlight-home-depot.jpg");
 }
 
 .customer-spotlight h2 {
@@ -1866,7 +1866,7 @@ h6 {
 }
 
 .rt-image-hand {
-	background-image: url("/assets/images/hand.jpg");
+	background-image: url("/assets../images/hand.jpg");
 	background-size: 120%;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1875,7 +1875,7 @@ h6 {
 }
 
 .lt-image-hand {
-	background-image: url("/assets/images/left-phone.jpg");
+	background-image: url("/assets../images/left-phone.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1884,7 +1884,7 @@ h6 {
 }
 
 .rt-image-laptop {
-	background-image: url("/assets/images/laptop.jpg");
+	background-image: url("/assets../images/laptop.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1893,7 +1893,7 @@ h6 {
 }
 
 .lt-image-person {
-	background-image: url("/assets/images/person.jpg");
+	background-image: url("/assets../images/person.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -2325,7 +2325,7 @@ div > a:hover,
 
 /* apotica */
 .services-hero {
-	background: url(//storage.googleapis.com/airwatch_assets/images/services-background.jpg) no-repeat #464648;
+	background: url(//storage.googleapis.com/airwatch_assets../images/services-background.jpg) no-repeat #464648;
 	min-height: 300px;
 	min-width: 100%;
 	/* margin-top: 150px; */
