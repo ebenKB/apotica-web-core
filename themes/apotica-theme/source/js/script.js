@@ -61,9 +61,6 @@ function toggleHeader(current, previous) {
       document.getElementById('contact-header').classList.remove('fadeout');
       document.getElementById('contact-header').classList.remove('hide');
     }
-  } else {
-    // document.getElementById('contact-header').classList.remove('fadeout');
-    // document.getElementById('contact-header').classList.remove('hide');
   }
 
   // check for end of scroll
