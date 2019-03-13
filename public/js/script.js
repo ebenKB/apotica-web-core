@@ -23,8 +23,6 @@ document.getElementById('media-mob').addEventListener('click', () => {
   } else {
     burgerDown.style.backgroundColor = '#fff';
     burgerTop.style.backgroundColor = '#fff';
-    // document.getElementsByClassName('nav-menu-content')[0].style="display: none";
-
   }
 });
 
@@ -34,12 +32,14 @@ let current_pos = last_known_scroll_position;
 let ticking = false;
 
 function toggleHeader(current, previous) {
-  if(current > previous) {
+  // console.log("toggle header:", 'current:', current, "last", last_known_scroll_position)
+  if(current == 0) {
+    document.getElementById('contact-header').classList.remove('fadeout');
+    document.getElementById('contact-header').classList.remove('hide');
+  } else if(current > previous) {
     //scroll-down
-    // console.log('this is previous', previous, "this is current", current, "this is the last pos", last_known_scroll_position)
-    if(current >=100) {
-
-      // show floatingn button
+    if(current >= 100) {
+      // show floating button
       if (current >= 700) {
         document.getElementById('float-btn').classList.remove('hide')
       } else {
@@ -51,10 +51,8 @@ function toggleHeader(current, previous) {
             document.getElementById('contact-header').classList.add('hide');
           }
         }, 300);
-
     }
-  } else if(previous > current) {
-    //scroll up
+  } else if(previous >= current) { //scroll up
     // hide the floating button 
     if (current <= 300) {
       document.getElementById('float-btn').classList.add('hide');
@@ -63,33 +61,46 @@ function toggleHeader(current, previous) {
       document.getElementById('contact-header').classList.remove('fadeout');
       document.getElementById('contact-header').classList.remove('hide');
     }
-  }else if(current ==0) {
-    document.getElementById('contact-header').classList.remove('fadeout');
-    document.getElementById('contact-header').classList.remove('hide');
   }
+
+  // check for end of scroll
+  setTimeout(() => {
+    // revert to the previous state
+    if(current ==0) {
+      document.getElementById('contact-header').classList.remove('fadeout');
+      document.getElementById('contact-header').classList.remove('hide');
+    }
+  }, 200);
 }
 
 // detect scroll
-window.addEventListener('scroll', function(e) {
+window.addEventListener('scroll', function() {
   last_known_scroll_position = current_pos;
   current_pos = window.scrollY;
-  if(!ticking) {
     window.requestAnimationFrame(function() {
       toggleHeader(current_pos, last_known_scroll_position);
-      ticking=false;
     });
-    ticking = true;
-  }
 });
+
+// -old working version
+// window.addEventListener('scroll', function(e) {
+//   last_known_scroll_position = current_pos;
+//   current_pos = window.scrollY;
+//   if(!ticking) {
+//     window.requestAnimationFrame(function() {
+//       toggleHeader(current_pos, last_known_scroll_position);
+//       ticking=false;
+//     });
+//     ticking = true;
+//   }
+// });
 
 // accordion menu /privacy
 let acc = document.getElementsByClassName("card-link");
-// let trigger = document.querySelector(".card-expand");
 
 let i;
 
 for (i = 0; i < acc.length; i++) {
-//  console.log(acc[i].nextElementSibling )
  acc[i].addEventListener("click", function() {
    /* Toggle between adding and removing the "active" class,
    to highlight the button that controls the panel */
@@ -99,7 +110,6 @@ for (i = 0; i < acc.length; i++) {
    /* Toggle between hiding and showing the active panel */
    let panel = this.nextElementSibling;
    let panelActive = this.firstElementChild;
-  // console.log(this.firstElementChild)
 
    if (panel.style.display === "block") {
      panel.style.display = "none";
@@ -115,37 +125,8 @@ for (i = 0; i < acc.length; i++) {
     } else {
     panel.style.maxHeight = panel.scrollHeight + "px";
   }
-
  });
 }
-
-//adding scroll - animates scrolling
-
-// function animate(elem, style, unit, from, to, time, prop) {
-//   if (!elem) {
-//       return;
-//   }
-
-//   let start = new Date().getTime(),
-//       timer = setInterval(function () {
-//           let step = Math.min(1, (new Date().getTime() - start) / time);
-//           if (prop) {
-//               elem[style] = (from + step * (to - from))+unit;
-//           } else {
-//               elem.style[style] = (from + step * (to - from))+unit;
-//           }
-//           if (step === 1) {
-//               clearInterval(timer);
-//           }
-//       }, 25);
-//   if (prop) {
-//         elem[style] = from+unit;
-//   } else {
-//         elem.style[style] = from+unit;
-//   }
-// }
-
-
 
 $("document").ready(function() {
   // add scroll for all scrollable containers
