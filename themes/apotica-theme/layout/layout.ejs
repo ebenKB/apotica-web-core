@@ -2,9 +2,13 @@
 <body id="home">
   <div class="wrapper">
       <%- partial('partial/header/header') %>
+      
+      <%if(body == 'index'){%>
+        
+      <%}%>
 
       <%- body %>
-
+   
       <div class="desktop-only">
         <%- partial('partial/floating-btn') %>
       </div>
