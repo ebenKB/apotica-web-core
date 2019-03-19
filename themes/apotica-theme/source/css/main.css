@@ -1963,7 +1963,7 @@ h6 {
 }
 
 .rt-image-hand {
-	background-image: url("../images/hand.jpg");
+	background-image: url("/assets../images/hand.jpg");
 	background-size: 120%;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1972,7 +1972,7 @@ h6 {
 }
 
 .lt-image-hand {
-	background-image: url("../images/left-phone.jpg");
+	background-image: url("/assets../images/left-phone.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -1981,7 +1981,7 @@ h6 {
 }
 
 .rt-image-laptop {
-	background-image: url("../images/laptop.jpg");
+	background-image: url("/assets../images/laptop.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1990,7 +1990,7 @@ h6 {
 }
 
 .lt-image-person {
-	background-image: url("../images/person.jpg");
+	background-image: url("/assets../images/person.jpg");
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -2429,7 +2429,7 @@ div > a:hover,
 
 /* apotica */
 .services-hero {
-	background: url(//storage.googleapis.com/airwatch_assets/images/services-background.jpg) no-repeat #464648;
+	background: url(//storage.googleapis.com/airwatch_assets../images/services-background.jpg) no-repeat #464648;
 	min-height: 300px;
 	min-width: 100%;
 	/* margin-top: 150px; */

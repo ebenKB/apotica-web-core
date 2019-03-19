@@ -1,30 +1,26 @@
 // humburger
-document.getElementById('media-mob').addEventListener('click', () => {
-  const burgerTop = document.getElementById('burger-top');
-  const burgerMid = document.getElementById('burger-mid');
-  const burgerDown = document.getElementById('burger-down');
-  const mobileView = document.getElementById('menu');
-
-
-  burgerTop.classList.toggle('burger-top-rotate');
-  burgerDown.classList.toggle('burger-down-rotate');
-
-  burgerMid.classList.toggle('hide');
-  mobileView.classList.remove('menu-toggle');
-  // mobileView.classList.toggle('hide');
-  mobileView.classList.toggle('grid-block');
-  // document.getElementsByClassName('nav-menu-content')[0].style="display: none";
-
-  if (burgerTop.classList.contains('burger-top-rotate')) {
-    // burgerDown.classList.add('green');
-    // burgerTop.classList.add('green');
-    // document.getElementsByClassName('nav-menu-content')[0].style="display: block";
-
-  } else {
-    burgerDown.style.backgroundColor = '#fff';
-    burgerTop.style.backgroundColor = '#fff';
-  }
-});
+const mediaMob = document.getElementById('media-mob');
+if(mediaMob != null) {
+  mediaMob.addEventListener('click', () => {
+    const burgerTop = document.getElementById('burger-top');
+    const burgerMid = document.getElementById('burger-mid');
+    const burgerDown = document.getElementById('burger-down');
+    const mobileView = document.getElementById('menu');
+  
+  
+    burgerTop.classList.toggle('burger-top-rotate');
+    burgerDown.classList.toggle('burger-down-rotate');
+  
+    burgerMid.classList.toggle('hide');
+    mobileView.classList.remove('menu-toggle');
+    mobileView.classList.toggle('grid-block');
+  
+    if (! burgerTop.classList.contains('burger-top-rotate')) {
+      burgerDown.style.backgroundColor = '#fff';
+      burgerTop.style.backgroundColor = '#fff';
+    }
+  });
+}
 
 // scroll positions
 let last_known_scroll_position = 0;
@@ -32,7 +28,6 @@ let current_pos = last_known_scroll_position;
 let ticking = false;
 
 function toggleHeader(current, previous) {
-  // console.log("toggle header:", 'current:', current, "last", last_known_scroll_position)
   if(current == 0) {
     document.getElementById('contact-header').classList.remove('fadeout');
     document.getElementById('contact-header').classList.remove('hide');
@@ -66,11 +61,11 @@ function toggleHeader(current, previous) {
   // check for end of scroll
   setTimeout(() => {
     // revert to the previous state
-    if(current ==0) {
+    if(current < 100) {
       document.getElementById('contact-header').classList.remove('fadeout');
       document.getElementById('contact-header').classList.remove('hide');
     }
-  }, 200);
+  }, 300);
 }
 
 // detect scroll
@@ -81,19 +76,6 @@ window.addEventListener('scroll', function() {
       toggleHeader(current_pos, last_known_scroll_position);
     });
 });
-
-// -old working version
-// window.addEventListener('scroll', function(e) {
-//   last_known_scroll_position = current_pos;
-//   current_pos = window.scrollY;
-//   if(!ticking) {
-//     window.requestAnimationFrame(function() {
-//       toggleHeader(current_pos, last_known_scroll_position);
-//       ticking=false;
-//     });
-//     ticking = true;
-//   }
-// });
 
 // accordion menu /privacy
 let acc = document.getElementsByClassName("card-link");
