@@ -1,3 +1,5 @@
+@import '../css/partial/cookie.css';
+
 :root {
 	--primary: #073151;
 	--secondary: #37a0ef;
@@ -49,6 +51,13 @@ body {
 .clickable {
 	cursor: hand;
 }
+
+/* STYLE -- cookie here */
+.cc-color-override--1042357756.cc-window {
+	color: rgb(255, 255, 255);
+	background-color: red !important;
+}
+/* END cookie style */
 
 a {
 	text-decoration: none;
@@ -2790,116 +2799,11 @@ margin-bottom: 70px;
 }
 /* end support.html */
 
-
-/* partners.html */
-
-/* apotica */
-/* .partnership-interests{
-	display: block;
-	background: #3e3f44;
-	color: var(--white);
-} */
-
-/* apotica */
-/* .partnership-interests__content {
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-right: auto;
-	margin-left: 50px;
-	max-width: 85%;
-} */
-
-/* apotica */
-/* .partnership-interests__content h4 {
-	display: inline-block;
-	color: var(--white);
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 23px;
-	position: relative;
-	margin-top: 30px;
-} */
-
-/* apotica */
-/* .partnership-interests__content h4 div.h4-line{
-	content: '';
-	display: block;
-	position: absolute;
-	bottom: -10px;
-	width: 100px;
-	height: 2px;
-	background: #666;
-} */
-
-/* apotica */
-/* .partnership-interests__content h2 {
-	padding-top: 30px;
-	margin-bottom: 30px;
-	text-align: center;
-	font-weight: 300;
-	font-size: 28px;
-	line-height: 36px;
-} */
-
-/* apotica */
-/* .partner-list{
-	padding-right: 15px;
-	padding-left: 15px;
-	display: grid;
-	grid-template-columns: repeat(4, 300px);
-	padding-bottom: 30px;
-	margin: 0;
-} */
-
-/* apotica */
-/* .partner-list__item {
-	border-right: 1px solid #666;
-} */
-
-/* apotica */
-/* .partner-list__item p {
-	font-size: 18px;
-	text-align: center;
-	line-height: 23px;
-	font-weight: 300;
-	margin: 0 5px 10px;
-} */
-
-/* apotica */
-/* .partner-nav{
-	position: relative;
-	bottom: 100%;
-	margin: 0;
-	margin-left: 4%;
-} */
-/* apotica */
-/* .partner-nav__item {
-	color: var(--secondary);
-	padding-bottom: 30px;
-	padding-right: 15px;
-	padding-left: 15px;
-	font-size: 18px;
-	line-height: 60px;
-	font-weight: 600;
-	cursor: pointer;
-	margin: 0;
-	text-align: center;
-	display: inline-block;
-
-} */
-/* apotica */
-/* .partner-nav__item:hover {
-	transition: transform all .3s;
-	color: var(--primary);
-} */
-
 /* apotica */
 .mobile-partners{
 	display: none;
 }
 /* end partners.html */
-
-
 
 /* about */
 .about-apotica {
@@ -3011,7 +2915,6 @@ margin-bottom: 70px;
 	transition: 0.4s;
 }
 
-
 /* apotica */
 .card-arrow{
 	position: absolute;
@@ -3034,7 +2937,9 @@ margin-bottom: 70px;
 	background-position: right center;
 }
 
-
+.cc-btn {
+	border-radius: 5px;
+}
 
 .privacy-section {
 	background:rgba(132, 133, 134, 0.054);
