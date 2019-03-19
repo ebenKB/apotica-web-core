@@ -3532,7 +3532,7 @@ margin-bottom: 70px;
 	grid-template-columns: 60% 40%;
 	grid-gap: 30px;
 	grid-template-rows: auto;
-	grid-template-areas: 
+	grid-template-areas:
 	"container-large container-small"
 }
 
@@ -3591,7 +3591,8 @@ margin-bottom: 70px;
 	margin-right: 2%;
 }
 
-.campaign-form-container form-body input {
+.campaign-form-container form-body input,
+.campaign-form-container form-body textarea{
 	width: calc(100% - 10px);
 }
 
@@ -3599,7 +3600,8 @@ margin-bottom: 70px;
 	width: 100%;
 }
 
-.campaign-form-container form-body .input-wrap input{
+.campaign-form-container form-body .input-wrap input,
+.campaign-form-container form-body .input-wrap textarea{
 	border-radius: 2.5px;
 	height: 50px;
 	background: #000;
@@ -3609,7 +3611,8 @@ margin-bottom: 70px;
 	font-size: 16px;
 }
 
-.campaign-form-container form-body .input-wrap input:focus{
+.campaign-form-container form-body .input-wrap input:focus,
+.campaign-form-container form-body .input-wrap textarea:focus{
 	outline: none;
 	background: var(--light-gray);
 }
