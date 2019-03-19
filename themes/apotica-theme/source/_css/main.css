@@ -3532,7 +3532,7 @@ margin-bottom: 70px;
 	grid-template-columns: 60% 40%;
 	grid-gap: 30px;
 	grid-template-rows: auto;
-	grid-template-areas: 
+	grid-template-areas:
 	"container-large container-small"
 }
 
