@@ -3,15 +3,15 @@ window.addEventListener('load', (event) => {
   initCookie();
 });
 
-// humburger
-const mediaMob = document.getElementById('media-mob');
+// humburger for smaller view ports
+$('document').ready( () => {
+  const mediaMob = document.getElementById('media-mob');
 if(mediaMob != null) {
   mediaMob.addEventListener('click', () => {
     const burgerTop = document.getElementById('burger-top');
     const burgerMid = document.getElementById('burger-mid');
     const burgerDown = document.getElementById('burger-down');
     const mobileView = document.getElementById('menu');
-  
   
     burgerTop.classList.toggle('burger-top-rotate');
     burgerDown.classList.toggle('burger-down-rotate');
@@ -20,22 +20,21 @@ if(mediaMob != null) {
     mobileView.classList.remove('menu-toggle');
     mobileView.classList.toggle('grid-block');
   
-    if (! burgerTop.classList.contains('burger-top-rotate')) {
+    if (!burgerTop.classList.contains('burger-top-rotate')) {
       burgerDown.style.backgroundColor = '#fff';
       burgerTop.style.backgroundColor = '#fff';
     }
   });
 }
+})
 
 // scroll positions
 let last_known_scroll_position = 0;
 let current_pos = last_known_scroll_position;
-let ticking = false;
 
 function toggleHeader(current, previous) {
   if(current == 0) {
-    document.getElementById('contact-header').classList.remove('fadeout');
-    document.getElementById('contact-header').classList.remove('hide');
+    showContentHeader();
   } else if(current > previous) {
     //scroll-down
     if(current >= 100) {
@@ -58,17 +57,15 @@ function toggleHeader(current, previous) {
       document.getElementById('float-btn').classList.add('hide');
     }
     if(current == 0) {
-      document.getElementById('contact-header').classList.remove('fadeout');
-      document.getElementById('contact-header').classList.remove('hide');
+      showContentHeader();
     }
   }
 
   // check for end of scroll
   setTimeout(() => {
     // revert to the previous state
-    if(current < 100) {
-      document.getElementById('contact-header').classList.remove('fadeout');
-      document.getElementById('contact-header').classList.remove('hide');
+    if(current == 0) {
+      showContentHeader();
     }
   }, 300);
 }
@@ -92,7 +89,6 @@ for (i = 0; i < acc.length; i++) {
    /* Toggle between adding and removing the "active" class,
    to highlight the button that controls the panel */
    this.classList.toggle("active");
-
 
    /* Toggle between hiding and showing the active panel */
    let panel = this.nextElementSibling;
@@ -169,4 +165,9 @@ function initCookie() {
 function afterPageLoad() {
   $('#wrapper').removeClass('hide');
   $('#page-loader').addClass('hide');
+}
+
+function showContentHeader(){
+  document.getElementById('contact-header').classList.remove('fadeout');
+  document.getElementById('contact-header').classList.remove('hide');
 }

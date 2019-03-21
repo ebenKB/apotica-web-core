@@ -3984,6 +3984,10 @@ margin-bottom: 70px;
 	grid-template-columns: 1fr;
 }
 /* END --campaign page */
+
+.tiny-hero .hero-text-wrapper {
+	margin-left: 5%;
+}
 }
 
 /* smaller screens */
