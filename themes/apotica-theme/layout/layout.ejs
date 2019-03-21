@@ -1,6 +1,9 @@
 <%- partial('partial/head') %>
 <body id="home">
-  <div class="wrapper">
+  <section class="page-loader" id="page-loader">
+    <%- partial('partial/sections/loader') %>
+  </section>
+  <div class="wrapper hide" id="wrapper">
       <%- partial('partial/header/header') %>
       
       <%if(body == 'index'){%>

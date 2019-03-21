@@ -1,11 +1,4 @@
-<section class="success-container hide" id="success-banner">
-  <div class="container">
-    <div class="success-banner swipeFromLeft">
-      <h1>Thanks for getting in touch</h1>
-      <p>Someone will reach out to you shortly regarding your message.</p>
-    </div>
-  </div>
-</section>
+<%- partial('partial/sections/message-response') %>
 <section class="contact-sales m-t-50 m-b-50 ">
   <div class="sales-container" id="sales-container">
     <div class="sales-row sales-heading">
@@ -27,7 +20,7 @@
                     <form action="" id="sales-form">
                       <div class="input-wrapper">
                         <label for="name" class="sales-input">
-                          <input type="text" name="user_name" placeholder="Full name" required min="4" max="32" class="sales-input__item">
+                          <input type="text" name="user_name" placeholder="Full name" required min="4" max="32" class="sales-input__item" pattern="[a-zA-Z\s-]+">
                         </label>
                       </div>
                       <div class="input-wrapper">

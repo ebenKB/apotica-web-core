@@ -1,3 +1,8 @@
+window.addEventListener('load', (event) => {
+  afterPageLoad();
+  initCookie();
+});
+
 // humburger
 const mediaMob = document.getElementById('media-mob');
 if(mediaMob != null) {
@@ -138,4 +143,30 @@ function scroll(id, to, delay) {
       scrollTop: $('#'+to).offset().top
     }, delay)
   });
+}
+
+function initCookie() {
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#073151"
+      },
+      "button": {
+        "background": "transparent",
+        "text": "#fff",
+        "border": "#fff",
+        "padding": "5px 15px"
+      }
+    },
+    "content": {
+      "message": "This website uses cookies to ensure you get the best experience.",
+      "dismiss": "Got it!",
+      "href": "https://www.apotica.net/privacy/"
+      }
+});
+}
+
+function afterPageLoad() {
+  $('#wrapper').removeClass('hide');
+  $('#page-loader').addClass('hide');
 }

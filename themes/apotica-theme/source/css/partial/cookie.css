@@ -89,6 +89,7 @@
     background-color: transparent;
     border-color: transparent;
 }
+
 .cc-highlight .cc-btn:first-child:focus, .cc-highlight .cc-btn:first-child:hover {
     background-color: transparent;
     text-decoration: underline;
