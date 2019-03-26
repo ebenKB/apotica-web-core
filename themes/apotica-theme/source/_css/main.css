@@ -834,8 +834,10 @@ section .two-column-grid .grid-item img {
 }
 
 .tiny-hero {
-	height: 220px;
-	background: url(../images/black-bg-hero.jpg);
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background: url(../images/firepower-hero.jpeg);
+	background: url(../images/firepower-hero.jpeg);
 }
 
 .small-hero__partner {
@@ -3532,6 +3534,10 @@ margin-bottom: 70px;
 	border: 1px solid #fff;
 	padding-left: 10px;
 	font-size: 16px;
+}
+
+.input-wrap .wrap-area {
+	padding-top: 33px
 }
 
 .campaign-form-container form-body .input-wrap input:focus,
