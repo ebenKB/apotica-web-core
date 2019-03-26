@@ -885,8 +885,10 @@ section .two-column-grid .grid-item img {
 }
 
 .tiny-hero {
-	height: 220px;
-	background: url(../images/black-bg-hero.jpg);
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background: url(../images/firepower-hero.jpeg);
+	background: url(../images/firepower-hero.jpeg);
 }
 
 .small-hero__partner {
@@ -3650,6 +3652,10 @@ margin-bottom: 70px;
 	font-size: 16px;
 }
 
+.input-wrap .wrap-area {
+	padding-top: 33px
+}
+
 .campaign-form-container form-body .input-wrap input:focus,
 .campaign-form-container form-body .input-wrap textarea:focus{
 	outline: none;
@@ -4100,6 +4106,10 @@ margin-bottom: 70px;
 	grid-template-columns: 1fr;
 }
 /* END --campaign page */
+
+.tiny-hero .hero-text-wrapper {
+	margin-left: 5%;
+}
 }
 
 /* smaller screens */
