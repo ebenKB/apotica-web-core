@@ -3488,7 +3488,7 @@ margin-bottom: 70px;
 }
 
 .container-small {
-	height: 600px;
+	height: 620px;
 	grid-area: container-small;
 	background: #000;
 	border-top: 4px solid var(--secondary);
