@@ -176,9 +176,11 @@ header a:hover {
 }
 
 /* apotica */
-.mobility .wrap-content .item img {
+/* depracated */
+
+/* .mobility .wrap-content .item img {
  width: 70px;
-}
+} */
 
 /* apotica */
 .wrap-content ul {
@@ -756,6 +758,17 @@ nav {
 		transform: rotate(180deg);
 	}
 }
+
+@keyframes slide-in-left {
+	0%{
+		transform: translateX(-100px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+}
+
 .banner {
 	background: url("../images/hero/landingpage_section3\ copy.jpg");
 	height: 700px;

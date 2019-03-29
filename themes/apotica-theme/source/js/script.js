@@ -1,7 +1,7 @@
-window.addEventListener('load', (event) => {
-  afterPageLoad();
-  initCookie();
-});
+// window.addEventListener('DOMContentLoaded', (event) => {
+//   // afterPageLoad();
+//   initCookie();
+// });
 
 // humburger for smaller view ports
 $('document').ready( () => {
@@ -26,7 +26,7 @@ if(mediaMob != null) {
     }
   });
 }
-})
+});
 
 // scroll positions
 let last_known_scroll_position = 0;
@@ -141,31 +141,31 @@ function scroll(id, to, delay) {
   });
 }
 
-function initCookie() {
-  window.cookieconsent.initialise({
-    "palette": {
-      "popup": {
-        "background": "#073151"
-      },
-      "button": {
-        "background": "transparent",
-        "text": "#fff",
-        "border": "#fff",
-        "padding": "5px 15px"
-      }
-    },
-    "content": {
-      "message": "This website uses cookies to ensure you get the best experience.",
-      "dismiss": "Got it!",
-      "href": "https://www.apotica.net/privacy/"
-      }
-});
-}
+// function initCookie() {
+//   window.cookieconsent.initialise({
+//     "palette": {
+//       "popup": {
+//         "background": "#073151"
+//       },
+//       "button": {
+//         "background": "transparent",
+//         "text": "#fff",
+//         "border": "#fff",
+//         "padding": "5px 15px"
+//       }
+//     },
+//     "content": {
+//       "message": "This website uses cookies to ensure you get the best experience.",
+//       "dismiss": "Got it!",
+//       "href": "https://www.apotica.net/privacy/"
+//       }
+// });
+// }
 
-function afterPageLoad() {
-  $('#wrapper').removeClass('hide');
-  $('#page-loader').addClass('hide');
-}
+// function afterPageLoad() {
+//   $('#wrapper').removeClass('hide');
+//   $('#page-loader').addClass('hide');
+// }
 
 function showContentHeader(){
   document.getElementById('contact-header').classList.remove('fadeout');

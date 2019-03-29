@@ -1,6 +1,8 @@
-(function(){
-  emailjs.init("user_BitlFtyfkTJwLUCehZvke");
-})();
+$('document').ready(function(){
+  (function(){
+    emailjs.init("user_BitlFtyfkTJwLUCehZvke");
+  })();
+});
 
 window.onload = function() {
   // validate form when the user tries to submit
