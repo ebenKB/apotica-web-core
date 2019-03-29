@@ -14,8 +14,11 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113448247-1"></script>
 
-  <%- js('js/analytics') %>
   <%- js('js/jquery.min') %>
+  <!-- Add mail to smtp server -->
+  <script async type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+  <script  src="../../js/mailer.js"></script>
+  <%- js('js/analytics') %>
   <%- js('js/script') %>
   <%- css('css/util/util') %>
   <%- css('css/main') %>
