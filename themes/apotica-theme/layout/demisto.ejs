@@ -1,0 +1,105 @@
+<section>
+    <%- partial('partial/hero/medium-hero',
+    {
+      type: 'demisto',
+      subContent:'Heading Here',
+      mainContent: 'Introductory content here...'
+    })%>
+</section>
+
+<section class="container">
+  <%- partial('partial/sections/message-response') %>
+</section>
+<section class="container">
+    <div class="m-b-100">
+        <div class="campaign-container" id="campaign-container">
+            <div class="container-large">
+                <div class="campaign-content">
+                    <p class="m-t-50 m-b-20">
+                      Thank you for your interest in the Demisto Free Edition. 
+                      We have a queue of security analysts trying to access the product.
+                    </p>
+                    <p>
+                      Please fill in the form on the right to sign-up for the Free Edition. 
+                      We will notify you as soon as you are the next in line and your Demisto 
+                      Free Edition is ready for download!
+                    </p>
+                    <div class="highlight m-t-50">
+                      <h2>Remember : </h2>
+                      <ul>
+                        <li>This is a free product for which support is provided through our Slack Community.</li>
+                        <li>We will add you to the Slack channel automatically after you download the product.</li>
+                        <li>You can check out Demisto's playbook repository and open source automation scripts <a href="https://www.demisto.com/community#collaborative-open-playbook" target="_blank">here.</a></li>
+                      </ul>
+                    </div>
+                    <div class="demisto-container m-t-30">
+                      <span class="element-wrapper"> 
+                        <h2>Demisto Free Edition</h2>
+                        <h4>Free Edition users get A 30 day Enterprise trial</h4>
+                        <p>Offer subject to change.</p>
+                      </span>
+                      <div class="two-column-grid grid-gap_20">
+                        <div>
+                          <div class="al-ctr demisto-card diamond">
+                            Demisto Enterprise
+                          </div>
+                          <ul>
+                              <li>Unlimited Automations</li>
+                              <li>Unlimited Incident History</li>
+                              <li>Enterprise Reports Package</li>
+                              <li>24/7 Customer Support</li>
+                              <li class="no-border">Multi-tenancy</li>
+                            </ul>
+                        </div>
+                        <div>
+                          <div class="al-ctr demisto-card diamond">
+                            Demisto Enterprise
+                          </div>
+                          <ul>
+                              <li>Unlimited Automations</li>
+                              <li>Unlimited Incident History</li>
+                              <li>Enterprise Reports Package</li>
+                              <li>24/7 Customer Support</li>
+                              <li class="no-border">Multi-tenancy</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-small" id="sales-container">
+                <div class="campaign-form-container">
+                    <div class="form-caption m-t-30 m-b-30">
+                        <h2>Request for quote or additional info</h2>
+                    </div>
+                    <form action="" id="sales-form">
+                        <form-body  >
+                            <div class="input-wrap">
+                                <input type="text" name="user_name" placeholder="Full Name" required min="4" max="32" pattern="[a-zA-Z\s-]+">
+                            </div>
+                            <div class="input-wrap">
+                                <input type="text" name="user_title" id="" placeholder="Job Title" required min="3" max="32">
+                            </div>
+                            <div class="input-wrap">
+                                <input type="text" name="user_company" placeholder="Company" min="3" max="32" required>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="email" name="user_email" placeholder="Email Address" required>
+                            </div>
+                            <div class="input-wrap">
+                                <input type="phone" name="user_phone" placeholder="Phone Number" required >
+                            </div>
+                            <div class="input-wrap">
+                                <!-- <input type="textarea" name="message" placeholder="Message" min="8" max="320" class="sales-input__item sales-textarea"> -->
+                                <textarea rows="10" class="wrap-area" name="message" min="8" max="320" class="sales-input__item sales-textarea" placeholder="Do you have a message for us? "></textarea>
+                            </div>
+                            <div class="input-wrap">
+                                <button class="m-b-8 btn__full-width large" type="submit" id="submit">Send my request</button>
+                            </div>
+                        </form-body>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

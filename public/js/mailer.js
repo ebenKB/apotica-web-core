@@ -15,7 +15,7 @@ window.onload = function() {
     });
   }
 
-// SEND form
+// SEND form to smtp server
 const form = document.getElementById('sales-form');
 if (form != null) {
   form.addEventListener('submit', function(event) {
@@ -24,17 +24,12 @@ if (form != null) {
     $('#submit').text("Sending Message ...");
     document.getElementById('submit').setAttribute("disabled", "disabled");
 
+    // send message
     emailjs.sendForm('apotica', 'contact_us', this)
       .then((data) => {
         if (data.status == '200') {
           showStatus(btnText);
-          const campaignContainer=document.getElementById('campaign-container');
-          if(campaignContainer != null) {
-            campaignContainer.style.gridTemplateColumns = "1fr";
-          
-            // scroll to the top of the page
-            scroll();
-          }
+          reformatePage();
         }
       })
       .catch(() =>{
@@ -44,6 +39,7 @@ if (form != null) {
 }
 }
 
+// show message sending status
 function showStatus(btnText){
   $('#sales-container').addClass('hide');
   $('#success-banner').removeClass('hide');
@@ -51,8 +47,20 @@ function showStatus(btnText){
   $('#submit').text(btnText);
 }
 
+// for pages that have the form ending at the buttom
 function scroll(){
   $('html, body').animate({
     scrollTop: $('#home').offset().top
   }, 800);
+}
+
+// for campaign pages only
+function reformatePage(){
+  const campaignContainer=document.getElementById('campaign-container');
+  if(campaignContainer != null) {
+    campaignContainer.style.gridTemplateColumns = "1fr";
+  
+    // scroll to the top of the page
+    scroll();
+  }
 }
