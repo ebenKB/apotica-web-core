@@ -412,6 +412,12 @@ header a:hover {
 	margin-top: 4%;
 }
 
+.app-dynamics .medium-hero .hero-text-wrapper {
+	width: 50%;
+	margin-top: 4%;
+	margin-left: 10%;
+}
+
 .hero {
 	background-position: 100% 50%;
 	min-height: 450px;
@@ -1069,6 +1075,11 @@ section .two-column-grid .grid-item img {
 	color:var(--white);
 	background-image:
 	url("../images/hero-Img.jpg");
+}
+
+.medium-hero__app-dynamics{
+	background: linear-gradient( rgba(5, 5, 5, 0.5), rgba(70, 119, 158,0.5) ),  
+	url("../images/appDynamics-trash.png")no-repeat center center fixed
 }
 
 .box {
@@ -3707,10 +3718,22 @@ margin-bottom: 70px;
 	border-top: 4px solid var(--secondary);
 }
 
+.app-dynamics .container-small {
+	background: #fff;
+	width: 83%;
+	margin-top: -290px;
+	box-shadow: 0 2px 5px 0 rgba(68, 73, 83, 0.12);
+	z-index: 1;
+}
+
 .campaign-form-container {
 	width: 90%;
 	margin-left: 5%;
 	background: #000;
+}
+
+.app-dynamics .campaign-form-container {
+	background: #fff;
 }
 
 .campaign-form-container .btn__full-width,
@@ -3718,11 +3741,25 @@ margin-bottom: 70px;
 	color: var(--white)
 }
 
+.app-dynamics .campaign-form-container .btn__full-width {
+	color: var(--light-gray);
+	border: 1px solid var(--light-gray);
+}
+
+.app-dynamics .campaign-form-container .btn__full-width:hover {
+	color: var(--white);
+}
+
 .campaign-container .form-caption span,
 .campaign-container .form-caption h2 {
 	padding: 10px 0;
 	color: var(--white);
 }
+
+.app-dynamics .campaign-form-container .form-caption h2 {
+	color: var(--dark);
+}
+
 .campaign-form-container form-body .input-wrap {
 	width: 96%;
 	margin-left: 2%;
@@ -3749,6 +3786,17 @@ margin-bottom: 70px;
 	font-size: 16px;
 }
 
+.app-dynamics form-body .input-wrap textarea {
+	background: #fff;
+	border: 1px solid var(--light-gray);
+}
+
+.app-dynamics .campaign-form-container form-body .input-wrap input {
+	background: var(--white);
+	color: var(--black);
+	border: 1px solid var(--light-gray);
+}
+
 .input-wrap .wrap-area {
 	padding-top: 33px
 }
@@ -3762,6 +3810,7 @@ margin-bottom: 70px;
 .campaign-form-container form-body .input-wrap{
 	margin-bottom: 15px;
 }
+
 
 /* END campaign style here */
 
