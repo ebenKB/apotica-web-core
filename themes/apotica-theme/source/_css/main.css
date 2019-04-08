@@ -409,7 +409,7 @@ header a:hover {
 .app-dynamics .medium-hero .hero-text-wrapper {
 	width: 50%;
 	margin-top: 4%;
-	margin-left: 10%;
+	margin-left: 5%;
 }
 
 .hero {
@@ -3590,7 +3590,7 @@ margin-bottom: 70px;
 .app-dynamics .container-small {
 	background: #fff;
 	width: 83%;
-	margin-top: -290px;
+	margin-top: -336px;
 	box-shadow: 0 2px 5px 0 rgba(68, 73, 83, 0.12);
 	z-index: 1;
 }
