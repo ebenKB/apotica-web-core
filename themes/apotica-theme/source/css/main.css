@@ -1072,9 +1072,13 @@ section .two-column-grid .grid-item img {
 }
 
 .medium-hero__app-dynamics {
-	background-size: cover;
+ 	background-size: cover;
 	background: linear-gradient( rgba(5, 5, 5, 0.5), rgba(70, 119, 158,0.5) ),  
-	url("../images/appDynamics-trash.png") no-repeat center center fixed
+	url("../images/appDynamics-trash.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/* background: linear-gradient( rgba(5, 5, 5, 0.5), rgba(70, 119, 158,0.5) ),  
+	url("../images/appDynamics-trash.png") no-repeat center center fixed */
 }
 
 .box {
