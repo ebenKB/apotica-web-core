@@ -406,12 +406,6 @@ header a:hover {
 	margin-top: 4%;
 }
 
-.app-dynamics .medium-hero .hero-text-wrapper {
-	width: 50%;
-	margin-top: 4%;
-	margin-left: 5%;
-}
-
 .hero {
 	background-position: 100% 50%;
 	min-height: 450px;
@@ -1908,6 +1902,11 @@ h6 {
 	line-height: 30px;
 }
 
+.app-dynamics .medium-hero .hero-text h1 {
+	font-size: 14px;
+	font-weight: 300;
+}
+
 .faint {
 	color: rgba(53, 54, 54, 0.5);
 }
@@ -3370,7 +3369,6 @@ margin-bottom: 70px;
 		display: inline-block;
 		margin-right: 0;
 	}
-
 }
 
 /* show partners images */
@@ -3587,12 +3585,33 @@ margin-bottom: 70px;
 	border-top: 4px solid var(--secondary);
 }
 
-.app-dynamics .container-small {
+/* .app-dynamics .container-small {
 	background: #fff;
 	width: 83%;
 	margin-top: -336px;
 	box-shadow: 0 2px 5px 0 rgba(68, 73, 83, 0.12);
 	z-index: 1;
+} */
+
+.app-dynamics .container-small {
+	background: #fff;
+	box-shadow: 0 2px 5px 0 rgba(68, 73, 83, 0.12);
+	z-index: 1;
+}
+
+@media only screen and (min-width:900px) {
+	.app-dynamics .container-small {
+		top: 200px;
+    width: 380px;
+    position: absolute;
+    right: 13%;
+	}
+
+	.app-dynamics .medium-hero .hero-text-wrapper {
+		width: 50%;
+		margin-top: 4%;
+		margin-left: 5%;
+	}
 }
 
 .campaign-form-container {
