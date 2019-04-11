@@ -3664,7 +3664,7 @@ margin-bottom: 70px;
 }
 
 .campaign-form-container form-body .input-wrap input,
-.campaign-form-container form-body .input-wrap textarea{
+.campaign-form-container form-body .input-wrap textarea {
 	border-radius: 2.5px;
 	height: 50px;
 	background: #000;
@@ -3679,7 +3679,8 @@ margin-bottom: 70px;
 	border: 1px solid var(--light-gray);
 }
 
-.app-dynamics .campaign-form-container form-body .input-wrap input {
+.app-dynamics .campaign-form-container form-body .input-wrap input,
+.app-dynamics .campaign-form-container form-body .input-wrap textarea {
 	background: var(--white);
 	color: var(--black);
 	border: 1px solid var(--light-gray);
