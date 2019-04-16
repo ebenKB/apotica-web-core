@@ -1007,7 +1007,7 @@ section .two-column-grid .grid-item img {
 
 .medium-hero__app-dynamics {
  	background-size: cover !important;
-	background: linear-gradient( rgba(5, 5, 5, 0.5), rgba(2, 2, 2, 0.5) ),  
+	background: linear-gradient( rgba(5, 5, 5, 0.05), rgba(2, 2, 2, 0.1) ),  
 	url("../images/meraki-hero.jpg") center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
