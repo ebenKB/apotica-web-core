@@ -3699,6 +3699,16 @@ margin-bottom: 70px;
 	        transform: scale(0.6);
 }
 
+.img-holder .icon-large {
+	width: 100%;
+	-webkit-transform: scale(0.8);
+	        transform: scale(0.8);
+}
+
+.img-caption {
+	border-radius: 25px;
+	border: 1px solid var(--secondary);
+}
 .content-row:hover .img-holder {
 	-webkit-transform: scale(1.2);
 	        transform: scale(1.2);
@@ -3766,7 +3776,7 @@ margin-bottom: 70px;
 }
 
 .app-dynamics .campaign-form-container .btn__full-width {
-	color: var(--light-gray);
+	color: var(--black);
 	border: 1px solid var(--light-gray);
 }
 

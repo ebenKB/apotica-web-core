@@ -14,8 +14,9 @@ gulp.task('autoprefixer', function () {
 // gulp.task('js', function() {
 //   return gulp.src('./themes/apotica-theme/source/_css/**/*.css')
 // })
+
 gulp.task('watch', function () {
     gulp.watch(['./themes/apotica-theme/source/_css/**/*.css'], ['css']);
 });
 
-gulp.task( ['autoprefixer', 'watch']);
+gulp.task(['autoprefixer', 'watch']);
