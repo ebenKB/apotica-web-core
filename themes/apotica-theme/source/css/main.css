@@ -1073,10 +1073,10 @@ section .two-column-grid .grid-item img {
 
 .medium-hero__app-dynamics {
  	background-size: cover !important;
-	background: linear-gradient( rgba(5, 5, 5, 0.05), rgba(2, 2, 2, 0.1) ),  
-	url("../images/meraki-hero.jpg") center center;
+	background: linear-gradient( rgba(5, 5, 5, 0.15), rgba(2, 2, 2, 0.5) ),  
+	url("../images/erica-hero-2.jpg") 20% 20%;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
 	/* background: linear-gradient( rgba(5, 5, 5, 0.5), rgba(70, 119, 158,0.5) ),  
 	url("../images/appDynamics-trash.png") no-repeat center center fixed */
 }
@@ -1992,6 +1992,11 @@ h6 {
 	font-weight: 300;
 	font-size: 24px;
 	line-height: 30px;
+}
+
+.app-dynamics .medium-hero .hero-text {
+	float: right;
+	width: 55%;
 }
 
 .app-dynamics .medium-hero .hero-text h1 {
@@ -3705,10 +3710,15 @@ margin-bottom: 70px;
 	        transform: scale(0.8);
 }
 
+/* .image-shadow {
+	box-shadow: 3px 17.1px 17px 0px #888888;
+} */
+
 .img-caption {
-	border-radius: 25px;
-	border: 1px solid var(--secondary__light);
+	border-radius: 15px;
+	/* border: 1px solid var(--secondary__light); */
 }
+
 .content-row:hover .img-holder {
 	-webkit-transform: scale(1.2);
 	        transform: scale(1.2);
@@ -3756,7 +3766,7 @@ margin-bottom: 70px;
 	.app-dynamics .medium-hero .hero-text-wrapper {
 		width: 50%;
 		margin-top: 4%;
-		margin-left: 5%;
+		margin-left: 9%;
 	}
 }
 
