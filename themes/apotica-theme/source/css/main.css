@@ -4321,6 +4321,11 @@ margin-bottom: 70px;
 	-webkit-transform: scale(1.3);
 	        transform: scale(1.3);
 }
+
+.campaign-container .campaign-content .content-row .img-holder {
+	margin-bottom: 25px;
+	margin-top: 15px;
+}
 }
 
 /* smaller screens */
