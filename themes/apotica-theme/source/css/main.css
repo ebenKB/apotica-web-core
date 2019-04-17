@@ -1073,8 +1073,8 @@ section .two-column-grid .grid-item img {
 
 .medium-hero__app-dynamics {
  	background-size: cover !important;
-	background: linear-gradient( rgba(5, 5, 5, 0.0), rgba(2, 2, 2, 0.2) ),  
-	url("../images/erica-hero-3.jpg");
+	background: linear-gradient( rgba(5, 5, 5, 0.0), rgba(2, 2, 2, 0.8) ),  
+	url("../images/erica-hero-5.jpg");
 	background-repeat: no-repeat;
 	margin-top: 32px;
 	/* background-attachment: fixed; */
@@ -1977,7 +1977,7 @@ h6 {
 }
 
 .app-dynamics .medium-hero .hero-text h4 {
-	color: var(--dark);
+	color: var(--white);
 }
 
 /* apotica */
@@ -3771,7 +3771,7 @@ margin-bottom: 70px;
 	.app-dynamics .medium-hero .hero-text-wrapper {
 		width: 50%;
 		margin-top: 4%;
-		margin-left: 9%;
+		margin-left: 4%;
 	}
 }
 
@@ -4500,6 +4500,31 @@ margin-bottom: 70px;
 	}
 }
 
+/* override .app-dynamics hero for small resolutions  */
+@media only screen and (min-width:980px)  and (max-width: 1366px){
+	/* body {
+		background: red;
+	} */
+
+	.app-dynamics .container-small {
+    right: 6%;
+	}
+
+	.campaign-container .campaign-content .content-row {
+    width: 90%;
+	}
+
+	.container-large .campaign-content .content-caption{
+    width: 90%;
+    font-weight: 900;
+    font-size: 18px;
+	}
+	
+	.app-dynamics .medium-hero .hero-text {
+			width: 75%;
+	}
+}
+
 @media screen and (min-width:769px) and (max-width: 1523px) {
 	.nav-inner-content {
 		/* margin-left: 0; */
@@ -4508,6 +4533,5 @@ margin-bottom: 70px;
 		width: 90%;
     margin-left: 10%;
 	}
-
 }
 /*# sourceMappingURL=main.css.map */
