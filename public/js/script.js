@@ -141,27 +141,6 @@ function scroll(id, to, delay) {
   });
 }
 
-// function initCookie() {
-//   window.cookieconsent.initialise({
-//     "palette": {
-//       "popup": {
-//         "background": "#073151"
-//       },
-//       "button": {
-//         "background": "transparent",
-//         "text": "#fff",
-//         "border": "#fff",
-//         "padding": "5px 15px"
-//       }
-//     },
-//     "content": {
-//       "message": "This website uses cookies to ensure you get the best experience.",
-//       "dismiss": "Got it!",
-//       "href": "https://www.apotica.net/privacy/"
-//       }
-// });
-// }
-
 // function afterPageLoad() {
 //   $('#wrapper').removeClass('hide');
 //   $('#page-loader').addClass('hide');
@@ -170,4 +149,13 @@ function scroll(id, to, delay) {
 function showContentHeader(){
   document.getElementById('contact-header').classList.remove('fadeout');
   document.getElementById('contact-header').classList.remove('hide');
+}
+
+function getDate(){
+  fetch('http://worldclockapi.com/api/json/est/now')
+    .then((res) => res.json())
+    .then(data => {
+      const currentYr = data.ordinalDate.split('-')[0];
+      document.getElementById('current_year').innerHTML = currentYr;
+  });
 }
