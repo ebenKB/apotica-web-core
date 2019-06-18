@@ -232,7 +232,7 @@ header a:hover {
 }
 
 .wrapper {
-	min-height: calc(100vh - 400px);
+	min-height: calc(100vh - 270px);
 	overflow: hidden;
 }
 
@@ -2395,7 +2395,7 @@ h6 {
 	overflow: hidden;
 	width: 100%;
 	font-weight: 350;
-	height: 260px;
+	min-height: 270px;
 }
 
 .footer-content {
@@ -2410,12 +2410,13 @@ h6 {
 }
 
 .footer-bottom {
-	display: grid;
+	/* display: grid; */
 	grid-template-columns: repeat(2, 1fr);
 	/* grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); */
 	margin-right: 0;
 	margin-top: 30px;
 	margin-bottom: 60px;
+	width: 100%;
 }
 .footer > div {
 	padding-top: 20px;
@@ -2465,9 +2466,8 @@ div > a:hover,
 }
 
 .footer-content {
-	width: 95%;
-	margin: 0;
-	margin-left: 135px;
+	width: 80%;
+	margin-left: 10%;
 }
 
 .footer-body {
@@ -2500,7 +2500,7 @@ div > a:hover,
 	        transform: scale(.6);
 	position: absolute;
 	margin-top: -5px;
-	margin-left: -35px;
+	margin-left: 35px;
 	float: left;
 	width: 50px;
 	height: 50px;
@@ -2511,7 +2511,7 @@ div > a:hover,
 	        transform: scale(.6);
 	position: absolute;
 	margin-top: 30px;
-	margin-left: -35px;
+	margin-left: 35px;
 	float: left;
 	width: 50px;
 	height: 50px;
@@ -2522,7 +2522,7 @@ div > a:hover,
 	        transform: scale(.6);
 	position: absolute;
 	margin-top: 70px;
-	margin-left: -35px;
+	margin-left: 35px;
 	float: left;
 	width: 50px;
 	height: 50px;
@@ -3486,19 +3486,15 @@ margin-bottom: 70px;
 	}
 
 	.footer-body {
-		display: grid;
-		position: relative;
-		grid-template-columns: repeat(2, 1fr);
-		margin-left: 25px;
-		grid-template-rows: auto;
-		margin-top: 35px;
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 5%;
 	}
+
 	.footer-body > #footer-logo {
 		display: none;
 	}
-	.footer-content {
-		margin: 0;
-	}
+
 	.footer-bottom {
 		display: inline-block;
 		margin-right: 0;
@@ -4326,6 +4322,25 @@ margin-bottom: 70px;
 	margin-bottom: 25px;
 	margin-top: 15px;
 }
+
+.footer-content {
+	width: 90%;
+	margin-left: 5%;
+	}
+
+	/* override footer icon margins */
+	.footer-social__twitter>svg {
+		margin-left: 0;
+	}
+
+	.footer-social__linkedin>svg {
+		margin-left: 0;
+	}
+	
+	.footer-social__facebook>svg {
+		margin-left: 0;
+	}
+	/* end override footer icon margins */
 }
 
 /* smaller screens */
