@@ -29,21 +29,26 @@ if (form != null) {
       .then((data) => {
         if (data.status == '200') {
           showStatus(btnText);
-          reformatePage();
+          
+          // if you decide to hide all page content then this can be removed, other it has to be added.
+          // reformatePage();
         }
       })
-      .catch(() =>{
+      .catch(() => {
         alert("an error occured while sending mail");
-      })
-});
-}
+      });
+    });
+  }
 }
 
 // show message sending status
 function showStatus(btnText){
   $('#sales-container').addClass('hide');
   $('#success-banner').removeClass('hide');
-  $('#success-banner').addClass('swipeFromLeft')
+  
+  // hide the major content from the page
+  $('#container-large').addClass('hide');
+  $('#success-banner').addClass('swipeFromLeft');
   $('#submit').text(btnText);
 }
 
@@ -59,7 +64,6 @@ function reformatePage(){
   const campaignContainer=document.getElementById('campaign-container');
   if(campaignContainer != null) {
     campaignContainer.style.gridTemplateColumns = "1fr";
-  
     // scroll to the top of the page
     scroll();
   }
