@@ -140,7 +140,6 @@ header a:hover {
 	grid-gap: 5px;
 }
 
-
 .float  {
 	position: fixed;
 	width: 40px;
@@ -174,13 +173,6 @@ header a:hover {
 .wrap-content .item img {
  width: 50px;
 }
-
-/* apotica */
-/* depracated */
-
-/* .mobility .wrap-content .item img {
- width: 70px;
-} */
 
 /* apotica */
 .wrap-content ul {
@@ -301,6 +293,21 @@ header a:hover {
 .form-items .form-item label {
 	width: 100% ;
 }
+
+.role-section {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 60px;
+}
+
+.role-section div {
+  width: 80%;
+  margin: auto;
+  padding: 15px;
+}
+
 .mobile-menu {
 	position: relative;
 	/* top: 0; */
