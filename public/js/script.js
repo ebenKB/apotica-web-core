@@ -151,11 +151,13 @@ function showContentHeader(){
   document.getElementById('contact-header').classList.remove('hide');
 }
 
-function getDate(){
-  fetch('http://worldclockapi.com/api/json/est/now')
-    .then((res) => res.json())
-    .then(data => {
-      const currentYr = data.ordinalDate.split('-')[0];
-      document.getElementById('current_year').innerHTML = currentYr;
-  });
-}
+(
+  function (){
+    fetch('http://worldclockapi.com/api/json/est/now')
+      .then((res) => res.json())
+      .then(data => {
+        const currentYr = data.ordinalDate.split('-')[0];
+        document.getElementById('current_year').innerHTML = currentYr;
+    });
+  }
+)();
